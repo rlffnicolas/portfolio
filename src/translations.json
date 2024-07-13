@@ -1,0 +1,150 @@
+{
+    "navibar": {
+        "jp": {
+            "name": "オルロフ",
+            "menu": {
+                "about": "紹介",
+                "profile": "履歴書",
+                "skills": "スキル",
+                "apps": "実績"
+            } 
+        },
+        "en": {
+            "name": "Orloff",
+            "menu": {
+                "about": "About",
+                "profile": "Profile",
+                "skills": "Experiences",
+                "apps": "My apps"
+            } 
+        },
+        "fr": {
+            "name": "Orloff",
+            "menu": {
+                "about": "About",
+                "profile": "Profile",
+                "skills": "Skills",
+                "apps": "My apps"
+            } 
+        }
+    },
+    "about": {
+        "jp": {
+            "title": "紹介",
+            "main": "オルロフ・ニコラ　と申します。\n\n\n２９歳のフランス人です。\n\n\n８年前から日本に暮らしています。\n\n\nフランスの大学で「応用言語」を専攻しました。\n\n英語・日本語・翻訳の勉強をしました。\n\n\n一年上智大学に交換留学しました。\n\n\n昔からITに興味があり、\n\n４年前からウェブ開発の勉強をし、\n\n３年前に転職し、フロントエンドウェブエンジニアとして務まりました。\n\n\n新しい技術を身につけたく、\n\n現在はiOSのアプリ開発（SwiftUI）を勉強しております。"
+        },
+        "en": {
+            "title": "About me",
+            "main": "My name is"
+        },
+        "fr": {
+            "title": "À propos de moi",
+            "main": "Je m'appelle"
+        }
+    },
+    "profile": {
+        "jp": {
+            "title": "履歴書",
+            "studies": {
+                "title": "学歴",
+                "content": "エクスマルセイユ大学"
+            },
+            "work": {
+                "title": "職歴",
+                "content": "ザ・ノット東京新宿"
+            },
+            "diplomas": {
+                "title": "資格",
+                "content": "JLPT"
+            }
+        },
+        "en": {
+            "title": "Profile",
+            "studies": {
+                "title": "学歴",
+                "content": "エクスマルセイユ大学"
+            },
+            "work": {
+                "title": "職歴",
+                "content": "ザ・ノット東京新宿"
+            },
+            "diplomas": {
+                "title": "資格",
+                "content": "JLPT"
+            }
+        },
+        "fr": {
+            "title": "Profil",
+            "studies": {
+                "title": "学歴",
+                "content": "エクスマルセイユ大学"
+            },
+            "work": {
+                "title": "職歴",
+                "content": "ザ・ノット東京新宿"
+            },
+            "diplomas": {
+                "title": "資格",
+                "content": "JLPT"
+            }
+        }
+    },
+    "skills": {
+        "jp": {
+            "title": "スキル",
+            "programming": {
+                "title": "プログラミング",
+                "content": "HTML"
+            },
+            "language": {
+                "title": "言語",
+                "content": "フランス語"
+            },
+            "work": {
+                "title": "仕事関連のスキル",
+                "content": "エクセル"
+            }
+        },
+        "en": {
+            "title": "Skills",
+            "programming": {
+                "title": "プログラミング",
+                "content": "HTML"
+            },
+            "language": {
+                "title": "言語",
+                "content": "フランス語"
+            },
+            "work": {
+                "title": "仕事関連のスキル",
+                "content": "エクセル"
+            }
+        },
+        "fr": {
+            "title": "Skills",
+            "programming": {
+                "title": "プログラミング",
+                "content": "HTML"
+            },
+            "language": {
+                "title": "言語",
+                "content": "フランス語"
+            },
+            "work": {
+                "title": "仕事関連のスキル",
+                "content": "エクセル"
+            }
+        }
+    },
+    "apps": {
+        "jp": {
+            "title": "実績"
+        },
+        "en": {
+            "title": "My apps"
+        },
+        "fr": {
+            "title": "My apps"
+        }
+    }
+}
