@@ -6,9 +6,9 @@ const Motion = ({children}) => {
     return (
         <motion.div
             initial={{ 
+                position: 'fixed',
                 top: '10%',
                 left: '20%',
-                position: 'fixed',
                 width: '100%',
                 height: '100%',
                 opacity: 0,

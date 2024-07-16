@@ -15,6 +15,11 @@ const Profile = ({ order }) => {
         transition: { duration: 2 }
     };
 
+    const profilePresentation = profile[language].presentation.replace(/\n/g, '<br>');
+    const profileStudiesContent = profile[language].studies.content.replace(/\n/g, '<br>');
+    const profileWorkContent = profile[language].work.content.replace(/\n/g, '<br>');
+    const profileDiplomasContent = profile[language].diplomas.content.replace(/\n/g, '<br>');
+
     return (
         <Section order={order}>
             <motion.div
@@ -22,15 +27,16 @@ const Profile = ({ order }) => {
                 {...animateProps}    
             >
                 <h1>{profile[language].title}</h1>
+                <p dangerouslySetInnerHTML={{ __html: profilePresentation }}></p>
 
                 <h2>{profile[language].studies.title}</h2>
-                <p>{profile[language].studies.content}</p>
+                <p dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></p>
 
                 <h2>{profile[language].work.title}</h2>
-                <p>{profile[language].work.content}</p>
+                <p dangerouslySetInnerHTML={{ __html: profileWorkContent }}></p>
 
                 <h2>{profile[language].diplomas.title}</h2>
-                <p>{profile[language].diplomas.content}</p>
+                <p dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></p>
             </motion.div>
         </Section>
     )    
