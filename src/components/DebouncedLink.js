@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useClickable } from '../contexts/ClickableContext';
-import { useToggleNavibar } from '../contexts/ToggleNavibarContext';
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -50,7 +49,6 @@ const StyledLink = styled(Link)`
 
 const DebouncedLink = ({ to, children, delay = 500, isActive, onClick, ...props }) => {
 
-  const { toggleNavibar, setToggleNavibar } = useToggleNavibar();
 
   const { isDisabled, disableLinks } = useClickable();
   const [clickable, setClickable] = useState(true);
