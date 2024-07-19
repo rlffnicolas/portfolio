@@ -33,7 +33,7 @@ const StyledApp = styled.div`
       width: 40px;
       cursor: pointer;
 
-      left: ${props => props.toggleNavibar? '12%' : '2%'};
+      left: ${props => props.$togglenavibar? '12%' : '2%'};
     }
 
     button.toggle-navibar > span {
@@ -45,22 +45,22 @@ const StyledApp = styled.div`
     }
 
     button.toggle-navibar > span:nth-of-type(1) {
-      transform: ${props => props.toggleNavibar? 'rotate(45deg)' : 'none'};
+      transform: ${props => props.$togglenavibar? 'rotate(45deg)' : 'none'};
     }
 
     button.toggle-navibar > span:nth-of-type(2) {
-      transform: ${props => props.toggleNavibar? 'rotate(-45deg) translate(4px, -4px)' : 'none'};
+      transform: ${props => props.$togglenavibar? 'rotate(-45deg) translate(4px, -4px)' : 'none'};
     }
 
     button.toggle-navibar > span:nth-of-type(3) {
-      opacity: ${props => props.toggleNavibar? '0' : '1'};
-      transform: ${props => props.toggleNavibar? 'rotate(-45deg) translate(8px, -8px)' : 'none'};
+      opacity: ${props => props.$togglenavibar? '0' : '1'};
+      transform: ${props => props.$togglenavibar? 'rotate(-45deg) translate(8px, -8px)' : 'none'};
     }
 
     @media ${devices.tablet} {
         button.toggle-navibar {
-          left: ${props => props.toggleNavibar? '30%' : '5%'};
-          top: ${props => props.toggleNavibar? '4%' : '3%'};
+          left: ${props => props.$togglenavibar? '30%' : '5%'};
+          top: ${props => props.$togglenavibar? '4%' : '3%'};
         }
     }
 
@@ -75,9 +75,9 @@ function App() {
   const [ order, setOrder ] = useState([0, 0]);
 
   return (
-    <StyledApp theme={theme} toggleNavibar={toggleNavibar}>
+    <StyledApp theme={theme} $togglenavibar={toggleNavibar}>
       <AnimatePresence>
-          <button className='toggle-navibar' onClick={() => {
+          <button key='toggle-navibar' className='toggle-navibar' onClick={() => {
                 setToggleNavibar(!toggleNavibar)
             }}>
               <span></span>

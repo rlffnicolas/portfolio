@@ -29,8 +29,8 @@ const StyledNavibar = styled.div`
   transition: all 0.5s;
   padding-top: 10%;
 
-  left: ${props => props.toggleNavibar ? '2%' : '-15%'}; 
-  opacity: ${props => props.toggleNavibar ? '1' : '0'}; 
+  left: ${props => props.$togglenavibar ? '2%' : '-15%'}; 
+  opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
   
   h1 {
     text-align: center;
@@ -107,7 +107,7 @@ const Navibar = ({ order, setOrder }) => {
   };
 
   return (
-    <StyledNavibar theme={theme} toggleNavibar={toggleNavibar}>
+    <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
       <ClickableProvider>
 
           <motion.h1

@@ -12,11 +12,11 @@ const StyledSection = styled.div`
     overflow-y: scroll;
     transition: all 0.5s;
 
-    padding: ${props => props.toggleNavibar ? '30px 5%' : '30px 5% 30px 10%'};
-    left: ${props => props.toggleNavibar ? '20%' : '0'};
-    width: ${props => props.toggleNavibar ? '68%' : '90%'};
-    top: ${props => props.toggleNavibar ? '2%' : '0'};
-    height: ${props => props.toggleNavibar ? '90vh' : '100vh'};
+    padding: ${props => props.$togglenavibar ? '30px 5%' : '30px 5% 30px 10%'};
+    left: ${props => props.$togglenavibar ? '20%' : '0'};
+    width: ${props => props.$togglenavibar ? '68%' : '90%'};
+    top: ${props => props.$togglenavibar ? '2%' : '0'};
+    height: ${props => props.$togglenavibar ? '90vh' : '100vh'};
 
     * {
         text-align: start;
@@ -57,7 +57,7 @@ const Section = ({ children }) => {
 
     return (
         <Motion>
-            <StyledSection className="section" toggleNavibar={toggleNavibar} >
+            <StyledSection className="section" $togglenavibar={{toggleNavibar}} >
                 {children}
             </StyledSection>
         </Motion>
