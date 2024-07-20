@@ -33,15 +33,13 @@ function App() {
 
   return (
     <StyledApp theme={theme}>
-      <AnimatePresence>
-          <Navibar order={order} setOrder={setOrder} />
-          <Routes location={location} key={location.pathname}>
-            <Route path="/about" element={<About />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/apps" element={<Apps />} />
-          </Routes>
-      </AnimatePresence>
+      <Navibar />
+      <Routes location={location} key={location.pathname}>
+        <Route path="/about" element={<About />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/apps" element={<Apps />} />
+      </Routes>
     </StyledApp>
   );
 }

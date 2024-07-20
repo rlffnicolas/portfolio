@@ -2,7 +2,6 @@ import React from "react"
 import styled from 'styled-components';
 import Motion from '../components/Motion';
 import { devices } from '../deviceSizes';
-import { useToggleNavibar } from "../contexts/ToggleNavibarContext";
 
 const StyledSection = styled.div`
     background-color: rgba(50,50,50,0.3);

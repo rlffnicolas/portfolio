@@ -96,27 +96,12 @@ const Navibar = ({ order, setOrder }) => {
     <StyledNavibar theme={theme} >
       <ClickableProvider>
 
-          <motion.h1
-            key={language}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={variants}
-            custom={0}
-          >
+          <h1>
             {navibar[language].name}
-          </motion.h1>
+          </h1>
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (
-            <motion.li
-              key={path}
-              custom={index}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
               <DebouncedLink
                 to={path}
                 isActive={activeLink === path}
@@ -126,13 +111,8 @@ const Navibar = ({ order, setOrder }) => {
                   
                 }}
               >
-                <motion.div key={language} initial={{opacity: 0}} 
-                animate={{ opacity: 1 }} 
-                transition={{duration: 2}}>
                 {navibar[language].menu[path.substring(1)]}
-                </motion.div> 
               </DebouncedLink>
-            </motion.li>
           ))}
         </ul>
 
@@ -140,41 +120,23 @@ const Navibar = ({ order, setOrder }) => {
 
         <ul className="row">
           {['jp', 'en', 'fr'].map((lang, index) => (
-            <motion.li
-              key={lang}
-              custom={index + 4}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
               <button onClick={() => {
                 changeLanguage(lang);
                
                 }}>
                 {lang === 'jp' ? '🇯🇵' : lang === 'en' ? '🇬🇧' : '🇫🇷'}
               </button>
-            </motion.li>
           ))}
         </ul>
 
         <ul className="row">
           {['light', 'dark'].map((theme, index) => (
-            <motion.li
-              key={theme}
-              custom={index + 7}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
               <button onClick={() => {
                 changeTheme(theme); 
                 
                 }}>
                 {theme === 'light' ? '☀️' : '🌙'}
               </button>
-            </motion.li>
           ))}
         </ul>
         

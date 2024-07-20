@@ -58,31 +58,18 @@ const About = ({ order }) => {
     };
 
     return (
-        <Section order={order}>
-            <StyledAbout>
-                <motion.h1
-                    key={language}
-                    {...animateProps}
-                >
-                    {about[language].title}
-                </motion.h1>
-                
-                <div className="row">
-                    <motion.p 
-                        key={language}
-                        {...animateProps}
-                        dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}
-                    ></motion.p>
-                    <motion.img
-                        className="round"
-                        src={Photo}
-                        initial={{ rotateY: 0 }}
-                        animate={{ rotateY: 360 }}
-                        transition={{ duration: 2 }}
-                    />
-                </div>
-            </StyledAbout>
-        </Section>
+        <StyledAbout>
+            <h1>
+                {about[language].title}
+            </h1>
+            
+            <div className="row">
+                <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
+                <img
+                    className="round"
+                    src={Photo} />
+            </div>
+        </StyledAbout>
     )    
 }
 

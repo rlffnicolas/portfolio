@@ -98,43 +98,33 @@ const Apps = ({ order }) => {
     };
 
     return (
-        <Section order={order}>
-            <StyledApps>
-                <motion.h1
-                    key={language}
-                    {...animateProps}
-                >
-                    {apps[language].title}
-                </motion.h1>
+        <StyledApps>
+            <h1>
+                {apps[language].title}
+            </h1>
 
-                <motion.div
-                    className="app-list row"
-                    {...animateProps}    
-                >
-                    {appDetails.map((app, index) => (
-                        <div
-                            key={index}
-                            className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
-                            onClick={() => setSelectedApp(app)}
-                        >
-                            <h2>{app.title}</h2>
-                            {app.images.map((image, imgIndex) => (
-                                <img key={imgIndex} src={image} alt={app.title} />
-                            ))}
-                        </div>
-                    ))}
-                </motion.div>
-
-                {selectedApp && (
-                    <motion.div className="description"
-                        {...animateProps}
+            <div className="app-list row" >
+                {appDetails.map((app, index) => (
+                    <div
+                        key={index}
+                        className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
+                        onClick={() => setSelectedApp(app)}
                     >
-                        <h2>{selectedApp.title}</h2>
-                        <p>{selectedApp.description}</p>
-                    </motion.div>
-                )}
-            </StyledApps>
-        </Section>
+                        <h2>{app.title}</h2>
+                        {app.images.map((image, imgIndex) => (
+                            <img key={imgIndex} src={image} alt={app.title} />
+                        ))}
+                    </div>
+                ))}
+            </div>
+
+            {selectedApp && (
+                <div>
+                    <h2>{selectedApp.title}</h2>
+                    <p>{selectedApp.description}</p>
+                </div>
+            )}
+        </StyledApps>
     )    
 
    
