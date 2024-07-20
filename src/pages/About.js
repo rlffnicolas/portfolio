@@ -51,12 +51,6 @@ const About = () => {
 
     const mainWithLineBreak = about[language].main.replace(/\n/g, '<br>');
 
-    const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
-    };
-
     return (
         <Section>
             <StyledAbout>

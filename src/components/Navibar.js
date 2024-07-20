@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import DebouncedLink from './DebouncedLink';
-import { ClickableProvider } from '../contexts/ClickableContext';
-import { ToggleNavibarProvider, useToggleNavibar } from '../contexts/ToggleNavibarContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 import translations from '../translations.json';
 import { devices } from '../deviceSizes';
-import { toggleNavibar } from '../contexts/ToggleNavibarContext';
+import { Link } from 'react-router-dom';
 
 const mobileCheck = () => {
   let check = false;
@@ -29,8 +25,8 @@ const StyledNavibar = styled.div`
   transition: all 0.5s;
   padding-top: 10%;
 
-  left: ${props => props.$togglenavibar ? '2%' : '-15%'}; 
-  opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
+  // left: ${props => props.$togglenavibar ? '2%' : '-15%'}; 
+  // opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
   
   h1 {
     text-align: center;
@@ -41,6 +37,22 @@ const StyledNavibar = styled.div`
     flex-direction: column;
     padding: 10px 50px 10px 30px;
   }
+
+  // ul a.about {
+  //   background-color: ${props => props.$activelink == "/about" ? 'pink' : 'transparent'}; 
+  // }
+
+  // ul a.profile {
+  //   background-color: ${props => props.$activelink == "/profile" ? 'pink' : 'transparent'}; 
+  // }
+
+  // ul a.skills {
+  //   background-color: ${props => props.$activelink == "/skills" ? 'pink' : 'transparent'}; 
+  // }
+
+  // ul a.apps {
+  //   background-color: ${props => props.$activelink == "/apps" ? 'pink' : 'transparent'}; 
+  // }
 
   ul.row {
     flex-direction: row;
@@ -80,7 +92,7 @@ const StyledNavibar = styled.div`
 
   @media ${devices.tablet} {
     width: 40%;
-    background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
+    // background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
     left: 0;
     top: 0;
     padding-top: 15%;
@@ -88,47 +100,24 @@ const StyledNavibar = styled.div`
 
 `;
 
-const Navibar = ({ order, setOrder }) => {
+const Navibar = () => {
   const [activeLink, setActiveLink] = useState(null);
   const { language, changeLanguage } = useLanguage();
   const { theme, changeTheme } = useTheme();
-  const { toggleNavibar, setToggleNavibar } = useToggleNavibar();
   const { navibar } = translations;
 
-  const variants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.3,
-      },
-    }),
-  };
-
   return (
-    <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
-      <ClickableProvider>
+    <StyledNavibar theme={theme} $activelink={activeLink} >
 
-          <h1>
+          <h1 key='title'>
             {navibar[language].name}
           </h1>
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (
-            <DebouncedLink
-              to={path}
-              isActive={activeLink === path}
-              onClick={() => {
-                setActiveLink(path);
-                setOrder([order[1], index]);
-                if (mobileCheck()) {
-                  setToggleNavibar(!toggleNavibar)
-                }
-              }}
-            >
+            <Link to={path} key={index} className={path.substring(1)} onClick={() => setActiveLink(path)} >
               {navibar[language].menu[path.substring(1)]}
-            </DebouncedLink>
+            </Link>
           ))}
         </ul>
 
@@ -136,7 +125,7 @@ const Navibar = ({ order, setOrder }) => {
 
         <ul className="row">
           {['jp', 'en', 'fr'].map((lang, index) => (
-            <li>
+            <li key={index}>
               <button onClick={() => {
                 changeLanguage(lang);
                 if (mobileCheck()) {
@@ -151,7 +140,7 @@ const Navibar = ({ order, setOrder }) => {
 
         <ul className="row">
           {['light', 'dark'].map((theme, index) => (
-            <li>
+            <li key={index}>
               <button onClick={() => {
                 changeTheme(theme); 
                 if (mobileCheck()) {
@@ -164,7 +153,6 @@ const Navibar = ({ order, setOrder }) => {
           ))}
         </ul>
         
-      </ClickableProvider>
     </StyledNavibar>
   );
 };

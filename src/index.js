@@ -5,18 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { ToggleNavibarProvider } from './contexts/ToggleNavibarContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
       <LanguageProvider>
-        <ToggleNavibarProvider>
           <BrowserRouter>
               <App />
           </BrowserRouter>
-        </ToggleNavibarProvider>
       </LanguageProvider>
     </ThemeProvider>
   </React.StrictMode>
