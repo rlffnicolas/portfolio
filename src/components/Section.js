@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components';
-import Motion from '../components/Motion';
 import { devices } from '../deviceSizes';
 import { useToggleNavibar } from "../contexts/ToggleNavibarContext";
 
@@ -55,12 +54,10 @@ const Section = ({ children }) => {
 
     const { toggleNavibar } = useToggleNavibar();
 
-    return (
-        <Motion>
-            <StyledSection className="section" $togglenavibar={{toggleNavibar}} >
-                {children}
-            </StyledSection>
-        </Motion>
+    return ( 
+        <StyledSection className="section" $togglenavibar={{toggleNavibar}} >
+            {children}
+        </StyledSection>
     )    
 }
 

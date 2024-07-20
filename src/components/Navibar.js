@@ -110,45 +110,25 @@ const Navibar = ({ order, setOrder }) => {
     <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
       <ClickableProvider>
 
-          <motion.h1
-            key={language}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={variants}
-            custom={0}
-          >
+          <h1>
             {navibar[language].name}
-          </motion.h1>
+          </h1>
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (
-            <motion.li
-              key={path}
-              custom={index}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
+            <DebouncedLink
+              to={path}
+              isActive={activeLink === path}
+              onClick={() => {
+                setActiveLink(path);
+                setOrder([order[1], index]);
+                if (mobileCheck()) {
+                  setToggleNavibar(!toggleNavibar)
+                }
+              }}
             >
-              <DebouncedLink
-                to={path}
-                isActive={activeLink === path}
-                onClick={() => {
-                  setActiveLink(path);
-                  setOrder([order[1], index]);
-                  if (mobileCheck()) {
-                    setToggleNavibar(!toggleNavibar)
-                  }
-                }}
-              >
-                <motion.div key={language} initial={{opacity: 0}} 
-                animate={{ opacity: 1 }} 
-                transition={{duration: 2}}>
-                {navibar[language].menu[path.substring(1)]}
-                </motion.div> 
-              </DebouncedLink>
-            </motion.li>
+              {navibar[language].menu[path.substring(1)]}
+            </DebouncedLink>
           ))}
         </ul>
 
@@ -156,14 +136,7 @@ const Navibar = ({ order, setOrder }) => {
 
         <ul className="row">
           {['jp', 'en', 'fr'].map((lang, index) => (
-            <motion.li
-              key={lang}
-              custom={index + 4}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
+            <li>
               <button onClick={() => {
                 changeLanguage(lang);
                 if (mobileCheck()) {
@@ -172,20 +145,13 @@ const Navibar = ({ order, setOrder }) => {
                 }}>
                 {lang === 'jp' ? '🇯🇵' : lang === 'en' ? '🇬🇧' : '🇫🇷'}
               </button>
-            </motion.li>
+            </li>
           ))}
         </ul>
 
         <ul className="row">
           {['light', 'dark'].map((theme, index) => (
-            <motion.li
-              key={theme}
-              custom={index + 7}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
+            <li>
               <button onClick={() => {
                 changeTheme(theme); 
                 if (mobileCheck()) {
@@ -194,7 +160,7 @@ const Navibar = ({ order, setOrder }) => {
                 }}>
                 {theme === 'light' ? '☀️' : '🌙'}
               </button>
-            </motion.li>
+            </li>
           ))}
         </ul>
         

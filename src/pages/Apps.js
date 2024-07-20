@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
-import { motion } from "framer-motion";
 import styled from "styled-components";
 
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
@@ -73,7 +72,7 @@ const StyledApps = styled.div`
     }
 `
 
-const Apps = ({ order }) => {
+const Apps = () => {
 
     const {language} = useLanguage();
     const {apps} = translations;
@@ -91,26 +90,14 @@ const Apps = ({ order }) => {
         { title: 'Item Finder', images: [ItemFinder], description: 'Item Finder helps you find items in your inventory.' },
     ];
 
-    const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
-    };
-
     return (
-        <Section order={order}>
+        <Section>
             <StyledApps>
-                <motion.h1
-                    key={language}
-                    {...animateProps}
-                >
+                <h1>
                     {apps[language].title}
-                </motion.h1>
+                </h1>
 
-                <motion.div
-                    className="app-list row"
-                    {...animateProps}    
-                >
+                <div className="app-list row">
                     {appDetails.map((app, index) => (
                         <div
                             key={index}
@@ -123,15 +110,13 @@ const Apps = ({ order }) => {
                             ))}
                         </div>
                     ))}
-                </motion.div>
+                </div>
 
                 {selectedApp && (
-                    <motion.div className="description"
-                        {...animateProps}
-                    >
+                    <div className="description">
                         <h2>{selectedApp.title}</h2>
                         <p>{selectedApp.description}</p>
-                    </motion.div>
+                    </div>
                 )}
             </StyledApps>
         </Section>

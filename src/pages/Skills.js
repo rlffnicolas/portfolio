@@ -2,24 +2,13 @@ import React from "react"
 import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
-import { motion } from "framer-motion";
 
-const Skills = ({ order }) => {
+const Skills = () => {
     const {language} = useLanguage();
     const {skills} = translations;
 
-    const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
-    };
-
     return (
-        <Section order={order}>
-            <motion.div
-                key={language}
-                {...animateProps}
-            >
+        <Section>
                 <h1>{skills[language].title}</h1>
 
                 <h2>{skills[language].programming.title}</h2>
@@ -30,7 +19,6 @@ const Skills = ({ order }) => {
 
                 <h2>{skills[language].work.title}</h2>
                 <p>{skills[language].work.content}</p>
-            </motion.div>
         </Section>
     )    
 }

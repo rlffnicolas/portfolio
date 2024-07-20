@@ -45,7 +45,7 @@ const StyledAbout = styled.div`
     }
 `
 
-const About = ({ order }) => {
+const About = () => {
     const {language} = useLanguage();
     const {about} = translations;
 
@@ -58,21 +58,14 @@ const About = ({ order }) => {
     };
 
     return (
-        <Section order={order}>
+        <Section>
             <StyledAbout>
-                <motion.h1
-                    key={language}
-                    {...animateProps}
-                >
+                <h1>
                     {about[language].title}
-                </motion.h1>
+                </h1>
                 
                 <div className="row">
-                    <motion.p 
-                        key={language}
-                        {...animateProps}
-                        dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}
-                    ></motion.p>
+                    <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
                     <motion.img
                         className="round"
                         src={Photo}
