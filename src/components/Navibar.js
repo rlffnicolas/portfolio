@@ -135,7 +135,6 @@ const Navibar = () => {
                 isActive={activeLink === path}
                 onClick={() => {
                   setActiveLink(path);
-                  setOrder([order[1], index]);
                   if (mobileCheck()) {
                     setToggleNavibar(!toggleNavibar)
                   }
