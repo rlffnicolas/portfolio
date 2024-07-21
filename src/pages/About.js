@@ -3,25 +3,19 @@ import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import Photo from "../assets/images/portrait.jpg";
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 const StyledAbout = styled.div`
-    .section {
+    .row {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
-        align-items: center;
-        height: 100vh;
     }
 
-    .block {
-        width: 250px;
-        height: 250px;
-        padding: 60px;
-        background-color: peachpuff;
+    .row p {
+        width: 70%;
     }
 
-    .container {
-        width: 500px;
+    .row img {
+        width: 30%;
     }
 
     img {
@@ -33,15 +27,18 @@ const StyledAbout = styled.div`
     img.round {
         border-radius: 50%;
     }
-
-    .row p {
-        width: 70%;
-    }
-
-    .row img {
-        width: 30%;
-    }
 `
+
+const variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+  };
 
 const About = () => {
     const {language} = useLanguage();
@@ -50,19 +47,37 @@ const About = () => {
     const mainWithLineBreak = about[language].main.replace(/\n/g, '<br>');
 
     const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
+        initial: { opacity: 0, transform: 'translateY(-10px)' },
+        animate: { opacity: 1, transform: 'translateY(0)' },
+        transition: { duration: 0.4 }
     };
 
     return (
         <StyledAbout>
-            <h1>{about[language].title}</h1>
             
-            <div className="row">
-                <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
-                <img className="round" src={Photo}  />
-            </div>
+                <motion.h1
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={variants}
+                    custom={0}
+                    key={language}
+                >
+                    {about[language].title}
+                </motion.h1>
+                
+                <div className="row">
+                    <motion.p 
+                        dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}
+                        initial="hidden"
+                        animate="visible"
+                        exit="hidden"
+                        variants={variants}
+                        custom={1}
+                        key={language}
+                    ></motion.p>
+                    <img className="round" src={Photo}  />
+                </div>
         </StyledAbout>
     )    
 }

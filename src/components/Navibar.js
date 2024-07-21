@@ -10,6 +10,7 @@ import translations from '../translations.json';
 import { devices } from '../deviceSizes';
 import Switch from '@mui/material/Switch';
 
+
 const mobileCheck = () => {
   let check = false;
   (function(a) {
@@ -144,7 +145,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 const Navibar = () => {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState('/about');
   const { language, changeLanguage } = useLanguage();
   const { theme, changeTheme } = useTheme();
   const { toggleNavibar, setToggleNavibar } = useToggleNavibar();
@@ -155,6 +156,16 @@ const Navibar = () => {
     visible: (i) => ({
       opacity: 1,
       y: 0,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+  };
+  const variants2 = {
+    hidden: { opacity: 0, x: -20 },
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
       transition: {
         delay: i * 0.3,
       },
@@ -182,28 +193,22 @@ const Navibar = () => {
     <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
       <ClickableProvider>
 
-          <motion.h1
-            key={language}
-            initial="hidden"
-            animate="visible"
-            exit="hidden"
-            variants={variants}
-            custom={0}
-          >
-            {navibar[language].name}
-          </motion.h1>
+        <motion.h1
+          key={language}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={variants}
+          custom={0}
+        >
+          {navibar[language].name}
+        </motion.h1>
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (
-            <motion.li
-              key={path}
-              custom={index}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={variants}
-            >
+           
               <DebouncedLink
+                key={index}
                 to={path}
                 isActive={activeLink === path}
                 onClick={() => {
@@ -213,13 +218,17 @@ const Navibar = () => {
                   }
                 }}
               >
-                <motion.div key={language} initial={{opacity: 0}} 
-                animate={{ opacity: 1 }} 
-                transition={{duration: 2}}>
+                <motion.div 
+                  key={language}
+                  custom={0.5+index/3}
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  variants={variants}
+                >
                 {navibar[language].menu[path.substring(1)]}
                 </motion.div> 
               </DebouncedLink>
-            </motion.li>
           ))}
         </ul>
 
@@ -229,11 +238,11 @@ const Navibar = () => {
           {['jp', 'en', 'fr'].map((lang, index) => (
             <motion.li
               key={lang}
-              custom={index + 4}
+              custom={2+index/3}
               initial="hidden"
               animate="visible"
               exit="hidden"
-              variants={variants}
+              variants={variants2}
             >
               <button onClick={() => {
                 changeLanguage(lang);
@@ -247,7 +256,16 @@ const Navibar = () => {
           ))}
         </ul>
 
-        <MaterialUISwitch onChange={handleChangeTheme} checked={checked} />
+        <motion.div
+          key='lightdarkmode'
+          custom={3}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={variants2}
+        >
+          <MaterialUISwitch onChange={handleChangeTheme} checked={checked} />
+        </motion.div>
         
       </ClickableProvider>
     </StyledNavibar>

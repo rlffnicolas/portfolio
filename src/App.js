@@ -8,6 +8,7 @@ import { Navibar }  from './components';
 import { useToggleNavibar } from './contexts/ToggleNavibarContext';
 import { devices } from './deviceSizes';
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
   background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
@@ -91,6 +92,7 @@ function App() {
   const {toggleNavibar, setToggleNavibar} = useToggleNavibar();
   const location = useLocation();
   const outlet = useOutlet();
+  const language = useLanguage();
 
   return (
     <StyledApp theme={theme} $togglenavibar={toggleNavibar}>
@@ -107,13 +109,13 @@ function App() {
 
       <AnimatePresence>
         <motion.div
-          key={language}
+          key={location.pathname}
           className="motion"
           initial={{ opacity: 0, transform: 'translate(10px, 50px)' }}
           animate={{ opacity: 1, transform: 'translate(0)' }}
           exit={{ opacity: 0, transform: 'translate(-10px, -50px)' }}
           transition={{
-            duration: 0.5
+            duration: 0.4
           }}
         >
           <Scrollbars>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter ,RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ToggleNavibarProvider } from './contexts/ToggleNavibarContext';
@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        path: "/",
+        element: <Navigate to="/about" replace />
+      },
       {
         path: "/about",
         element: <About />
