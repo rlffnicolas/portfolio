@@ -1,9 +1,7 @@
 import React from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import Photo from "../assets/images/portrait.jpg";
-import { motion } from "framer-motion"
 import styled from 'styled-components';
 
 const StyledAbout = styled.div`
@@ -45,7 +43,7 @@ const StyledAbout = styled.div`
     }
 `
 
-const About = ({ order }) => {
+const About = () => {
     const {language} = useLanguage();
     const {about} = translations;
 
@@ -58,31 +56,14 @@ const About = ({ order }) => {
     };
 
     return (
-        <Section order={order}>
-            <StyledAbout>
-                <motion.h1
-                    key={language}
-                    {...animateProps}
-                >
-                    {about[language].title}
-                </motion.h1>
-                
-                <div className="row">
-                    <motion.p 
-                        key={language}
-                        {...animateProps}
-                        dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}
-                    ></motion.p>
-                    <motion.img
-                        className="round"
-                        src={Photo}
-                        initial={{ rotateY: 0 }}
-                        animate={{ rotateY: 360 }}
-                        transition={{ duration: 2 }}
-                    />
-                </div>
-            </StyledAbout>
-        </Section>
+        <StyledAbout>
+            <h1>{about[language].title}</h1>
+            
+            <div className="row">
+                <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
+                <img className="round" src={Photo}  />
+            </div>
+        </StyledAbout>
     )    
 }
 

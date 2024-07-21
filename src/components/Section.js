@@ -56,11 +56,9 @@ const Section = ({ children }) => {
     const { toggleNavibar } = useToggleNavibar();
 
     return (
-        <Motion>
-            <StyledSection className="section" $togglenavibar={{toggleNavibar}} >
+            <StyledSection className="section" $togglenavibar={toggleNavibar} >
                 {children}
             </StyledSection>
-        </Motion>
     )    
 }
 

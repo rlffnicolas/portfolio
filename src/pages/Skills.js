@@ -1,10 +1,13 @@
 import React from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
-import { motion } from "framer-motion";
+import styled from "styled-components";
 
-const Skills = ({ order }) => {
+const StyledSkills = styled.div`
+
+`
+
+const Skills = () => {
     const {language} = useLanguage();
     const {skills} = translations;
 
@@ -15,11 +18,7 @@ const Skills = ({ order }) => {
     };
 
     return (
-        <Section order={order}>
-            <motion.div
-                key={language}
-                {...animateProps}
-            >
+        <StyledSkills>
                 <h1>{skills[language].title}</h1>
 
                 <h2>{skills[language].programming.title}</h2>
@@ -30,8 +29,7 @@ const Skills = ({ order }) => {
 
                 <h2>{skills[language].work.title}</h2>
                 <p>{skills[language].work.content}</p>
-            </motion.div>
-        </Section>
+        </StyledSkills>
     )    
 }
 

@@ -1,10 +1,13 @@
 import React from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
-import { motion } from "framer-motion";
+import styled from "styled-components";
 
-const Profile = ({ order }) => {
+const StyledProfile = styled.div`
+
+`
+
+const Profile = () => {
 
     const { language } = useLanguage(); 
     const { profile } = translations;
@@ -21,24 +24,19 @@ const Profile = ({ order }) => {
     const profileDiplomasContent = profile[language].diplomas.content.replace(/\n/g, '<br>');
 
     return (
-        <Section order={order}>
-            <motion.div
-                key={language}
-                {...animateProps}    
-            >
-                <h1>{profile[language].title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: profilePresentation }}></p>
+        <StyledProfile>
+            <h1>{profile[language].title}</h1>
+            <p dangerouslySetInnerHTML={{ __html: profilePresentation }}></p>
 
-                <h2>{profile[language].studies.title}</h2>
-                <p dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></p>
+            <h2>{profile[language].studies.title}</h2>
+            <p dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></p>
 
-                <h2>{profile[language].work.title}</h2>
-                <p dangerouslySetInnerHTML={{ __html: profileWorkContent }}></p>
+            <h2>{profile[language].work.title}</h2>
+            <p dangerouslySetInnerHTML={{ __html: profileWorkContent }}></p>
 
-                <h2>{profile[language].diplomas.title}</h2>
-                <p dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></p>
-            </motion.div>
-        </Section>
+            <h2>{profile[language].diplomas.title}</h2>
+            <p dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></p>
+        </StyledProfile>
     )    
 }
 

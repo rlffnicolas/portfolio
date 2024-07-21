@@ -2,10 +2,39 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter ,RouterProvider } from "react-router-dom";
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ToggleNavibarProvider } from './contexts/ToggleNavibarContext';
+import { About, Profile, Apps, Skills } from './pages';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/profile",
+        element: <Profile />
+      },
+      {
+        path: "/skills",
+        element: <Skills />
+      },
+      {
+        path: "/apps",
+        element: <Apps />
+      }
+    ]
+  },
+  
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,9 +42,7 @@ root.render(
     <ThemeProvider>
       <LanguageProvider>
         <ToggleNavibarProvider>
-          <BrowserRouter>
-              <App />
-          </BrowserRouter>
+          <RouterProvider router={router} />
         </ToggleNavibarProvider>
       </LanguageProvider>
     </ThemeProvider>

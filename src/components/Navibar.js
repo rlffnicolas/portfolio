@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import DebouncedLink from './DebouncedLink';
 import { ClickableProvider } from '../contexts/ClickableContext';
-import { ToggleNavibarProvider, useToggleNavibar } from '../contexts/ToggleNavibarContext';
+import { useToggleNavibar } from '../contexts/ToggleNavibarContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTheme } from '../contexts/ThemeContext';
 import translations from '../translations.json';
 import { devices } from '../deviceSizes';
-import { toggleNavibar } from '../contexts/ToggleNavibarContext';
 
 const mobileCheck = () => {
   let check = false;
@@ -88,7 +87,7 @@ const StyledNavibar = styled.div`
 
 `;
 
-const Navibar = ({ order, setOrder }) => {
+const Navibar = () => {
   const [activeLink, setActiveLink] = useState(null);
   const { language, changeLanguage } = useLanguage();
   const { theme, changeTheme } = useTheme();
