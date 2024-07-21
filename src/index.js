@@ -2,20 +2,46 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { About, Profile, Apps, Skills, Error } from './pages';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/profile",
+        element: <Profile />
+      },
+      {
+        path: "/skills",
+        element: <Skills />
+      },
+      {
+        path: "/apps",
+        element: <Apps />
+      }
+    ]
+  },
+  
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <LanguageProvider>
-          <BrowserRouter>
-              <App />
-          </BrowserRouter>
-      </LanguageProvider>
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </LanguageProvider>
   </React.StrictMode>
 );
 

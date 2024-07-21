@@ -1,7 +1,11 @@
 import React from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
+import styled from "styled-components";
+
+const StyledProfile = styled.div`
+
+`
 
 const Profile = () => {
 
@@ -14,7 +18,7 @@ const Profile = () => {
     const profileDiplomasContent = profile[language].diplomas.content.replace(/\n/g, '<br>');
 
     return (
-        <Section>
+        <StyledProfile>
             <h1>{profile[language].title}</h1>
             <p dangerouslySetInnerHTML={{ __html: profilePresentation }}></p>
 
@@ -26,7 +30,7 @@ const Profile = () => {
 
             <h2>{profile[language].diplomas.title}</h2>
             <p dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></p>
-        </Section>
+        </StyledProfile>
     )    
 }
 

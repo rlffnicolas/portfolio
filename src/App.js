@@ -1,22 +1,42 @@
 import './App.css';
-import { useLocation, Routes, Route } from 'react-router-dom';
-import { About, Profile, Apps, Skills } from './pages';
-import { AnimatePresence } from 'framer-motion';
+import React, { useState } from 'react';
+import { useLocation, useOutlet } from 'react-router-dom';
 import { useTheme } from './contexts/ThemeContext';
 import styled from 'styled-components';
 import { Navibar }  from './components';
 import { devices } from './deviceSizes';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const StyledApp = styled.div`
   background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
   height: 100vh;
   transition: background-color 0.5s;
+  display: flex;
+
+  .navibar-container {
+    width: 20%;
+  }
+
+  .outlet-container {
+    width: 80%;
+  }
+
+  .absolute {
+    position: absolute;
+  }
+
+  .top-0 {
+    top: 10%;
+  }
 
     * {
         color: ${props => props.theme === 'light' ? '#7f5539' : '#fff'}; 
-        transition: all 0.5s;
         border-color: ${props => props.theme === 'light' ? '#7f5539' : 'rgba(50,50,50,0.5)'} !important;
         
+    }
+
+    .row {
+      display: flex;
     }
 
     button.toggle-navibar {
@@ -67,27 +87,37 @@ const StyledApp = styled.div`
 
 function App() {
 
-  const location = useLocation()
   const {theme} = useTheme();
+  const [toggleNavibar, setToggleNavibar] = useState(true);
+  const location = useLocation();
+  const outlet = useOutlet();
 
   return (
     <StyledApp theme={theme}>
-      <AnimatePresence>
-          <button key='toggle-navibar' className='toggle-navibar' onClick={() => {
-                setToggleNavibar(!toggleNavibar)
-            }}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          <Navibar key='navibar' />
-          <Routes location={location} key={location.pathname}>
-            <Route path="/about" element={<About />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/apps" element={<Apps />} />
-          </Routes>
-      </AnimatePresence>
+        <button key='toggle-navibar' className='toggle-navibar' onClick={() => {
+              setToggleNavibar(!toggleNavibar)
+          }}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <div className='navibar-container'>
+          <Navibar className="navibar" />
+        </div>
+        <AnimatePresence>
+          <div className="outlet-container">
+          <motion.div
+                    key={location.pathname}
+                    className="absolute top-0"
+                    initial={{ opacity: 0, top: '20%' }}
+                    animate={{ opacity: 1, top: '10%' }}
+                    exit={{ opacity: 0, top: '0' }}
+                    transition={{ duration: 0.5 }}
+                >
+                   {outlet && React.cloneElement(outlet, { key: location.pathname })}
+                </motion.div>
+          </div>
+        </AnimatePresence>
     </StyledApp>
   );
 }

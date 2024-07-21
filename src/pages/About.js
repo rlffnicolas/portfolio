@@ -1,5 +1,4 @@
 import React from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import Photo from "../assets/images/portrait.jpg";
@@ -52,24 +51,26 @@ const About = () => {
     const mainWithLineBreak = about[language].main.replace(/\n/g, '<br>');
 
     return (
-        <Section>
-            <StyledAbout>
-                <h1>
-                    {about[language].title}
-                </h1>
+        <StyledAbout>
+            <motion.h1
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 
-                <div className="row">
-                    <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
-                    <motion.img
-                        className="round"
-                        src={Photo}
-                        initial={{ rotateY: 0 }}
-                        animate={{ rotateY: 360 }}
-                        transition={{ duration: 2 }}
-                    />
-                </div>
-            </StyledAbout>
-        </Section>
+            >
+                {about[language].title}
+            </motion.h1>
+            
+            <div className="row">
+                <p dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}></p>
+                <motion.img
+                    className="round"
+                    src={Photo}
+                    initial={{ rotateY: 0 }}
+                    animate={{ rotateY: 360 }}
+                    transition={{ duration: 2 }}
+                />
+            </div>
+        </StyledAbout>
     )    
 }
 

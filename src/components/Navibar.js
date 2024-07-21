@@ -17,13 +17,8 @@ const mobileCheck = () => {
 };
 
 const StyledNavibar = styled.div`
-  position: fixed;
-  top: 2%;
-  z-index: 2;
-  width: 18%;
-  height: 96vh;
-  transition: all 0.5s;
   padding-top: 10%;
+  transition: all 0.5s;
 
   // left: ${props => props.$togglenavibar ? '2%' : '-15%'}; 
   // opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
@@ -115,7 +110,7 @@ const Navibar = () => {
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (
-            <Link to={path} key={index} className={path.substring(1)} onClick={() => setActiveLink(path)} >
+            <Link to={path} key={index}>
               {navibar[language].menu[path.substring(1)]}
             </Link>
           ))}

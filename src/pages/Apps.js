@@ -1,8 +1,8 @@
 import React, { useState } from "react"
-import Section from '../components/Section';
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
 import Calculator from '../assets/images/apps/calculator.png';
@@ -91,35 +91,33 @@ const Apps = () => {
     ];
 
     return (
-        <Section>
-            <StyledApps>
-                <h1>
-                    {apps[language].title}
-                </h1>
+        <StyledApps>
+            <motion.h1>
+                {apps[language].title}
+            </motion.h1>
 
-                <div className="app-list row">
-                    {appDetails.map((app, index) => (
-                        <div
-                            key={index}
-                            className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
-                            onClick={() => setSelectedApp(app)}
-                        >
-                            <h2>{app.title}</h2>
-                            {app.images.map((image, imgIndex) => (
-                                <img key={imgIndex} src={image} alt={app.title} />
-                            ))}
-                        </div>
-                    ))}
-                </div>
-
-                {selectedApp && (
-                    <div className="description">
-                        <h2>{selectedApp.title}</h2>
-                        <p>{selectedApp.description}</p>
+            <div className="app-list row">
+                {appDetails.map((app, index) => (
+                    <div
+                        key={index}
+                        className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
+                        onClick={() => setSelectedApp(app)}
+                    >
+                        <h2>{app.title}</h2>
+                        {app.images.map((image, imgIndex) => (
+                            <img key={imgIndex} src={image} alt={app.title} />
+                        ))}
                     </div>
-                )}
-            </StyledApps>
-        </Section>
+                ))}
+            </div>
+
+            {selectedApp && (
+                <div className="description">
+                    <h2>{selectedApp.title}</h2>
+                    <p>{selectedApp.description}</p>
+                </div>
+            )}
+        </StyledApps>
     )    
 
    
