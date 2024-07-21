@@ -25,26 +25,25 @@ const StyledApp = styled.div`
     border-radius: ${props => props.$togglenavibar ? '30px' : '0'};
     left: ${props => props.$togglenavibar ? '20%' : '0'};
     top: ${props => props.$togglenavibar ? '5%' : '0'};
-    width: ${props => props.$togglenavibar ? '74%' : '100%'};
+    width: ${props => props.$togglenavibar ? '74%' : '92%'};
     height: ${props => props.$togglenavibar ? '90%' : '100%'};
     transition: left 0.5s, width 0.5s, height 0.5s, padding 0.6s, top 0.5s, border-radius 1s;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
 
-   .motion::-webkit-scrollbar {
+  .motion::-webkit-scrollbar {
     display: none;
   }
 
   * {
       color: ${props => props.theme === 'light' ? '#7f5539' : '#fff'}; 
       border-color: ${props => props.theme === 'light' ? '#7f5539' : 'rgba(50,50,50,0.5)'} !important;
-      
   }
 
   button.toggle-navibar {
     position: fixed;
-    top: 5%;
+    top: ${props => props.$togglenavibar? '10%' : '5%'};
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -54,7 +53,7 @@ const StyledApp = styled.div`
     width: 40px;
     cursor: pointer;
     transition: all 0.5s;
-    left: ${props => props.$togglenavibar? '12%' : '2%'};
+    left: ${props => props.$togglenavibar? '14%' : '2%'};
   }
 
   button.toggle-navibar > span {

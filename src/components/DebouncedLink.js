@@ -7,7 +7,6 @@ import { useToggleNavibar } from '../contexts/ToggleNavibarContext';
 const StyledLink = styled(Link)`
   position: relative;
   text-decoration: none;
-  width: 100%;
   display: block;
   padding: 10px;
   margin: 5px 0;
@@ -34,7 +33,7 @@ const StyledLink = styled(Link)`
   p.arrow {
     position: absolute;
     right: 20%;
-    top: -8%;
+    top: -10%;
     opacity: 0;
     transition: all 0.3s; 
   }
@@ -70,7 +69,7 @@ const DebouncedLink = ({ to, children, delay = 500, isActive, onClick, ...props 
   return (
     <StyledLink to={to} onClick={handleClick} $isActive={isActive} disabled={isDisabled} {...props}>
       {children}
-      <p className='arrow'>→</p>
+      <p className='arrow'>▶︎</p>
     </StyledLink>
   );
 };

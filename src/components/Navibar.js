@@ -28,11 +28,13 @@ const StyledNavibar = styled.div`
   transition: all 0.5s;
   padding-top: 10%;
 
-  left: ${props => props.$togglenavibar ? '2%' : '-15%'}; 
+  left: ${props => props.$togglenavibar ? '0' : '-15%'}; 
   opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
   
   h1 {
-    text-align: center;
+    text-align: start;
+    font-size: 26px;
+    margin-left: 40px;
   }
 
   ul {
@@ -43,7 +45,6 @@ const StyledNavibar = styled.div`
 
   ul.row {
     flex-direction: row;
-    justify-content: space-around;
   }
 
   li {
@@ -52,16 +53,18 @@ const StyledNavibar = styled.div`
   }
 
   button {
-    background-color: transparent;
+    background-color: rgba(200, 200, 200, 0.2);
     border: none;
     transition: background-color 0.5s;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 5px 10px;
+    margin: 0 5px;
   }
 
   button:hover {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.6);
     transition: all 0.5s;
   }
 
