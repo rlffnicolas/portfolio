@@ -3,9 +3,21 @@ import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { MaterialSymbol } from 'react-material-symbols';
 
 const StyledProfile = styled.div`
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 
+    .icon-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    
 `
 
 const variants = {
@@ -37,6 +49,19 @@ const Profile = () => {
 
     return (
         <StyledProfile>
+
+            <motion.div 
+                className="icon-container"
+                initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '80vw', opacity: 0}}
+                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: '10%' }}
+                transition={{
+                    type: "spring",
+                    stiffness: 250,
+                    damping: 28}}
+            >
+                
+                <MaterialSymbol className="settings-icon" icon="work" />
+            </motion.div>
 
             <motion.div key={language}>
                 <motion.h1

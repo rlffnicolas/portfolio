@@ -7,7 +7,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { ToggleNavibarProvider } from './contexts/ToggleNavibarContext';
 import { About, Profile, Apps, Skills } from './pages';
-
+import 'react-material-symbols/rounded';
 
 const router = createBrowserRouter([
   {

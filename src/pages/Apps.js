@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
@@ -120,13 +120,17 @@ const Apps = () => {
         variants: variants
     };
 
+    const scrollRef = useRef(null)
+
+    console.log(Math.random())
+
     return (
         <StyledApps>
             <h1>
                 {apps[language].title}
             </h1>
 
-            <div className="app-list row">
+            <div className="app-list row" ref={scrollRef} style={{ overflowY: "scroll", overflowX: "hidden" }}>
                 {appDetails.map((app, index) => (
                     <div
                         key={index}
@@ -136,9 +140,18 @@ const Apps = () => {
                             setDescriptionAnimation(!descriptionAnimation)
                         }}
                     >
-                        <h2>{app.title}</h2>
+                        <motion.h2
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{duration: 1}}
+                            viewport={{ once: false }}    
+                        >{app.title}</motion.h2>
                         {app.images.map((image, imgIndex) => (
-                            <img key={imgIndex} src={image} alt={app.title} />
+                            <motion.img initial={{ opacity: 0, transform: `translateX(100%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }}
+                            whileInView={{ opacity: 1, transform: 'translateX(0) scale(1)' }}
+                            transition={{duration: 0.8}}
+                            viewport={{ once: false }} key={imgIndex} src={image} alt={app.title}
+                            />
                         ))}
                     </div>
                 ))}
@@ -151,8 +164,10 @@ const Apps = () => {
                 </motion.div>
             )}
         </StyledApps>
-    )    
 
+        
+    )    
+    
    
 }
 

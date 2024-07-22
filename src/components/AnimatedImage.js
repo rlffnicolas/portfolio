@@ -13,8 +13,8 @@ const AnimatedImage = () => {
 
   useEffect(() => {
     animate(angle, 100, { duration: 2 });
-    animate(right, '0%', { duration: 2 });
-    animate(opacity, 1, { duration: 2 }); // Animate to full opacity
+    animate(right, '0%', { duration: 1 });
+    animate(opacity, 1, { duration: 3 }); // Animate to full opacity
   }, [angle, right, opacity]);
   
 

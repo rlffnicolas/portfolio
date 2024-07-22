@@ -15,16 +15,7 @@ const StyledAbout = styled.div`
         width: 70%;
     }
 
-   @property --gap{
-  syntax: '<length>';
-  inherits: true;
-  initial-value: 0;
-}
-@property --angle{
-  syntax: '<angle>';
-  inherits: true;
-  initial-value: 0deg;
-}
+
 
 
 

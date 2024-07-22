@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useClickable } from '../contexts/ClickableContext';
 import { useToggleNavibar } from '../contexts/ToggleNavibarContext';
+import { MaterialSymbol } from 'react-material-symbols';
 
 const StyledLink = styled(Link)`
   position: relative;
@@ -30,16 +31,16 @@ const StyledLink = styled(Link)`
     opacity: 0.6;
   }
 
-  p.arrow {
+  .arrow {
     position: absolute;
     right: 20%;
-    top: -10%;
+    top: 30%;
     opacity: 0;
     transition: all 0.3s; 
   }
 
   ${props => props.$isActive && `
-    p.arrow {
+    .arrow {
       opacity: 1; 
       right: 5%;
       transition: all 0.3s; 
@@ -69,7 +70,7 @@ const DebouncedLink = ({ to, children, delay = 500, isActive, onClick, ...props 
   return (
     <StyledLink to={to} onClick={handleClick} $isActive={isActive} disabled={isDisabled} {...props}>
       {children}
-      <p className='arrow'>▶︎</p>
+      <MaterialSymbol className="arrow" icon="arrow_forward_ios" />
     </StyledLink>
   );
 };
