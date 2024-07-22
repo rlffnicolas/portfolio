@@ -15,11 +15,6 @@ const StyledAbout = styled.div`
         width: 70%;
     }
 
-
-
-
-
-
 `
 
 const variants = {

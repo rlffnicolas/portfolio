@@ -30,6 +30,7 @@ const AnimatedImage = () => {
         opacity: opacityTransform,
         width: '200px',
         height: 'fit-content',
+        height: 'auto',
         boxSizing: 'border-box',
         borderRadius: '0',
         margin: '20px',

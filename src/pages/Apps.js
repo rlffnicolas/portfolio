@@ -58,8 +58,16 @@ const StyledApps = styled.div`
         display: flex;
     }
 
+    .app-list .app.row img {
+        max-width: 33%;
+    }
+
     .app-list .app.row.two {
         width: 66%;
+    }
+
+    .app-list .app.row.two img {
+        max-width: 48%;
     }
 
     .app-list .app.column {
