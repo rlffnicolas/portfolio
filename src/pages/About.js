@@ -4,6 +4,7 @@ import translations from '../translations.json';
 import Photo from "../assets/images/portrait.jpg";
 import styled from 'styled-components';
 import { motion } from "framer-motion";
+import AnimatedImage from "../components/AnimatedImage";
 
 const StyledAbout = styled.div`
     .row {
@@ -14,19 +15,20 @@ const StyledAbout = styled.div`
         width: 70%;
     }
 
-    .row img {
-        width: 30%;
-    }
+   @property --gap{
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 0;
+}
+@property --angle{
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
 
-    img {
-        width: 30%;
-        height: intrinsic !important;
-        height: fit-content;
-    }
 
-    img.round {
-        border-radius: 50%;
-    }
+
+
 `
 
 const variants = {
@@ -76,7 +78,7 @@ const About = () => {
                         custom={1}
                         key={language}
                     ></motion.p>
-                    <img className="round" src={Photo}  />
+                        <AnimatedImage />
                 </div>
         </StyledAbout>
     )    

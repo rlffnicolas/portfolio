@@ -145,7 +145,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 const Navibar = () => {
-  const [activeLink, setActiveLink] = useState('/about');
+  const [activeLink, setActiveLink] = useState(location.pathname == '/' ? '/about' : location.pathname);
   const { language, changeLanguage } = useLanguage();
   const { theme, changeTheme } = useTheme();
   const { toggleNavibar, setToggleNavibar } = useToggleNavibar();

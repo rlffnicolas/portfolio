@@ -2,10 +2,22 @@ import React from "react"
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const StyledProfile = styled.div`
 
 `
+
+const variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+  };
 
 const Profile = () => {
 
@@ -13,9 +25,9 @@ const Profile = () => {
     const { profile } = translations;
 
     const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
+        initial: "hidden",
+        animate: "visible",
+        variants: variants
     };
 
     const profilePresentation = profile[language].presentation.replace(/\n/g, '<br>');
@@ -25,17 +37,45 @@ const Profile = () => {
 
     return (
         <StyledProfile>
-            <h1>{profile[language].title}</h1>
-            <p dangerouslySetInnerHTML={{ __html: profilePresentation }}></p>
 
-            <h2>{profile[language].studies.title}</h2>
-            <p dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></p>
+            <motion.div key={language}>
+                <motion.h1
+                    {...animateProps}
+                    custom={0}
+                    >{profile[language].title}</motion.h1>
+                <motion.p 
+                    {...animateProps}
+                    custom={0.25}
+                    dangerouslySetInnerHTML={{ __html: profilePresentation }}></motion.p>
 
-            <h2>{profile[language].work.title}</h2>
-            <p dangerouslySetInnerHTML={{ __html: profileWorkContent }}></p>
+                <motion.h2
+                    {...animateProps}
+                    custom={0.5}
+                    >{profile[language].studies.title}</motion.h2>
+                <motion.p 
+                    {...animateProps}
+                    custom={0.75}
+                    dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></motion.p>
 
-            <h2>{profile[language].diplomas.title}</h2>
-            <p dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></p>
+                <motion.h2
+                    {...animateProps}
+                    custom={1}
+                    >{profile[language].work.title}</motion.h2>
+                <motion.p 
+                    {...animateProps}
+                    custom={1.25}
+                    dangerouslySetInnerHTML={{ __html: profileWorkContent }}></motion.p>
+
+                <motion.h2
+                    {...animateProps}
+                    custom={1.5}
+                    >{profile[language].diplomas.title}</motion.h2>
+                <motion.p 
+                    {...animateProps}
+                    custom={1.75}
+                    dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></motion.p>
+            </motion.div>   
+
         </StyledProfile>
     )    
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
 import Calculator from '../assets/images/apps/calculator.png';
@@ -41,6 +42,11 @@ const StyledApps = styled.div`
         transition: all 0.5s;
     }
 
+    .app-list .app:active {
+        box-shadow: inset 5px 5px 2px rgba(80,50,50,0.5);
+        transform: translate(-1px, -1px);
+    }
+
     .app-list .app h2 {
         position: absolute;
         top: 0;
@@ -48,7 +54,9 @@ const StyledApps = styled.div`
         text-align: center;
     }
 
-    
+    .app-list .app.row {
+        display: flex;
+    }
 
     .app-list .app.row.two {
         width: 66%;
@@ -57,14 +65,13 @@ const StyledApps = styled.div`
     .app-list .app.column {
         display: flex;
         width: 30%;
-        
     }
 
     .description {
         position: fixed;
-        width: 77%;
-        bottom: 2%;
-        left: 20%;
+        width: 100%;
+        bottom: 0%;
+        left: 0%;
         background-color: rgba(80,50,50);
         border-radius: 10px;
         z-index: 2;
@@ -77,10 +84,22 @@ const StyledApps = styled.div`
     }
 `
 
+const variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+  };
+
 const Apps = () => {
 
     const {language} = useLanguage();
     const {apps} = translations;
+    const [descriptionAnimation, setDescriptionAnimation] = useState(false);
 
     const [selectedApp, setSelectedApp] = useState(null);
     const appDetails = [
@@ -96,9 +115,9 @@ const Apps = () => {
     ];
 
     const animateProps = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        transition: { duration: 2 }
+        initial: "hidden",
+        animate: "visible",
+        variants: variants
     };
 
     return (
@@ -112,7 +131,10 @@ const Apps = () => {
                     <div
                         key={index}
                         className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
-                        onClick={() => setSelectedApp(app)}
+                        onClick={() => {
+                            setSelectedApp(app)
+                            setDescriptionAnimation(!descriptionAnimation)
+                        }}
                     >
                         <h2>{app.title}</h2>
                         {app.images.map((image, imgIndex) => (
@@ -123,10 +145,10 @@ const Apps = () => {
             </div>
 
             {selectedApp && (
-                <div className="description">
-                    <h2>{selectedApp.title}</h2>
-                    <p>{selectedApp.description}</p>
-                </div>
+                <motion.div key={descriptionAnimation} {...animateProps} className="description">
+                    <motion.h2 key={descriptionAnimation} {...animateProps}>{selectedApp.title}</motion.h2>
+                    <motion.p key={descriptionAnimation} {...animateProps}>{selectedApp.description}</motion.p>
+                </motion.div>
             )}
         </StyledApps>
     )    
