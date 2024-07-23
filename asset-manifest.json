@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.749ca1d9.css",
-    "main.js": "/static/js/main.a6064241.js",
+    "main.js": "/static/js/main.ffe4e06f.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/material-symbols-rounded.woff2": "/static/media/material-symbols-rounded.7e6c57567e2ab620ec78.woff2",
     "static/media/dicee.png": "/static/media/dicee.02565903d4e427c2362a.png",
@@ -19,11 +19,11 @@
     "static/media/portrait.jpg": "/static/media/portrait.4edf962a963c42c7b0bc.jpg",
     "index.html": "/index.html",
     "main.749ca1d9.css.map": "/static/css/main.749ca1d9.css.map",
-    "main.a6064241.js.map": "/static/js/main.a6064241.js.map",
+    "main.ffe4e06f.js.map": "/static/js/main.ffe4e06f.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.749ca1d9.css",
-    "static/js/main.a6064241.js"
+    "static/js/main.ffe4e06f.js"
   ]
 }
