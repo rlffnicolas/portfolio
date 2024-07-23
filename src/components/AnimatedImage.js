@@ -44,7 +44,8 @@ const AnimatedImage = () => {
         backgroundSize: 'var(--border) var(--border), auto',
         backgroundRepeat: 'no-repeat',
         
-        transition: '--angle .4s, --gap .4s'
+        transition: '--angle .4s, --gap .4s',
+        zIndex: '-1'
       }}
       src={Photo} />
   );

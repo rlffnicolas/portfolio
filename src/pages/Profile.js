@@ -4,6 +4,7 @@ import translations from '../translations.json';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { MaterialSymbol } from 'react-material-symbols';
+import { devices } from "../deviceSizes";
 
 const StyledProfile = styled.div`
     height: 100%;
@@ -17,7 +18,11 @@ const StyledProfile = styled.div`
         z-index: -1;
     }
 
-    
+    @media ${devices.tablet} {
+        p {
+            width: 90%;
+        }
+    }
 `
 
 const variants = {
@@ -52,8 +57,8 @@ const Profile = () => {
 
             <motion.div 
                 className="icon-container"
-                initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '80vw', opacity: 0}}
-                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: '10%' }}
+                initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '60vw', opacity: 0}}
+                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: '-10%' }}
                 transition={{
                     type: "spring",
                     stiffness: 250,

@@ -35,11 +35,11 @@
         },
         "en": {
             "title": "About me",
-            "main": "My name is"
+            "main": "My name is Nicolas.\n\nI am a 29-year-old Frenchman.\n\nI have been living in Japan for eight years.\n\nI majored in “Applied Linguistics” at a university in France.\n\nI studied English, Japanese, and translation.\n\nI spent one year as an exchange student at Sophia University.\n\nI have been interested in IT for a long time.\n\nI started studying web development four years ago.\n\nThree years ago, I changed careers and began working as a front-end web engineer.\n\nCurrently, I am studying iOS app development (SwiftUI) to acquire new skills."
         },
         "fr": {
             "title": "À propos de moi",
-            "main": "Je m'appelle"
+            "main": "Je m'appelle Nicolas.\n\nJe suis un Français de 29 ans.\n\nJe vis au Japon depuis huit ans.\n\nJ'ai étudié la “Linguistique appliquée” à l'université en France.\n\nJ'ai étudié l'anglais, le japonais et la traduction.\n\nJ'ai passé un an en échange universitaire à l'Université Sophia.\n\nJe m'intéresse à l'informatique depuis longtemps.\n\nJ'ai commencé à étudier le développement web il y a quatre ans.\n\nIl y a trois ans, j'ai changé de carrière et commencé à travailler en tant qu'ingénieur web front-end.\n\nActuellement, j'étudie le développement d'applications iOS (SwiftUI) pour acquérir de nouvelles compétences."
         }
     },
     "profile": {
@@ -48,7 +48,7 @@
             "presentation": "ITに興味深い29歳のフランス人です。\n\n前職で約3年主にECサイトのコーディングをしました。\n\nモバイルアプリ開発をチャレンジしたく、\nここ6ヶ月iOS開発（Swift UI）を勉強してきました。\n\n私の強みは理解度です。前職ではその経験が多かったですが、使ったことない技術について調べたりして身につくことが早いです。",
             "work": {
                 "title": "職歴",
-                "content": "<b>ザ・ノット東京新宿 フロント・販売促進部</b>　2018年～2021年\n受付、日本語／英語での対応、英語教室の講師、パソコン作業\n\n<b>株式会社アプロ総研・エンジニア</b>　2021年〜2024年年\nHTML・CSS・JSのコーディング"
+                "content": "<b>ザ・ノット東京新宿 フロント・販売促進部</b>　2018年～2021年\n受付、日本語／英語での対応、英語教室の講師、パソコン作業\n\n<b>株式会社アプロ総研・エンジニア</b>　2021年〜2024年\nHTML・CSS・JSのコーディング"
             },
             "studies": {
                 "title": "学歴",
@@ -61,93 +61,498 @@
         },
         "en": {
             "title": "Profile",
-            "presentation": "ITに興味深い29歳のフランス人です。\n\n前職で約3年主にECサイトのコーディングをしました。\n\nモバイルアプリ開発をチャレンジしたく、\nここ6ヶ月iOS開発（Swift UI）を勉強してきました。\n\n私の強みは理解度です。前職ではその経験が多かったですが、使ったことない技術について調べたりして身につくことが早いです。",
+            "presentation": "I am a 23-year-old person with a deep interest in IT.\n\nIn my previous job, I mainly did coding for EC sites for about 3 years.\n\nI wanted to challenge myself with mobile app development,\nand for the past 6 months, I have been studying iOS development (Swift UI).\n\nMy strength is my comprehension. In my previous job, I had a lot of experience with it, but I am quick to learn new technologies by researching them, even if I have not used them before.",
             "work": {
-                "title": "職歴",
-                "content": "ザ・ノット東京新宿"
+                "title": "Work History",
+                "content": "<b>The Knot Tokyo Shinjuku - Sales promotion</b>　2018-2021\nFront Desk, use of Japanese and English, English class teacher, computer tasks\n\n<b>Apro Soken - Engineer</b>　2021-2024\nCoding in HTML, CSS, JS"
             },
             "studies": {
-                "title": "学歴",
-                "content": "エクスマルセイユ大学"
+                "title": "Academic Background",
+                "content": "<b>Exchange in Sophia University - Tokyo</b>　2016-2017\nIntensive Japanese class\n\n<b>Aix Marseille University</b>　2013-2016\nApplied Languages: Japanese, English, translation, international business"
             },
             "diplomas": {
-                "title": "資格",
-                "content": "JLPT"
+                "title": "Diplomas",
+                "content": "<b>Driving license</b>　2024\n<b>Business Manner Training (OJT)</b>　2022　\n<b>Japanese Language Proficiency level 1 (JLPT N1)</b>　2019\n<b>TOEIC (score: 870)</b>　2016"
             }
         },
         "fr": {
             "title": "Profil",
-            "presentation": "ITに興味深い29歳のフランス人です。\n\n前職で約3年主にECサイトのコーディングをしました。\n\nモバイルアプリ開発をチャレンジしたく、\nここ6ヶ月iOS開発（Swift UI）を勉強してきました。\n\n私の強みは理解度です。前職ではその経験が多かったですが、使ったことない技術について調べたりして身につくことが早いです。",
+            "presentation": "Je suis une personne de 23 ans avec un grand intérêt pour l'informatique.\n\nDans mon précédent emploi, j'ai principalement fait du codage pour des sites de commerce électronique pendant environ 3 ans.\n\nJe voulais me lancer dans le développement d'applications mobiles,\net depuis 6 mois, j'étudie le développement iOS (Swift UI).\n\nMa force est ma compréhension. Dans mon précédent emploi, j'avais beaucoup d'expérience dans ce domaine, mais je suis rapide à apprendre de nouvelles technologies en les recherchant, même si je ne les ai jamais utilisées auparavant.",
             "work": {
-                "title": "職歴",
-                "content": "ザ・ノット東京新宿"
+                "title": "Parcours professional",
+                "content": "<b>The Knot Tokyo Shinjuku - Vente</b>　2018-2021\nAccueil, travail en anglais et japonais, classes d'anglais, travail avec un ordinateur\n\n<b>Apro Soken - Ingénieur</b>　2021-2024\nCoding en HTML, CSS, JS"
             },
             "studies": {
-                "title": "学歴",
-                "content": "エクスマルセイユ大学"
+                "title": "Parcours scolaire",
+                "content": "<b>Étudiant en échange à l'université de Sophia - Tokyo</b>　2016-2017\nClasses de japonais intensives\n\n<b>Université Aix Marseille</b>　2013-2016\nLangues Étrangères Appliquées: japonais, anglais, traduction, business international"
             },
             "diplomas": {
-                "title": "資格",
-                "content": "JLPT"
+                "title": "Diplômes",
+                "content": "<b>Permis de conduire</b>　2024\n<b>Business Manner Training (OJT)</b>　2022　\n<b>Japanese Language Proficiency level 1 (JLPT N1)</b>　2019\n<b>TOEIC (score: 870)</b>　2016"
             }
         }
     },
     "skills": {
         "jp": {
             "title": "スキル",
+            "header": {
+                "title": "種類",
+                "duration": "使用期間",
+                "level": "レベル"
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13年",
+                        "content": "WEB開発に使用\n個人的に使用\nターミナルの知識あり"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5年",
+                        "content": "仕事上、WEB開発に使用"
+                    }
+                ]
+            },
             "programming": {
                 "title": "プログラミング",
-                "content": "HTML"
+                "content": [
+                    {
+                        "title": "HTML / CSS",
+                        "duration": "4年",
+                        "content": "仕事上"
+                    },
+                    {
+                        "title": "Javascript",
+                        "duration": "4年",
+                        "content": "仕事上"
+                    },
+                    {
+                        "title": "Swift",
+                        "duration": "1年",
+                        "content": "勉強中、Swift UIでアプリ開発中"
+                    },
+                    {
+                        "title": "Python",
+                        "duration": "４ヶ月",
+                        "content": "勉強した経験あり"
+                    },
+                    {
+                        "title": "PHP",
+                        "duration": "4年",
+                        "content": "仕事上少し操作した経験あり\nsmartyテンプレートを使用した経験あり"
+                    }
+                ]
             },
-            "language": {
+            "framework": {
+                "title": "フレームワーク",
+                "content": [
+                    {
+                        "title": "React",
+                        "duration": "1年",
+                        "content": "個人で主にフロントエンド開発の経験あり\nBootstrap, material-ui, Expressを使用した経験あり"
+                    },
+                    {
+                        "title": "jQuery",
+                        "duration": "1年",
+                        "content": "知識あり、できるだけJSのみを使用"
+                    }
+                ]
+            },
+            "DB": {
+                "title": "プログラミング",
+                "content": [
+                    {
+                        "title": "mongoDB, mysql",
+                        "duration": "1年",
+                        "content": "勉強した経験\n仕事上mysqlを少し操作した経験あり"
+                    }
+                ]
+            },
+            "languages": {
                 "title": "言語",
-                "content": "フランス語"
+                "content": [
+                    {
+                        "title": "日本語",
+                        "content": "８年日本在住、流暢"
+                    },
+                    {
+                        "title": "英語",
+                        "content": "検索に常に使用しています。毎日聞いています。前職で使用。"
+                    },
+                    {
+                        "title": "フランス語",
+                        "content": "母国語"
+                    }
+                ]
             },
-            "work": {
-                "title": "仕事関連のスキル",
-                "content": "エクセル"
+            "workskills": {
+                "title": "仕事上のスキル",
+                "content": [
+                    {
+                        "title": "フロントエンドのWEB開発"
+                    },
+                    {
+                        "title": "自分で調べて行動する事が得意"
+                    },
+                    {
+                        "title": "その他技術：Wordpress, Photoshop, mt.net"
+                    },
+                    {
+                        "title": "EC：futureshop, eccube, 楽天, ヤフー, リピスト"
+                    }
+                ]
             }
         },
         "en": {
             "title": "Skills",
+            "header": {
+                "title": "Type",
+                "duration": "Duration",
+                "level": "Level"
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13 years",
+                        "content": "Used for web development\nPersonal use\nKnowledge of Terminal"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5 years",
+                        "content": "Used for work, web development"
+                    }
+                ]
+            },
             "programming": {
-                "title": "プログラミング",
-                "content": "HTML"
+                "title": "Programming",
+                "content": [
+                    {
+                        "title": "HTML / CSS",
+                        "duration": "4 years",
+                        "content": "For work"
+                    },
+                    {
+                        "title": "Javascript",
+                        "duration": "4 years",
+                        "content": "For work"
+                    },
+                    {
+                        "title": "Swift",
+                        "duration": "1 year",
+                        "content": "Currently studying, developing apps with Swift UI"
+                    },
+                    {
+                        "title": "Python",
+                        "duration": "4 months",
+                        "content": "Studied"
+                    },
+                    {
+                        "title": "PHP",
+                        "duration": "4 years",
+                        "content": "Some experience for work\nExperience using Smarty templates"
+                    }
+                ]
             },
-            "language": {
-                "title": "言語",
-                "content": "フランス語"
+            "framework": {
+                "title": "Frameworks",
+                "content": [
+                    {
+                        "title": "React",
+                        "duration": "1 year",
+                        "content": "Personal experience mainly in frontend development\nExperience with Bootstrap, Material-UI, Express"
+                    },
+                    {
+                        "title": "jQuery",
+                        "duration": "1 year",
+                        "content": "Knowledgeable, prefer to use pure JS"
+                    }
+                ]
             },
-            "work": {
-                "title": "仕事関連のスキル",
-                "content": "エクセル"
+            "DB": {
+                "title": "Databases",
+                "content": [
+                    {
+                        "title": "MongoDB, MySQL",
+                        "duration": "1 year",
+                        "content": "Studied\nSome experience with MySQL for work"
+                    }
+                ]
+            },
+            "languages": {
+                "title": "Languages",
+                "content": [
+                    {
+                        "title": "Japanese",
+                        "content": "Lived in Japan for 8 years, fluent"
+                    },
+                    {
+                        "title": "English",
+                        "content": "Used for searches regularly. Listen to it daily. Used in previous job."
+                    },
+                    {
+                        "title": "French",
+                        "content": "Native language"
+                    }
+                ]
+            },
+            "workskills": {
+                "title": "Work Skills",
+                "content": [
+                    {
+                        "title": "Frontend Web Development"
+                    },
+                    {
+                        "title": "Good at self-research and taking action"
+                    },
+                    {
+                        "title": "Other skills: Wordpress, Photoshop, .NET"
+                    },
+                    {
+                        "title": "E-commerce: Futureshop, ECCube, Rakuten, Yahoo, Repeaters"
+                    }
+                ]
             }
         },
         "fr": {
-            "title": "Skills",
+            "title": "Compétences",
+            "header": {
+                "title": "Type",
+                "duration": "Durée",
+                "level": "Niveau"
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13 ans",
+                        "content": "Utilisé pour le développement web\nUtilisation personnelle\nConnaissance du Terminal"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5 ans",
+                        "content": "Utilisé pour le travail, développement web"
+                    }
+                ]
+            },
             "programming": {
-                "title": "プログラミング",
-                "content": "HTML"
+                "title": "Programmation",
+                "content": [
+                    {
+                        "title": "HTML / CSS",
+                        "duration": "4 ans",
+                        "content": "Pour le travail"
+                    },
+                    {
+                        "title": "Javascript",
+                        "duration": "4 ans",
+                        "content": "Pour le travail"
+                    },
+                    {
+                        "title": "Swift",
+                        "duration": "1 an",
+                        "content": "Actuellement en apprentissage, développement d'applications avec Swift UI"
+                    },
+                    {
+                        "title": "Python",
+                        "duration": "4 mois",
+                        "content": "Étudié"
+                    },
+                    {
+                        "title": "PHP",
+                        "duration": "4 ans",
+                        "content": "Quelques expériences pour le travail\nExpérience avec les modèles Smarty"
+                    }
+                ]
             },
-            "language": {
-                "title": "言語",
-                "content": "フランス語"
+            "framework": {
+                "title": "Frameworks",
+                "content": [
+                    {
+                        "title": "React",
+                        "duration": "1 an",
+                        "content": "Expérience personnelle principalement en développement frontend\nExpérience avec Bootstrap, Material-UI, Express"
+                    },
+                    {
+                        "title": "jQuery",
+                        "duration": "1 an",
+                        "content": "Connaissances, préfère utiliser JS pur"
+                    }
+                ]
             },
-            "work": {
-                "title": "仕事関連のスキル",
-                "content": "エクセル"
+            "DB": {
+                "title": "Bases de données",
+                "content": [
+                    {
+                        "title": "MongoDB, MySQL",
+                        "duration": "1 an",
+                        "content": "Étudié\nQuelques expériences avec MySQL pour le travail"
+                    }
+                ]
+            },
+            "languages": {
+                "title": "Langues",
+                "content": [
+                    {
+                        "title": "Japonais",
+                        "content": "Vécu au Japon pendant 8 ans, fluent"
+                    },
+                    {
+                        "title": "Anglais",
+                        "content": "Utilisé régulièrement pour les recherches. Écoute quotidienne. Utilisé dans un emploi précédent."
+                    },
+                    {
+                        "title": "Français",
+                        "content": "Langue maternelle"
+                    }
+                ]
+            },
+            "workskills": {
+                "title": "Compétences professionnelles",
+                "content": [
+                    {
+                        "title": "Développement web frontend"
+                    },
+                    {
+                        "title": "Bonne capacité à rechercher et à agir de manière autonome"
+                    },
+                    {
+                        "title": "Autres compétences : Wordpress, Photoshop, .NET"
+                    },
+                    {
+                        "title": "E-commerce : Futureshop, ECCube, Rakuten, Yahoo, Repeaters"
+                    }
+                ]
             }
         }
     },
     "apps": {
         "jp": {
-            "title": "実績"
+            "title": "実績",
+            "appDetails": [
+                {
+                "title": "Flash Chat",
+                "description": "Flash Chatはリアルタイムチャットアプリです。"
+                },
+                {
+                "title": "Todo",
+                "description": "Todoは日々のタスクを管理するアプリです。"
+                },
+                {
+                "title": "BMI Calculator",
+                "description": "BMI Calculatorはあなたの体格指数を計算するアプリです。"
+                },
+                {
+                "title": "Calculator",
+                "description": "Calculatorはシンプルな算術計算機です。"
+                },
+                {
+                "title": "Card",
+                "description": "Cardはデジタル名刺アプリです。"
+                },
+                {
+                "title": "Dicee",
+                "description": "Diceeはデジタルサイコロを振るアプリです。"
+                },
+                {
+                "title": "Divide",
+                "description": "Divideは割り算を手助けするアプリです。"
+                },
+                {
+                "title": "Hacker News",
+                "description": "Hacker NewsはHacker Newsからニュースを閲覧するアプリです。"
+                },
+                {
+                "title": "Item Finder",
+                "description": "Item Finderは在庫のアイテムを見つけるアプリです。"
+                }
+            ]
         },
         "en": {
-            "title": "My apps"
+            "title": "My apps",
+            "appDetails": [
+                {
+                    "title": "Flash Chat",
+                    "description": "Flash Chat is a real-time chat application."
+                },
+                {
+                    "title": "Todo",
+                    "description": "Todo is a task management application to keep track of your daily tasks."
+                },
+                {
+                    "title": "BMI Calculator",
+                    "description": "BMI Calculator helps you calculate your Body Mass Index."
+                },
+                {
+                    "title": "Calculator",
+                    "description": "Calculator is a simple arithmetic calculator."
+                },
+                {
+                    "title": "Card",
+                    "description": "Card is a digital business card application."
+                },
+                {
+                    "title": "Dicee",
+                    "description": "Dicee is a digital dice rolling app."
+                },
+                {
+                    "title": "Divide",
+                    "description": "Divide is an app to help you with division calculations."
+                },
+                {
+                    "title": "Hacker News",
+                    "description": "Hacker News is an app to browse news from Hacker News."
+                },
+                {
+                    "title": "Item Finder",
+                    "description": "Item Finder helps you find items in your inventory."
+                }
+            ]
         },
         "fr": {
-            "title": "My apps"
+            "title": "My apps",
+            "appDetails": [
+                {
+                  "title": "Flash Chat",
+                  "description": "Flash Chat est une application de chat en temps réel."
+                },
+                {
+                  "title": "Todo",
+                  "description": "Todo est une application de gestion des tâches pour suivre vos tâches quotidiennes."
+                },
+                {
+                  "title": "BMI Calculator",
+                  "description": "BMI Calculator vous aide à calculer votre indice de masse corporelle."
+                },
+                {
+                  "title": "Calculator",
+                  "description": "Calculator est une calculatrice arithmétique simple."
+                },
+                {
+                  "title": "Card",
+                  "description": "Card est une application de carte de visite numérique."
+                },
+                {
+                  "title": "Dicee",
+                  "description": "Dicee est une application de lancer de dés numériques."
+                },
+                {
+                  "title": "Divide",
+                  "description": "Divide est une application pour vous aider avec les calculs de division."
+                },
+                {
+                  "title": "Hacker News",
+                  "description": "Hacker News est une application pour parcourir les nouvelles de Hacker News."
+                },
+                {
+                  "title": "Item Finder",
+                  "description": "Item Finder vous aide à trouver des articles dans votre inventaire."
+                }
+            ]
         }
     }
 }

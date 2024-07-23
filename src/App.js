@@ -19,9 +19,7 @@ const StyledApp = styled.div`
 
   .motion {
     position: absolute;
-    background-color: rgba(50,50,50,0.1);
     background-color: ${props => props.theme === 'light' ? 'rgba(50,50,50,0.1)' : 'rgba(250,250,250,0.2)'}; 
-    overflow-y: scroll;
     padding: ${props => props.$togglenavibar ? '1% 2%' : '8% 4%'};
     border-radius: ${props => props.$togglenavibar ? '30px' : '0'};
     left: ${props => props.$togglenavibar ? '20%' : '0'};
@@ -40,6 +38,17 @@ const StyledApp = styled.div`
   * {
       color: ${props => props.theme === 'light' ? '#7f5539' : '#fff'}; 
       border-color: ${props => props.theme === 'light' ? '#7f5539' : 'rgba(50,50,50,0.5)'} !important;
+  }
+
+  *:not(.arrow, .material-symbols) {
+      font-family: "M PLUS 1", sans-serif !important;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal; 
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 400 !important;
   }
 
   button.toggle-navibar {
@@ -80,8 +89,16 @@ const StyledApp = styled.div`
 
   @media ${devices.tablet} {
       button.toggle-navibar {
-        left: ${props => props.$togglenavibar? '30%' : '5%'};
-        top: ${props => props.$togglenavibar? '4%' : '3%'};
+        left: ${props => props.$togglenavibar? '65%' : '5%'};
+        top: ${props => props.$togglenavibar? '6%' : '3%'};
+      }
+        
+      .motion {
+        padding: 30px 2% !important;
+        left: ${props => props.$togglenavibar ? '20%' : '0'};
+        width: 100% !important;
+        top: 0 !important;
+        height: 100vh !important;
       }
   } 
 `

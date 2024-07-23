@@ -5,14 +5,27 @@ import Photo from "../assets/images/portrait.jpg";
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 import AnimatedImage from "../components/AnimatedImage";
+import { devices } from "../deviceSizes";
 
 const StyledAbout = styled.div`
+
     .row {
         display: flex;
     }
 
     .row p {
         width: 70%;
+    }
+
+    @media ${devices.tablet} {
+        .row p {
+            width: 90%;
+            padding-bottom: 50px;
+        }
+
+        img {
+            opacity: 0.4 !important;
+        }
     }
 
 `

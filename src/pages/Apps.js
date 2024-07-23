@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { devices } from "../deviceSizes";
 
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
 import Calculator from '../assets/images/apps/calculator.png';
@@ -90,6 +91,26 @@ const StyledApps = styled.div`
         border-color: #ede0d4;
         padding: 0 5%; 
     }
+
+    @media ${devices.tablet} {
+
+    .app-list {
+        padding-bottom: 30%;
+    }
+
+        .app-list .app {
+            margin: 0 1%;
+            padding: 12% 0 30px;
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+
+        .description {
+            bottom: 12%;
+        }
+    }
 `
 
 const variants = {
@@ -111,15 +132,15 @@ const Apps = () => {
 
     const [selectedApp, setSelectedApp] = useState(null);
     const appDetails = [
-        { title: 'Flash Chat', images: [FlashChat1, FlashChat2, FlashChat3], description: 'Flash Chat is a real-time chat application.' },
-        { title: 'Todo', images: [Todo1, Todo2], description: 'Todo is a task management application to keep track of your daily tasks.' },
-        { title: 'BMI Calculator', images: [BmiCalculator], description: 'BMI Calculator helps you calculate your Body Mass Index.' },
-        { title: 'Calculator', images: [Calculator], description: 'Calculator is a simple arithmetic calculator.' },
-        { title: 'Card', images: [Card], description: 'Card is a digital business card application.' },
-        { title: 'Dicee', images: [Dicee], description: 'Dicee is a digital dice rolling app.' },
-        { title: 'Divide', images: [Divide], description: 'Divide is an app to help you with division calculations.' },
-        { title: 'Hacker News', images: [HackerNews], description: 'Hacker News is an app to browse news from Hacker News.' },
-        { title: 'Item Finder', images: [ItemFinder], description: 'Item Finder helps you find items in your inventory.' },
+        { title: apps[language].appDetails[0].title, images: [FlashChat1, FlashChat2, FlashChat3], description: apps[language].appDetails[0].description },
+        { title: apps[language].appDetails[1].title, images: [Todo1, Todo2], description: apps[language].appDetails[1].description },
+        { title: apps[language].appDetails[2].title, images: [BmiCalculator], description: apps[language].appDetails[2].description },
+        { title: apps[language].appDetails[3].title, images: [Calculator], description: apps[language].appDetails[3].description },
+        { title: apps[language].appDetails[4].title, images: [Card], description: apps[language].appDetails[4].description },
+        { title: apps[language].appDetails[5].title, images: [Dicee], description: apps[language].appDetails[5].description },
+        { title: apps[language].appDetails[6].title, images: [Divide], description: apps[language].appDetails[6].description },
+        { title: apps[language].appDetails[7].title, images: [HackerNews], description: apps[language].appDetails[7].description },
+        { title: apps[language].appDetails[8].title, images: [ItemFinder], description: apps[language].appDetails[8].description },
     ];
 
     const animateProps = {
@@ -130,13 +151,19 @@ const Apps = () => {
 
     const scrollRef = useRef(null)
 
-    console.log(Math.random())
+    useEffect(() => {
+        setSelectedApp(false)
+    }, [language])
 
     return (
         <StyledApps>
-            <h1>
+            <motion.h1
+                key={language}
+                {...animateProps}
+                custom={0}
+            >
                 {apps[language].title}
-            </h1>
+            </motion.h1>
 
             <div className="app-list row" ref={scrollRef} style={{ overflowY: "scroll", overflowX: "hidden" }}>
                 {appDetails.map((app, index) => (
@@ -149,6 +176,7 @@ const Apps = () => {
                         }}
                     >
                         <motion.h2
+                            key={language}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             transition={{duration: 1}}
@@ -166,9 +194,9 @@ const Apps = () => {
             </div>
 
             {selectedApp && (
-                <motion.div key={descriptionAnimation} {...animateProps} className="description">
-                    <motion.h2 key={descriptionAnimation} {...animateProps}>{selectedApp.title}</motion.h2>
-                    <motion.p key={descriptionAnimation} {...animateProps}>{selectedApp.description}</motion.p>
+                <motion.div key={selectedApp.title} {...animateProps} className="description">
+                    <motion.h2 key={`${selectedApp.title}-title`} {...animateProps}>{selectedApp.title}</motion.h2>
+                    <motion.p key={`${selectedApp.title}-description`} {...animateProps}>{selectedApp.description}</motion.p>
                 </motion.div>
             )}
         </StyledApps>

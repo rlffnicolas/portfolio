@@ -10,7 +10,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   display: block;
   padding: 10px;
-  margin: 5px 0;
+  margin: 5px;
   border-radius: 10px;
   transition: all 0.3s;
 
