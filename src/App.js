@@ -12,7 +12,7 @@ import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
 
-  background-color: ${props => props.theme === 'light' ? 'yellow' : '#000'};
+  background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
   height: 100vh;
   transition: background-color 0.5s;
   overflow: hidden;
@@ -99,7 +99,7 @@ const StyledApp = styled.div`
         left: ${props => props.$togglenavibar ? '20%' : '0'};
         width: 100% !important;
         top: 0 !important;
-        width: 96%;
+        width: 96% !important;
         height: 100vh !important;
       }
   } 
