@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: #ede0d4;
+  overflow: hidden;
 }
 
 body * {

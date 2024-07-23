@@ -11,9 +11,6 @@ import { Scrollbars } from 'react-custom-scrollbars-2';
 import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
-  body {
-    background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
-  }
 
   background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
   height: 100vh;
