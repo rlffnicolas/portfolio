@@ -12,7 +12,7 @@ import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
 
-  background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
+  background-color: ${props => props.theme === 'light' ? 'yellow' : '#000'};
   height: 100vh;
   transition: background-color 0.5s;
   overflow: hidden;
