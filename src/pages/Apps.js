@@ -95,21 +95,21 @@ const StyledApps = styled.div`
     @media ${devices.tablet} {
 
     .app-list {
-        padding-bottom: 30%;
+        padding-bottom: 50%;
     }
 
-        .app-list .app {
-            margin: 0 1%;
-            padding: 12% 0 30px;
-        }
+    .app-list .app {
+        margin: 0 1%;
+        padding: 12% 0 30px;
+    }
 
-        h2 {
-            font-size: 4vw;
-        }
+    h2 {
+        font-size: 4vw;
+    }
 
-        .description {
-            bottom: 12%;
-        }
+    .description {
+        bottom: 17%;
+    }
     }
 `
 

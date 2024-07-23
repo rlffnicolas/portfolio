@@ -11,6 +11,10 @@ import { Scrollbars } from 'react-custom-scrollbars-2';
 import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
+  body {
+    background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
+  }
+
   background-color: ${props => props.theme === 'light' ? '#ede0d4' : '#000'};
   height: 100vh;
   transition: background-color 0.5s;
@@ -43,12 +47,12 @@ const StyledApp = styled.div`
   *:not(.arrow, .material-symbols) {
       font-family: "M PLUS 1", sans-serif !important;
       font-optical-sizing: auto;
-      font-weight: 200;
+      font-weight: 400;
       font-style: normal; 
   }
 
   h1, h2, h3, h4, h5 {
-    font-weight: 400 !important;
+    font-weight: 500 !important;
   }
 
   button.toggle-navibar {

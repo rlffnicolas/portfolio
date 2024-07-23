@@ -8,7 +8,6 @@ import { devices } from "../deviceSizes";
 
 const StyledProfile = styled.div`
     height: 100%;
-    overflow: hidden;
     position: relative;
 
     .icon-container {
@@ -21,6 +20,10 @@ const StyledProfile = styled.div`
     @media ${devices.tablet} {
         p {
             width: 90%;
+        }
+
+        .container {
+            padding: 10% 0 50px;
         }
     }
 `
@@ -68,7 +71,7 @@ const Profile = () => {
                 <MaterialSymbol className="settings-icon" icon="work" />
             </motion.div>
 
-            <motion.div key={language}>
+            <motion.div className="container" key={language}>
                 <motion.h1
                     {...animateProps}
                     custom={0}
