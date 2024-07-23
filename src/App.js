@@ -9,6 +9,7 @@ import { useToggleNavibar } from './contexts/ToggleNavibarContext';
 import { devices } from './deviceSizes';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import { useLanguage } from './contexts/LanguageContext';
+import setThemeColor from './utilities/setThemeColor';
 
 const StyledApp = styled.div`
 
@@ -111,6 +112,14 @@ function App() {
   const location = useLocation();
   const outlet = useOutlet();
   const language = useLanguage();
+
+  useEffect(() => {
+    if (theme == 'light') {
+      setThemeColor('#ede0d4');
+    } else {
+      setThemeColor('#000');
+    }
+  }, [theme]);
 
   return (
     <StyledApp theme={theme} $togglenavibar={toggleNavibar}>

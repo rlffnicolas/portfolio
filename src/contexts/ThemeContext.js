@@ -1,10 +1,12 @@
 import React, { createContext, useContext, useState } from 'react';
+import setThemeColor from '../utilities/setThemeColor';
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({children}) => {
 
     const [theme, setTheme] = useState(getThemeDependingOnTime());
+    setTheme(getThemeDependingOnTime());
 
     const changeTheme = (newTheme) => {
         setTheme(newTheme);
