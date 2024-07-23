@@ -102,6 +102,7 @@ const StyledApp = styled.div`
         left: ${props => props.$togglenavibar ? '20%' : '0'};
         width: 100% !important;
         top: 0 !important;
+        width: 96%;
         height: 100vh !important;
       }
   } 
