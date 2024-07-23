@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { MaterialSymbol } from 'react-material-symbols';
 import { devices } from "../deviceSizes";
+import useCheckMobileScreen from "../hooks/useCheckMobileScreen";
 
 const StyledSkills = styled.div`
     height: 100%;
@@ -52,6 +53,8 @@ const variants = {
   };
 
 const Skills = () => {
+    const isMobile = useCheckMobileScreen();
+
     const {language} = useLanguage();
     const {skills} = translations;
 
@@ -67,7 +70,7 @@ const Skills = () => {
             <motion.div 
                 className="icon-container"
                 initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '60vw', opacity: 0}}
-                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: '-20%' }}
+                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: isMobile ? '14%' : '-20%' }}
                 transition={{
                     type: "spring",
                     stiffness: 250,

@@ -9,23 +9,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import translations from '../translations.json';
 import { devices } from '../deviceSizes';
 import Switch from '@mui/material/Switch';
-
-const useCheckMobileScreen = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  const handleWindowSizeChange = () => {
-          setWidth(window.innerWidth);
-  }
-
-  useEffect(() => {
-      window.addEventListener('resize', handleWindowSizeChange);
-      return () => {
-          window.removeEventListener('resize', handleWindowSizeChange);
-      }
-  }, []);
-
-  return (width <= 768);
-}
-
+import useCheckMobileScreen from '../hooks/useCheckMobileScreen';
 
 const StyledNavibar = styled.div`
   position: fixed;
