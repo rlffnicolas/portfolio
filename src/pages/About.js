@@ -79,6 +79,11 @@ const About = () => {
                     ></motion.p>
                         <AnimatedImage />
                 </div>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
         </StyledAbout>
     )    
 }

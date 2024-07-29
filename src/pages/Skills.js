@@ -36,7 +36,7 @@ const StyledSkills = styled.div`
         }
 
         .container {
-            padding: 10% 0 50px;
+            padding: 0 0 50px;
         }
     }
 `

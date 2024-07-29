@@ -101,9 +101,9 @@ const StyledApp = styled.div`
       }
         
       .motion {
-        padding: 30px 2% !important;
+        padding: 70px 2% !important;
         left: ${props => props.$togglenavibar ? '20%' : '0'};
-        width: 100% !important;
+        width: 96% !important;
         top: 0 !important;
         width: 96%;
         height: 100vh !important;

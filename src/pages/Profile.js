@@ -24,7 +24,7 @@ const StyledProfile = styled.div`
         }
 
         .container {
-            padding: 10% 0 100px;
+            padding: 0 0 100px;
         }
     }
 `
