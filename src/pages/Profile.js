@@ -63,8 +63,8 @@ const Profile = () => {
 
             <motion.div 
                 className="icon-container"
-                initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '60vw', opacity: 0}}
-                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: isMobile ? '14%' : '-10%' }}
+                initial={{ translateX: '100%', position: 'fixed', fontSize: '60vw', opacity: 0}}
+                animate={{ translateX: '50%', opacity: 0.1, top: isMobile ? '14%' : '-10%' }}
                 transition={{
                     type: "spring",
                     stiffness: 200,
@@ -110,7 +110,12 @@ const Profile = () => {
                     {...animateProps}
                     custom={3.5}
                     dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></motion.p>
-            </motion.div>   
+            </motion.div>  
+
+            <br/>
+            <br/>
+            <br/>
+            <br/> 
 
         </StyledProfile>
     )    

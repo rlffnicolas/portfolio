@@ -38,6 +38,8 @@ const StyledApp = styled.div`
 
   .scrollbar > * {
     overflow-x: hidden !important;
+    max-width: 1000px;
+    margin: 0 auto !important;
   }
 
   * {

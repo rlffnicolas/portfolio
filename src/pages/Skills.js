@@ -69,8 +69,8 @@ const Skills = () => {
 
             <motion.div 
                 className="icon-container"
-                initial={{ rotate: 380, scale: 0, position: 'fixed', fontSize: '60vw', opacity: 0}}
-                animate={{ rotate: 0, scale: 1, opacity: 0.1, top: isMobile ? '14%' : '-20%' }}
+                initial={{ translateX: '100%', position: 'fixed', fontSize: '60vw', opacity: 0}}
+                animate={{ translateX: '40%', opacity: 0.1, top: isMobile ? '14%' : '-10%' }}
                 transition={{
                     type: "spring",
                     stiffness: 200,
@@ -214,6 +214,12 @@ const Skills = () => {
                 </motion.ul>
                 
             </motion.div>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
         </StyledSkills>
     )    
 }
