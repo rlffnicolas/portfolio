@@ -4,7 +4,17 @@ import translations from '../translations.json';
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { devices } from "../deviceSizes";
+import { useTheme } from "../contexts/ThemeContext";
 
+import ClickBlack from '../assets/images/click-black.png';
+import ClickWhite from '../assets/images/click-white.png';
+
+import DayPlan1 from '../assets/images/apps/dayplan-1.png';
+import DayPlan2 from '../assets/images/apps/dayplan-2.png';
+import DayPlan3 from '../assets/images/apps/dayplan-3.png';
+import DayPlan4 from '../assets/images/apps/dayplan-4.png';
+import DayPlan5 from '../assets/images/apps/dayplan-5.png';
+import DayPlan6 from '../assets/images/apps/dayplan-6.png';
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
 import Calculator from '../assets/images/apps/calculator.png';
 import Card from '../assets/images/apps/card.png';
@@ -17,100 +27,59 @@ import HackerNews from '../assets/images/apps/hackernews.png';
 import ItemFinder from '../assets/images/apps/item-finder.png';
 import Todo1 from '../assets/images/apps/todo-1.png';
 import Todo2 from '../assets/images/apps/todo-2.png';
+import ColorPicker from '../assets/images/apps/colorpicker.png';
 
 const StyledApps = styled.div`
-    img {
-        width: 100%;
-    }
 
-    .app-list {
+   img {
+        width: 100%;
+   }
+
+    .category {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        margin-top: 50px;
     }
 
-    .app-list .app {
-        position: relative;
-        padding: 5% 0 30px;
-        margin: 30px 1%;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.5s;
-    }
-
-    .app-list .app:hover {
-        background-color: rgba(80,50,50,0.1);
-        transition: all 0.5s;
-    }
-
-    .app-list .app:active {
-        box-shadow: inset 5px 5px 2px rgba(80,50,50,0.5);
-        transform: translate(-1px, -1px);
-    }
-
-    .app-list .app h2 {
-        position: absolute;
-        top: 0;
+    .category .app {
         width: 100%;
-        text-align: center;
+        margin: 10px 0;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 30px;
+        padding: 2%;
     }
 
-    .app-list .app.row {
+    .category .app.half {
+        width: 43%;
+        margin: 10px 1%;
+    }
+
+    .category .app .images {
         display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
-    .app-list .app.row img {
-        max-width: 33%;
+    .category .app .images .image {
+        width: 50%;
     }
 
-    .app-list .app.row.two {
-        width: 66%;
+    .category .app .images.three .image {
+        width: 33%;
     }
 
-    .app-list .app.row.two img {
-        max-width: 48%;
-    }
-
-    .app-list .app.column {
-        display: flex;
-        width: 30%;
-    }
-
-    .description {
-        position: fixed;
+    .category .app.half .images .image {
         width: 100%;
-        bottom: 0%;
-        left: 0%;
-        background-color: rgba(80,50,50);
-        border-radius: 10px;
-        z-index: 2;
     }
 
-    .description * {
-        color: #ede0d4;
-        border-color: #ede0d4;
-        padding: 0 5%; 
-    }
 
-    @media ${devices.tablet} {
+    @media ${devices.tablet} { 
+        .category .app.half {
+            width: 100%;
+            margin: 10px 0;
+        }
 
-    .app-list {
-        padding-bottom: 50%;
-    }
-
-    .app-list .app {
-        margin: 0 1%;
-        padding: 12% 0 30px;
-    }
-
-    h2 {
-        font-size: 4vw;
-    }
-
-    .description {
-        bottom: 17%;
-    }
-    }
 `
 
 const variants = {
@@ -128,20 +97,7 @@ const Apps = () => {
 
     const {language} = useLanguage();
     const {apps} = translations;
-    const [descriptionAnimation, setDescriptionAnimation] = useState(false);
-
-    const [selectedApp, setSelectedApp] = useState(null);
-    const appDetails = [
-        { title: apps[language].appDetails[0].title, images: [FlashChat1, FlashChat2, FlashChat3], description: apps[language].appDetails[0].description },
-        { title: apps[language].appDetails[1].title, images: [Todo1, Todo2], description: apps[language].appDetails[1].description },
-        { title: apps[language].appDetails[2].title, images: [BmiCalculator], description: apps[language].appDetails[2].description },
-        { title: apps[language].appDetails[3].title, images: [Calculator], description: apps[language].appDetails[3].description },
-        { title: apps[language].appDetails[4].title, images: [Card], description: apps[language].appDetails[4].description },
-        { title: apps[language].appDetails[5].title, images: [Dicee], description: apps[language].appDetails[5].description },
-        { title: apps[language].appDetails[6].title, images: [Divide], description: apps[language].appDetails[6].description },
-        { title: apps[language].appDetails[7].title, images: [HackerNews], description: apps[language].appDetails[7].description },
-        { title: apps[language].appDetails[8].title, images: [ItemFinder], description: apps[language].appDetails[8].description },
-    ];
+    const {theme} = useTheme();
 
     const animateProps = {
         initial: "hidden",
@@ -149,14 +105,16 @@ const Apps = () => {
         variants: variants
     };
 
+    const animatePropsFromRight = {
+        whileInView: { opacity: 1, transform: 'translateX(0) scale(1)' },
+        transition: {duration: 0.8},
+        viewport: { once: false }
+    };
+
     const scrollRef = useRef(null)
-
-    useEffect(() => {
-        setSelectedApp(false)
-    }, [language])
-
+ 
     return (
-        <StyledApps>
+        <StyledApps theme={theme}>
             <motion.h1
                 key={language}
                 {...animateProps}
@@ -165,42 +123,211 @@ const Apps = () => {
                 {apps[language].title}
             </motion.h1>
 
-            <div className="app-list row" ref={scrollRef} style={{ overflowY: "scroll", overflowX: "hidden" }}>
-                {appDetails.map((app, index) => (
-                    <div
-                        key={index}
-                        className={`app ${app.images.length > 1 ? 'row' : 'column'} ${app.images.length < 3 ? 'two' : ''}`}
-                        onClick={() => {
-                            setSelectedApp(app)
-                            setDescriptionAnimation(!descriptionAnimation)
-                        }}
-                    >
-                        <motion.h2
-                            key={language}
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{duration: 1}}
-                            viewport={{ once: false }}    
-                        >{app.title}</motion.h2>
-                        {app.images.map((image, imgIndex) => (
-                            <motion.img initial={{ opacity: 0, transform: `translateX(100%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }}
-                            whileInView={{ opacity: 1, transform: 'translateX(0) scale(1)' }}
-                            transition={{duration: 0.8}}
-                            viewport={{ once: false }} key={imgIndex} src={image} alt={app.title}
-                            />
-                        ))}
+            <div ref={scrollRef}>
+
+                <div className="category">
+                    <motion.h2 custom={0.5} key={language} {...animateProps}>
+                        {apps[language].appGroups.iosApps.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.div key={language}>
+                            <motion.h3 custom={1} {...animateProps}>{apps[language].appGroups.iosApps.content.dayPlan.title}</motion.h3>
+                            <motion.p custom={1.5} {...animateProps}>{apps[language].appGroups.iosApps.content.dayPlan.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={DayPlan2} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={DayPlan4} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={DayPlan5} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={DayPlan6} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
                     </div>
-                ))}
+
+                </div>
+
+                <div className="category">
+                    <motion.h2 key={language} {...animateProps}>
+                        {apps[language].appGroups.iosTrainingApps.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.flashChat.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.flashChat.description}</motion.p>
+                        </motion.div>
+                        <div className="images three">
+                            <div className="image">
+                                <motion.img src={FlashChat1} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={FlashChat2} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={FlashChat3} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.todo.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.todo.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={Todo1} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                            <div className="image">
+                                <motion.img src={Todo2} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.bmiCalculator.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.bmiCalculator.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={BmiCalculator} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.calculator.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.calculator.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={Calculator} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.dicee.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.dicee.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={Dicee} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.divide.title}</motion.h3>
+                            <motion.p>{apps[language].appGroups.iosTrainingApps.content.divide.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={Divide} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.hackerNews.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.hackerNews.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={HackerNews} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app half">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.itemFinder.title}</motion.h3>
+                            <motion.p {...animateProps}>{apps[language].appGroups.iosTrainingApps.content.itemFinder.description}</motion.p>
+                        </motion.div>
+                        <div className="images">
+                            <div className="image">
+                                <motion.img src={ItemFinder} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="category">
+                    <motion.h2 key={language} {...animateProps}>
+                        {apps[language].appGroups.ecSitesCoding.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.p key={language} {...animateProps}>
+                            {apps[language].appGroups.ecSitesCoding.description}
+                        </motion.p>
+                    </div>
+                </div>
+
+                <div className="category">
+                    <motion.h2 key={language} {...animateProps}>
+                        {apps[language].appGroups.excelProjects.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.p key={language} {...animateProps}>
+                            {apps[language].appGroups.excelProjects.description}
+                        </motion.p>
+                    </div>
+                </div>
+
+                <div className="category">
+                    <motion.h2 key={language} {...animateProps}>
+                        {apps[language].appGroups.reactProjects.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>
+                                {apps[language].appGroups.reactProjects.colorPicker.title}
+                            </motion.h3>
+                            <motion.p {...animateProps}>
+                                {apps[language].appGroups.reactProjects.colorPicker.description}
+                            </motion.p>
+                        </motion.div>
+                        
+                        <div className="images">
+                            <div className="image">
+                                <motion.a href="https://color-picker.orloff-nicolas.com/">
+                                    <motion.img src={ColorPicker} {...animatePropsFromRight} initial={{ opacity: 0, transform: `translateX(50%) scale(0.8) rotate(${Math.random() < 0.5 ? 1*50*Math.random()+0.1 : -1*50*Math.random()+0.1}deg)` }} />
+                                </motion.a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="app">
+                        <motion.div key={language}>
+                            <motion.h3 {...animateProps}>
+                                {apps[language].appGroups.reactProjects.moneySaver.title}
+                            </motion.h3>
+                            <motion.p {...animateProps}>
+                                {apps[language].appGroups.reactProjects.moneySaver.description}
+                            </motion.p>
+                        </motion.div>
+                    </div>
+                </div>
+
             </div>
 
-            {selectedApp && (
-                <motion.div key={selectedApp.title} {...animateProps} className="description">
-                    <motion.h2 key={`${selectedApp.title}-title`} {...animateProps}>{selectedApp.title}</motion.h2>
-                    <motion.p key={`${selectedApp.title}-description`} {...animateProps}>{selectedApp.description}</motion.p>
-                </motion.div>
-            )}
         </StyledApps>
-
         
     )    
     

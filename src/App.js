@@ -36,6 +36,10 @@ const StyledApp = styled.div`
     display: none;
   }
 
+  .scrollbar > * {
+    overflow-x: hidden !important;
+  }
+
   * {
       color: ${props => props.theme === 'light' ? '#7f5539' : '#fff'}; 
       border-color: ${props => props.theme === 'light' ? '#7f5539' : 'rgba(50,50,50,0.5)'} !important;
@@ -137,7 +141,7 @@ function App() {
             duration: 0.4
           }}
         >
-          <Scrollbars>
+          <Scrollbars className='scrollbar'>
             {outlet && React.cloneElement(outlet, { key: location.pathname })}
           </Scrollbars>
         </motion.div>

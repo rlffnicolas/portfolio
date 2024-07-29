@@ -42,8 +42,7 @@ const variants = {
 
 const Profile = () => {
 
-      const isMobile = useCheckMobileScreen();
-
+    const isMobile = useCheckMobileScreen();
 
     const { language } = useLanguage(); 
     const { profile } = translations;
@@ -68,7 +67,7 @@ const Profile = () => {
                 animate={{ rotate: 0, scale: 1, opacity: 0.1, top: isMobile ? '14%' : '-10%' }}
                 transition={{
                     type: "spring",
-                    stiffness: 250,
+                    stiffness: 200,
                     damping: 28}}
             >
                 
@@ -82,34 +81,34 @@ const Profile = () => {
                     >{profile[language].title}</motion.h1>
                 <motion.p 
                     {...animateProps}
-                    custom={0.25}
+                    custom={0.5}
                     dangerouslySetInnerHTML={{ __html: profilePresentation }}></motion.p>
 
                 <motion.h2
                     {...animateProps}
-                    custom={0.5}
+                    custom={1}
                     >{profile[language].studies.title}</motion.h2>
                 <motion.p 
                     {...animateProps}
-                    custom={0.75}
+                    custom={1.5}
                     dangerouslySetInnerHTML={{ __html: profileStudiesContent }}></motion.p>
 
                 <motion.h2
                     {...animateProps}
-                    custom={1}
+                    custom={2}
                     >{profile[language].work.title}</motion.h2>
                 <motion.p 
                     {...animateProps}
-                    custom={1.25}
+                    custom={2.5}
                     dangerouslySetInnerHTML={{ __html: profileWorkContent }}></motion.p>
 
                 <motion.h2
                     {...animateProps}
-                    custom={1.5}
+                    custom={3}
                     >{profile[language].diplomas.title}</motion.h2>
                 <motion.p 
                     {...animateProps}
-                    custom={1.75}
+                    custom={3.5}
                     dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></motion.p>
             </motion.div>   
 

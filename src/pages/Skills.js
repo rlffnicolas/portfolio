@@ -73,7 +73,7 @@ const Skills = () => {
                 animate={{ rotate: 0, scale: 1, opacity: 0.1, top: isMobile ? '14%' : '-20%' }}
                 transition={{
                     type: "spring",
-                    stiffness: 250,
+                    stiffness: 200,
                     damping: 28}}
             >
                 
@@ -90,12 +90,12 @@ const Skills = () => {
                 <motion.h2
                     key="os-title"
                     {...animateProps}
-                    custom={0.25}
+                    custom={0.5}
                 >{skills[language].os.title}</motion.h2>
                 <motion.ul
                     key="os-list"
                     {...animateProps}
-                    custom={0.5}
+                    custom={1}
                 >
                     {skills[language].os.content.map((content, index) => {
                         return (
@@ -111,12 +111,12 @@ const Skills = () => {
                 <motion.h2
                     key="programming-title"
                     {...animateProps}
-                    custom={0.75}
+                    custom={1.5}
                 >{skills[language].programming.title}</motion.h2>
                 <motion.ul
                     key="programming-list"
                     {...animateProps}
-                    custom={1}
+                    custom={2}
                 >
                     {skills[language].programming.content.map((content, index) => {
                         return (
@@ -132,12 +132,12 @@ const Skills = () => {
                 <motion.h2
                     key="framework-title"
                     {...animateProps}
-                    custom={1.25}
+                    custom={2.5}
                 >{skills[language].framework.title}</motion.h2>
                 <motion.ul
                     key="framework-list"
                     {...animateProps}
-                    custom={1.5}
+                    custom={3}
                 >
                     {skills[language].framework.content.map((content, index) => {
                         return (
@@ -153,12 +153,12 @@ const Skills = () => {
                 <motion.h2
                     key="db-title"
                     {...animateProps}
-                    custom={1.75}
+                    custom={3.5}
                 >{skills[language].DB.title}</motion.h2>
                 <motion.ul
                     key="db-list"
                     {...animateProps}
-                    custom={2}
+                    custom={4}
                 >
                     {skills[language].DB.content.map((content, index) => {
                         return (
@@ -174,12 +174,12 @@ const Skills = () => {
                 <motion.h2
                     key="languages-title"
                     {...animateProps}
-                    custom={2.25}
+                    custom={4.5}
                 >{skills[language].languages.title}</motion.h2>
                 <motion.ul
                     key="languages-list"
                     {...animateProps}
-                    custom={2.5}
+                    custom={5}
                 >
                     {skills[language].languages.content.map((content, index) => {
                         return (
@@ -195,12 +195,12 @@ const Skills = () => {
                 <motion.h2
                     key="workskills-title"
                     {...animateProps}
-                    custom={2.75}
+                    custom={5.5}
                 >{skills[language].workskills.title}</motion.h2>
                 <motion.ul
                     key="workskills-list"
                     {...animateProps}
-                    custom={3}
+                    custom={6}
                 >
                     {skills[language].workskills.content.map((content, index) => {
                         return (

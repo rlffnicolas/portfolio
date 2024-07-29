@@ -433,126 +433,216 @@
     "apps": {
         "jp": {
             "title": "実績",
-            "appDetails": [
-                {
-                "title": "Flash Chat",
-                "description": "Flash Chatはリアルタイムチャットアプリです。"
+            "appGroups": {
+                "iosApps": {
+                    "title": "iOS Apps",
+                    "content": {
+                        "dayPlan": {
+                            "title": "Day Plan",
+                            "description": "一日のスケジュールを簡単に入力・レビューするためのアプリを開発中。タスク追加の際、できるだけシンプルで早く追加できるというのがこのアプリのメリット。ほとんどの開発ができています。カレンダーのイベントと連携、iCloudバックアップの２機能が出来次第公開予定。"
+                        }
+                    }
                 },
-                {
-                "title": "Todo",
-                "description": "Todoは日々のタスクを管理するアプリです。"
+                "iosTrainingApps": {
+                    "title": "練習用のiOSアプリ開発",
+                    "description": "こちらはオンラインコースで作成した練習用の公開予定ではないiOSアプリ一覧",
+                    "content": {
+                        "flashChat": {
+                            "title": "Flash Chat",
+                            "description": "Firebase DBを使用したチャットアプリ。アカウント作成、ログイン、チャットメッセージを送信できる機能"
+                        },
+                        "todo": {
+                            "title": "Todo",
+                            "description": "リマインダーとリマインダーグループ作成が可能"
+                        },
+                        "bmiCalculator": {
+                            "title": "BMI Calculator",
+                            "description": "体重と身長を入力しBMIが計算できるアプリ"
+                        },
+                        "calculator": {
+                            "title": "Calculator",
+                            "description": "+ - × ÷ の電卓機能ができるアプリ"
+                        },
+                        "dicee": {
+                            "title": "Dicee",
+                            "description": "２つのサイコロを再現するアプリ"
+                        },
+                        "divide": {
+                            "title": "Divide",
+                            "description": "割り算のためのアプリ"
+                        },
+                        "hackerNews": {
+                            "title": "Hacker News",
+                            "description": "Hacker NewsのAPIを使用しニュースを閲覧できるアプリ"
+                        },
+                        "itemFinder": {
+                            "title": "Item Finder",
+                            "description": "アップルの機械技術（Core ML）を使用した、写真で撮ったものを認識できるアプリ"
+                        }
+                    }
                 },
-                {
-                "title": "BMI Calculator",
-                "description": "BMI Calculatorはあなたの体格指数を計算するアプリです。"
+                "ecSitesCoding": {
+                    "title": "ECサイトのコーディング",
+                    "description": "HTML・CSS・Javascriptを使用し、FutureshopというEC用のCMS上、約20のSP用のアクセサリー販売サイトを作成"
                 },
-                {
-                "title": "Calculator",
-                "description": "Calculatorはシンプルな算術計算機です。"
+                "excelProjects": {
+                    "title": "ExcelのCSV変換ツール",
+                    "description": "Excelの関数やマクロを使用したCSV変換ツールを作成"
                 },
-                {
-                "title": "Card",
-                "description": "Cardはデジタル名刺アプリです。"
-                },
-                {
-                "title": "Dicee",
-                "description": "Diceeはデジタルサイコロを振るアプリです。"
-                },
-                {
-                "title": "Divide",
-                "description": "Divideは割り算を手助けするアプリです。"
-                },
-                {
-                "title": "Hacker News",
-                "description": "Hacker NewsはHacker Newsからニュースを閲覧するアプリです。"
-                },
-                {
-                "title": "Item Finder",
-                "description": "Item Finderは在庫のアイテムを見つけるアプリです。"
+                "reactProjects": {
+                    "title": "Reactアプリ",
+                    "colorPicker": {
+                        "title": "Color Picker",
+                        "description": "カラーパレットを作成できるWebアプリ"
+                    },
+                    "moneySaver": {
+                        "title": "Money Saver",
+                        "description": "個人の支出入力・管理Webアプリ"
+                    }
                 }
-            ]
+            }
         },
         "en": {
-            "title": "My apps",
-            "appDetails": [
-                {
-                    "title": "Flash Chat",
-                    "description": "Flash Chat is a real-time chat application."
+            "title": "Achievements",
+            "appGroups": {
+                "iosApps": {
+                    "title": "iOS Apps",
+                    "content": {
+                        "dayPlan": {
+                            "title": "Day Plan",
+                            "description": "Developing an app for easily inputting and reviewing daily schedules. The advantage of this app is that tasks can be added as simply and quickly as possible. Most of the development is done. The app will be released once calendar event integration and iCloud backup features are complete."
+                        }
+                    }
                 },
-                {
-                    "title": "Todo",
-                    "description": "Todo is a task management application to keep track of your daily tasks."
+                "iosTrainingApps": {
+                    "title": "iOS Training Apps",
+                    "description": "These are practice iOS apps created in an online course that are not intended for public release",
+                    "content": {
+                        "flashChat": {
+                            "title": "Flash Chat",
+                            "description": "A chat app using Firebase DB. Features include account creation, login, and sending chat messages."
+                        },
+                        "todo": {
+                            "title": "Todo",
+                            "description": "Allows creation of reminders and reminder groups."
+                        },
+                        "bmiCalculator": {
+                            "title": "BMI Calculator",
+                            "description": "An app to calculate BMI by inputting weight and height."
+                        },
+                        "calculator": {
+                            "title": "Calculator",
+                            "description": "An app that can perform + - × ÷ calculations."
+                        },
+                        "dicee": {
+                            "title": "Dicee",
+                            "description": "An app that simulates two dice."
+                        },
+                        "divide": {
+                            "title": "Divide",
+                            "description": "An app for division calculations."
+                        },
+                        "hackerNews": {
+                            "title": "Hacker News",
+                            "description": "An app that uses the Hacker News API to view news."
+                        },
+                        "itemFinder": {
+                            "title": "Item Finder",
+                            "description": "An app that uses Apple's Core ML to recognize items in photos."
+                        }
+                    }
                 },
-                {
-                    "title": "BMI Calculator",
-                    "description": "BMI Calculator helps you calculate your Body Mass Index."
+                "ecSitesCoding": {
+                    "title": "EC Site Coding",
+                    "description": "Created about 20 accessory sales sites for mobile using HTML, CSS, and Javascript on the Futureshop CMS for e-commerce."
                 },
-                {
-                    "title": "Calculator",
-                    "description": "Calculator is a simple arithmetic calculator."
+                "excelProjects": {
+                    "title": "Excel CSV Conversion Tool",
+                    "description": "Created a CSV conversion tool using Excel functions and macros."
                 },
-                {
-                    "title": "Card",
-                    "description": "Card is a digital business card application."
-                },
-                {
-                    "title": "Dicee",
-                    "description": "Dicee is a digital dice rolling app."
-                },
-                {
-                    "title": "Divide",
-                    "description": "Divide is an app to help you with division calculations."
-                },
-                {
-                    "title": "Hacker News",
-                    "description": "Hacker News is an app to browse news from Hacker News."
-                },
-                {
-                    "title": "Item Finder",
-                    "description": "Item Finder helps you find items in your inventory."
+                "reactProjects": {
+                    "title": "React Apps",
+                    "colorPicker": {
+                        "title": "Color Picker",
+                        "description": "A web app for creating color palettes."
+                    },
+                    "moneySaver": {
+                        "title": "Money Saver",
+                        "description": "A web app for personal expense input and management."
+                    }
                 }
-            ]
+            }
         },
         "fr": {
-            "title": "My apps",
-            "appDetails": [
-                {
-                  "title": "Flash Chat",
-                  "description": "Flash Chat est une application de chat en temps réel."
+            "title": "Réalisations",
+            "appGroups": {
+                "iosApps": {
+                    "title": "Applications iOS",
+                    "content": {
+                        "dayPlan": {
+                            "title": "Plan de Jour",
+                            "description": "Développement d'une application pour saisir et revoir facilement les emplois du temps quotidiens. L'avantage de cette application est que les tâches peuvent être ajoutées aussi simplement et rapidement que possible. La majeure partie du développement est terminée. L'application sera publiée une fois les fonctionnalités d'intégration des événements du calendrier et de sauvegarde iCloud terminées."
+                        }
+                    }
                 },
-                {
-                  "title": "Todo",
-                  "description": "Todo est une application de gestion des tâches pour suivre vos tâches quotidiennes."
+                "iosTrainingApps": {
+                    "title": "Applications d'Entraînement iOS",
+                    "description": "Il s'agit d'applications iOS de pratique créées dans un cours en ligne qui ne sont pas destinées à être publiées",
+                    "content": {
+                        "flashChat": {
+                            "title": "Flash Chat",
+                            "description": "Une application de chat utilisant Firebase DB. Les fonctionnalités incluent la création de comptes, la connexion et l'envoi de messages de chat."
+                        },
+                        "todo": {
+                            "title": "Todo",
+                            "description": "Permet la création de rappels et de groupes de rappels."
+                        },
+                        "bmiCalculator": {
+                            "title": "Calculateur d'IMC",
+                            "description": "Une application pour calculer l'IMC en saisissant le poids et la taille."
+                        },
+                        "calculator": {
+                            "title": "Calculatrice",
+                            "description": "Une application pouvant effectuer des calculs + - × ÷."
+                        },
+                        "dicee": {
+                            "title": "Dicee",
+                            "description": "Une application simulant deux dés."
+                        },
+                        "divide": {
+                            "title": "Diviser",
+                            "description": "Une application pour les calculs de division."
+                        },
+                        "hackerNews": {
+                            "title": "Hacker News",
+                            "description": "Une application utilisant l'API Hacker News pour consulter les nouvelles."
+                        },
+                        "itemFinder": {
+                            "title": "Trouveur d'Objets",
+                            "description": "Une application utilisant le Core ML d'Apple pour reconnaître les objets dans les photos."
+                        }
+                    }
                 },
-                {
-                  "title": "BMI Calculator",
-                  "description": "BMI Calculator vous aide à calculer votre indice de masse corporelle."
+                "ecSitesCoding": {
+                    "title": "Codage de Sites EC",
+                    "description": "Création d'environ 20 sites de vente d'accessoires pour mobile en utilisant HTML, CSS et Javascript sur le CMS Futureshop pour le commerce électronique."
                 },
-                {
-                  "title": "Calculator",
-                  "description": "Calculator est une calculatrice arithmétique simple."
+                "excelProjects": {
+                    "title": "Outil de Conversion CSV pour Excel",
+                    "description": "Création d'un outil de conversion CSV utilisant les fonctions et macros d'Excel."
                 },
-                {
-                  "title": "Card",
-                  "description": "Card est une application de carte de visite numérique."
-                },
-                {
-                  "title": "Dicee",
-                  "description": "Dicee est une application de lancer de dés numériques."
-                },
-                {
-                  "title": "Divide",
-                  "description": "Divide est une application pour vous aider avec les calculs de division."
-                },
-                {
-                  "title": "Hacker News",
-                  "description": "Hacker News est une application pour parcourir les nouvelles de Hacker News."
-                },
-                {
-                  "title": "Item Finder",
-                  "description": "Item Finder vous aide à trouver des articles dans votre inventaire."
+                "reactProjects": {
+                    "title": "Applications React",
+                    "colorPicker": {
+                        "title": "Sélecteur de Couleurs",
+                        "description": "Une application web pour créer des palettes de couleurs."
+                    },
+                    "moneySaver": {
+                        "title": "Économiseur d'Argent",
+                        "description": "Une application web pour la saisie et la gestion des dépenses personnelles."
+                    }
                 }
-            ]
-        }
+            }
+        }        
     }
 }
