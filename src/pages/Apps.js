@@ -6,18 +6,12 @@ import { motion } from "framer-motion";
 import { devices } from "../deviceSizes";
 import { useTheme } from "../contexts/ThemeContext";
 
-import ClickBlack from '../assets/images/click-black.png';
-import ClickWhite from '../assets/images/click-white.png';
-
-import DayPlan1 from '../assets/images/apps/dayplan-1.png';
 import DayPlan2 from '../assets/images/apps/dayplan-2.png';
-import DayPlan3 from '../assets/images/apps/dayplan-3.png';
 import DayPlan4 from '../assets/images/apps/dayplan-4.png';
 import DayPlan5 from '../assets/images/apps/dayplan-5.png';
 import DayPlan6 from '../assets/images/apps/dayplan-6.png';
 import BmiCalculator from '../assets/images/apps/bmi-calculator.png';
 import Calculator from '../assets/images/apps/calculator.png';
-import Card from '../assets/images/apps/card.png';
 import Dicee from '../assets/images/apps/dicee.png';
 import Divide from '../assets/images/apps/divide.png';
 import FlashChat1 from '../assets/images/apps/flash-chat-1.png';
@@ -97,9 +91,42 @@ const variants = {
 
 const Apps = () => {
 
+    const imageUrls = [
+        DayPlan2,
+        DayPlan4,
+        DayPlan5,
+        DayPlan6,
+        BmiCalculator,
+        Calculator,
+        Dicee,
+        Divide,
+        FlashChat1,
+        FlashChat2,
+        FlashChat3,
+        HackerNews,
+        ItemFinder,
+        Todo1,
+        Todo2,
+        ColorPicker,
+      ];
+    
+    const preloadImages = (urls) => {
+        return Promise.all(
+          urls.map((url) => {
+            return new Promise((resolve, reject) => {
+              const img = new Image();
+              img.src = url;
+              img.onload = resolve;
+              img.onerror = reject;
+            });
+          })
+        );
+      };
+
     const {language} = useLanguage();
     const {apps} = translations;
     const {theme} = useTheme();
+    const [loading, setLoading] = useState(true);
 
     const animateProps = {
         initial: "hidden",
@@ -113,7 +140,21 @@ const Apps = () => {
         viewport: { once: false }
     };
 
+    useEffect(() => {
+        preloadImages(imageUrls)
+          .then(() => {
+            setLoading(false);
+          })
+          .catch((err) => {
+            console.error('Failed to load images', err);
+          });
+      }, []);
+
     const scrollRef = useRef(null)
+
+    if (loading) {
+        return <div>Loading...</div>; // Render a loading indicator
+      }
  
     return (
         <StyledApps theme={theme}>

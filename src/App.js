@@ -8,7 +8,6 @@ import { Navibar }  from './components';
 import { useToggleNavibar } from './contexts/ToggleNavibarContext';
 import { devices } from './deviceSizes';
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import { useLanguage } from './contexts/LanguageContext';
 
 const StyledApp = styled.div`
 
@@ -117,7 +116,6 @@ function App() {
   const {toggleNavibar, setToggleNavibar} = useToggleNavibar();
   const location = useLocation();
   const outlet = useOutlet();
-  const language = useLanguage();
 
   return (
     <StyledApp theme={theme} $togglenavibar={toggleNavibar}>
