@@ -1,18 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.749ca1d9.css",
-    "main.js": "/static/js/main.b4bf27ef.js",
+    "main.js": "/static/js/main.6990a914.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/material-symbols-rounded.woff2": "/static/media/material-symbols-rounded.7e6c57567e2ab620ec78.woff2",
     "static/media/dicee.png": "/static/media/dicee.02565903d4e427c2362a.png",
     "static/media/item-finder.png": "/static/media/item-finder.751d7f6a34b9f1056b7e.png",
     "static/media/dayplan-4.png": "/static/media/dayplan-4.46974cb1a92884c975b8.png",
     "static/media/dayplan-5.png": "/static/media/dayplan-5.203103af233ea96d8346.png",
-    "static/media/dayplan-3.png": "/static/media/dayplan-3.22d34e6ab87af9fbcca3.png",
     "static/media/dayplan-6.png": "/static/media/dayplan-6.9630befa2c4cfa0052e5.png",
-    "static/media/dayplan-1.png": "/static/media/dayplan-1.1594d75099e37011ea5b.png",
     "static/media/dayplan-2.png": "/static/media/dayplan-2.ce93e3e21dcfda5c7f6e.png",
-    "static/media/card.png": "/static/media/card.d5490ca611290b7e2a39.png",
     "static/media/hackernews.png": "/static/media/hackernews.245961c1154e31407268.png",
     "static/media/flash-chat-3.png": "/static/media/flash-chat-3.a6c5cec5b445f10beb7f.png",
     "static/media/bmi-calculator.png": "/static/media/bmi-calculator.70cc9493e767d20c5597.png",
@@ -24,15 +21,13 @@
     "static/media/todo-1.png": "/static/media/todo-1.bcbfae031a0b2ed98532.png",
     "static/media/portrait.jpg": "/static/media/portrait.4edf962a963c42c7b0bc.jpg",
     "static/media/colorpicker.png": "/static/media/colorpicker.025e1d0238843c69e8d0.png",
-    "static/media/click-black.png": "/static/media/click-black.7f5ea5b5b2da33b2bc40.png",
-    "static/media/click-white.png": "/static/media/click-white.ebedcfd0d4167aaa10e1.png",
     "index.html": "/index.html",
     "main.749ca1d9.css.map": "/static/css/main.749ca1d9.css.map",
-    "main.b4bf27ef.js.map": "/static/js/main.b4bf27ef.js.map",
+    "main.6990a914.js.map": "/static/js/main.6990a914.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.749ca1d9.css",
-    "static/js/main.b4bf27ef.js"
+    "static/js/main.6990a914.js"
   ]
 }
