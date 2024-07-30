@@ -159,8 +159,8 @@ const Apps = () => {
         return (
             <motion.div 
                 className="icon-container"
-                initial={{ rotate: '-700deg', transformOrigin: 'bottom', translateX: '10%', fontSize: '70vw', opacity: '0.1'}}
-                animate={{ rotate: 0 }}
+                initial={{ translateX: '-100%', fontSize: '70vw', opacity: '0.1'}}
+                animate={{ translateX: '100%', }}
                 transition={{duration: 4}}
             >
                 <MaterialSymbol className="settings-icon" icon="arrow_forward" />
