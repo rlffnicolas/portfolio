@@ -5,6 +5,9 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { devices } from "../deviceSizes";
 import { useTheme } from "../contexts/ThemeContext";
+import useCheckMobileScreen from "../hooks/useCheckMobileScreen";
+import { MaterialSymbol } from 'react-material-symbols';
+
 
 import DayPlan2 from '../assets/images/apps/dayplan-2.png';
 import DayPlan4 from '../assets/images/apps/dayplan-4.png';
@@ -69,7 +72,6 @@ const StyledApps = styled.div`
         width: 100%;
     }
 
-
     @media ${devices.tablet} { 
         .category .app.half {
             width: 100%;
@@ -127,6 +129,7 @@ const Apps = () => {
     const {apps} = translations;
     const {theme} = useTheme();
     const [loading, setLoading] = useState(true);
+    const isMobile = useCheckMobileScreen();
 
     const animateProps = {
         initial: "hidden",
@@ -153,7 +156,16 @@ const Apps = () => {
     const scrollRef = useRef(null)
 
     if (loading) {
-        return <div>Loading...</div>; // Render a loading indicator
+        return (
+            <motion.div 
+                className="icon-container"
+                initial={{ rotate: '-700deg', transformOrigin: 'bottom', translateX: '10%', fontSize: '70vw', opacity: '0.1'}}
+                animate={{ rotate: 0 }}
+                transition={{duration: 4}}
+            >
+                <MaterialSymbol className="settings-icon" icon="arrow_forward" />
+            </motion.div>
+        )
       }
  
     return (
