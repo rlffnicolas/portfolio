@@ -18,13 +18,25 @@ const StyledNavibar = styled.div`
   width: 18%;
   height: 96vh;
   transition: all 0.5s;
-  padding-top: 10%;
+  padding-top: 15%;
 
   left: ${props => props.$togglenavibar ? '0' : '-15%'}; 
   opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
 
   p.portfolio {
     margin: 0 0 0 40px;
+  }
+
+  .title {
+    border: 3px dotted rgba(255,255,255,0.2) !important;
+    padding: 5% 10%;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .title > * {
+    margin-left: 0 !important;
   }
   
   h1 {
@@ -72,6 +84,10 @@ const StyledNavibar = styled.div`
     border-radius: 10px;
   }
 
+  a {
+    width: 80%;
+  }
+
   a:hover {
     background-color: rgba(200, 200, 200, 0.5);
   }
@@ -83,15 +99,6 @@ const StyledNavibar = styled.div`
     left: 0;
     top: 0;
     padding-top: 15%;
-  }
-
-  a {
-    width: 80%;
-  }
-
-  ul {
-    
-    
   }
 
 `;
@@ -203,7 +210,7 @@ const Navibar = () => {
     <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
       <ClickableProvider>
 
-      <motion.div key={language}>
+      <motion.div className='title' key={language}>
         <motion.p
             className='portfolio'
             initial="hidden"

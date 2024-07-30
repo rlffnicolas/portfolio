@@ -39,69 +39,87 @@
             "title": "紹介",
             "line1": "オルロフ・ニコラ",
             "line2": "２９歳　フランス人",
-            "line3": "８年前より日本在住",
-            "line4": "フランスのエクス・マルセイユ大学で「応用言語」を専攻",
-            "line5": "英語・日本語・翻訳を履修",
-            "line6": "１年間上智大学に交換留学",
-            "line7": "昔からITに興味があった。",
-            "line8": "４年前からウェブ開発の勉強し、",
-            "line9": "３年前に転職し、フロントエンドウェブエンジニアとして勤務。",
-            "line10": "新しい技術を身につけたく、",
-            "line11": "現在はiOSのアプリ開発（SwiftUI）を勉強中。"
-
+            "line3": "",
+            "line4": "８年前より日本在住、東京都、埼玉県、大阪府に在住経験あり",
+            "line5": "フランスのエクス・マルセイユ大学で「応用言語」を専攻",
+            "line6": "英語・日本語・翻訳・国際ビジネスを履修",
+            "line7": "１年間上智大学に交換留学",
+            "line8": "",
+            "line9": "東京でホテルに勤めて言語・コミュニケーションスキルを磨いた。",
+            "line10": "その後Web開発を独学で勉強し始め、",
+            "line11": "大阪でフロントエンドウェブエンジニアとして勤務し、",
+            "line12": "多くのECサイトをコーディング。",
+            "line13": "",
+            "line14": "現在は新しい技術を身につけたく、",
+            "line15": "現在はiOSのアプリ開発（SwiftUI）を勉強中。",
+            "line16": "",
+            "line17": "趣味は音楽（ベース演奏）・キャンプ・ドライブ・歴史・フランス政治・ガジェット系",
+            "line18": "好きなものはコーヒー・日本酒・犬・チョコレート・ゴーヤチャンプル"
         },
         "en": {
             "title": "About me",
-            "line1": "My name is Nicolas.",
-            "line2": "I am a 29-year-old Frenchman.",
-            "line3": "I have been living in Japan for eight years.",
-            "line4": "I majored in “Applied Linguistics” at a university in France.",
-            "line5": "I studied English, Japanese, and translation.",
-            "line6": "I spent one year as an exchange student at Sophia University.",
-            "line7": "I have been interested in IT for a long time.",
-            "line8": "I started studying web development four years ago.",
-            "line9": "Three years ago, I changed careers and began working as a front-end web engineer.",
-            "line10": "Currently, I am studying iOS app development (SwiftUI) to acquire new skills.",
-            "line11": ""
+            "line1": "My name is Nicolas ORLOFF.",
+            "line2": "I am a 29-year-old, from France.",
+            "line3": "",
+            "line4": "I have been living in Japan for eight years.",
+            "line5": "I majored in “Applied Linguistics” at a university in France.",
+            "line6": "I studied English, Japanese, and translation.",
+            "line7": "I spent one year as an exchange student at Sophia University.",
+            "line8": "",
+            "line9": "I have been interested in IT for a long time.",
+            "line10": "I started studying web development four years ago.",
+            "line11": "Three years ago, I changed careers and began working as a front-end web engineer.",
+            "line12": "",
+            "line13": "Currently, I am studying iOS app development (SwiftUI) to acquire new skills.",
+            "line14": "",
+            "line15": "",
+            "line16": "",
+            "line17": "",
+            "line18": ""
         },
         "fr": {
             "title": "À propos de moi",
-            "line1": "Je m'appelle Nicolas.",
+            "line1": "Je m'appelle Nicolas ORLOFF.",
             "line2": "Je suis un Français de 29 ans.",
-            "line3": "Je vis au Japon depuis huit ans.",
-            "line4": "J'ai étudié la “Linguistique appliquée” à l'université en France.",
-            "line5": "J'ai étudié l'anglais, le japonais et la traduction.",
-            "line6": "J'ai passé un an en échange universitaire à l'Université Sophia.",
-            "line7": "Je m'intéresse à l'informatique depuis longtemps.",
-            "line8": "J'ai commencé à étudier le développement web il y a quatre ans.",
-            "line9": "Il y a trois ans, j'ai changé de carrière et commencé à travailler en tant qu'ingénieur web front-end.",
-            "line10": "Actuellement, j'étudie le développement d'applications iOS (SwiftUI) pour acquérir de nouvelles compétences.",
-            "line11": ""
+            "line3": "",
+            "line4": "Je vis au Japon depuis huit ans.",
+            "line5": "J'ai étudié la “Linguistique appliquée” à l'université en France.",
+            "line6": "J'ai étudié l'anglais, le japonais et la traduction.",
+            "line7": "J'ai passé un an en échange universitaire à l'Université Sophia.",
+            "line8": "",
+            "line9": "Je m'intéresse à l'informatique depuis longtemps.",
+            "line10": "J'ai commencé à étudier le développement web il y a quatre ans.",
+            "line11": "Il y a trois ans, j'ai changé de carrière et commencé à travailler en tant qu'ingénieur web front-end.",
+            "line12": "",
+            "line13": "Actuellement, j'étudie le développement d'applications iOS (SwiftUI) pour acquérir de nouvelles compétences.",
+            "line14": "",
+            "line15": "",
+            "line16": "",
+            "line17": "",
+            "line18": ""
         }
     },
     "profile": {
         "jp": {
             "title": "履歴書",
-            "presentation": "ITに興味深い29歳のフランス人です。\n\n前職で約3年主にECサイトのコーディングをしました。\n\nモバイルアプリ開発をチャレンジしたく、\nここ6ヶ月iOS開発（Swift UI）を勉強してきました。\n\n私の強みは理解度です。前職ではその経験が多かったですが、使ったことない技術について調べたりして身につくことが早いです。",
             "work": {
                 "title": "職歴",
-                "content": "<b>ザ・ノット東京新宿 フロント・販売促進部</b>　2018年～2021年\n受付、日本語／英語での対応、英語教室の講師、パソコン作業\n\n<b>株式会社アプロ総研・エンジニア</b>　2021年〜2024年\nHTML・CSS・JSのコーディング"
+                "content": "<b>ザ・ノット東京新宿 フロント・販売促進部</b>　2018年～2021年\n受付、日本語／英語での対応、英語教室の講師、パソコン作業\n\n<b>株式会社アプロ総研・エンジニア</b>　2021年〜2024年\nEC用CMS上フロントエンドコーディング（HTML・CSS・Javascript）\nお客様と社内のサイトとドメイン保守\nコーディング案件の見積作成"
             },
             "studies": {
                 "title": "学歴",
-                "content": "<b>上智大学 (交換留学)</b>　2016年〜2017年\nインテンシブ日本語教室\n\n<b>エクスマルセイユ大学 (フランス) </b>　2013年〜2016年\n応用言語：日本語、英語、翻訳、国際経済、法律、経営"
+                "content": "<b>上智大学 (交換留学)</b>　2016年〜2017年\nインテンシブ日本語教室\n\n<b>エクスマルセイユ大学 (フランス) </b>　2013年〜2016年\n応用言語：日本語、英語、翻訳、国際経済"
             },
             "diplomas": {
                 "title": "資格",
-                "content": "<b>運転免許</b>　2024年\n<b>ビジネスマナー研修を受講 (OJT)</b>　2022年　\n<b>日本語能力試験1級 (JLPT N1)</b>　2019年\n<b>TOEIC (スコア：870)</b>　2016年"
+                "content": "<b>普通自動車運転免許</b>　2024年\n<b>ビジネスマナー研修を受講 (OJT)</b>　2022年　\n<b>日本語能力試験1級 (JLPT N1)</b>　2019年\n<b>TOEIC (スコア：870)</b>　2016年"
             }
         },
         "en": {
             "title": "Profile",
-            "presentation": "I am a 23-year-old person with a deep interest in IT.\n\nIn my previous job, I mainly did coding for EC sites for about 3 years.\n\nI wanted to challenge myself with mobile app development,\nand for the past 6 months, I have been studying iOS development (Swift UI).\n\nMy strength is my comprehension. In my previous job, I had a lot of experience with it, but I am quick to learn new technologies by researching them, even if I have not used them before.",
             "work": {
                 "title": "Work History",
-                "content": "<b>The Knot Tokyo Shinjuku - Sales promotion</b>　2018-2021\nFront Desk, use of Japanese and English, English class teacher, computer tasks\n\n<b>Apro Soken - Engineer</b>　2021-2024\nCoding in HTML, CSS, JS"
+                "content": "<b>The Knot Tokyo Shinjuku - Sales promotion</b>　2018-2021\nFront Desk, use of Japanese and English, English class teacher, computer tasks\n\n<b>Apro Soken - Engineer</b>　2021-2024\nCoding in HTML, CSS, JS / Website domain management / Quotation for coding projects"
             },
             "studies": {
                 "title": "Academic Background",
@@ -114,10 +132,9 @@
         },
         "fr": {
             "title": "Profil",
-            "presentation": "Je suis une personne de 23 ans avec un grand intérêt pour l'informatique.\n\nDans mon précédent emploi, j'ai principalement fait du codage pour des sites de commerce électronique pendant environ 3 ans.\n\nJe voulais me lancer dans le développement d'applications mobiles,\net depuis 6 mois, j'étudie le développement iOS (Swift UI).\n\nMa force est ma compréhension. Dans mon précédent emploi, j'avais beaucoup d'expérience dans ce domaine, mais je suis rapide à apprendre de nouvelles technologies en les recherchant, même si je ne les ai jamais utilisées auparavant.",
             "work": {
                 "title": "Parcours professional",
-                "content": "<b>The Knot Tokyo Shinjuku - Vente</b>　2018-2021\nAccueil, travail en anglais et japonais, classes d'anglais, travail avec un ordinateur\n\n<b>Apro Soken - Ingénieur</b>　2021-2024\nCoding en HTML, CSS, JS"
+                "content": "<b>The Knot Tokyo Shinjuku - Vente</b>　2018-2021\nAccueil, travail en anglais et japonais, classes d'anglais, travail avec un ordinateur\n\n<b>Apro Soken - Ingénieur</b>　2021-2024\nCoding en HTML, CSS, JS / Gestion de domaine de site web / Devis pour des projets de codage"
             },
             "studies": {
                 "title": "Parcours scolaire",
@@ -137,47 +154,32 @@
                 "duration": "使用期間",
                 "level": "レベル"
             },
-            "os": {
-                "title": "OS",
-                "content": [
-                    {
-                        "title": "macOS",
-                        "duration": "13年",
-                        "content": "WEB開発に使用\n個人的に使用\nターミナルの知識あり"
-                    },
-                    {
-                        "title": "Windows (10 & 11)",
-                        "duration": "5年",
-                        "content": "仕事上、WEB開発に使用"
-                    }
-                ]
-            },
             "programming": {
-                "title": "プログラミング",
+                "title": "プログラミング言語",
                 "content": [
                     {
                         "title": "HTML / CSS",
-                        "duration": "4年",
+                        "duration": "4年間",
                         "content": "仕事上"
                     },
                     {
                         "title": "Javascript",
-                        "duration": "4年",
+                        "duration": "4年間",
                         "content": "仕事上"
                     },
                     {
                         "title": "Swift",
-                        "duration": "1年",
+                        "duration": "1年間",
                         "content": "勉強中、Swift UIでアプリ開発中"
                     },
                     {
                         "title": "Python",
-                        "duration": "４ヶ月",
+                        "duration": "４ヶ月間",
                         "content": "勉強した経験あり"
                     },
                     {
                         "title": "PHP",
-                        "duration": "4年",
+                        "duration": "4年間",
                         "content": "仕事上少し操作した経験あり\nsmartyテンプレートを使用した経験あり"
                     }
                 ]
@@ -187,23 +189,103 @@
                 "content": [
                     {
                         "title": "React",
-                        "duration": "1年",
+                        "duration": "1年間",
                         "content": "個人で主にフロントエンド開発の経験あり\nBootstrap, material-ui, Expressを使用した経験あり"
                     },
                     {
                         "title": "jQuery",
-                        "duration": "1年",
+                        "duration": "1年間",
                         "content": "知識あり、できるだけJSのみを使用"
                     }
                 ]
             },
             "DB": {
-                "title": "プログラミング",
+                "title": "DB",
                 "content": [
                     {
                         "title": "mongoDB, mysql",
                         "duration": "1年",
                         "content": "勉強した経験\n仕事上mysqlを少し操作した経験あり"
+                    }
+                ]
+            },
+            "server": {
+                "title": "サーバー",
+                "content": [
+                    {
+                        "title": "AWS",
+                        "duration": "1年",
+                        "content": "仕事上に使用する機会あり"
+                    }
+                ]
+            },
+            "cms": {
+                "title": "CMS",
+                "content": [
+                    {
+                        "title": "MovableType",
+                        "duration": "3年",
+                        "content": "問題なく日常的に利用できる"
+                    },
+                    {
+                        "title": "WordPress",
+                        "duration": "1年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "ecCms": {
+                "title": "EC用CMS",
+                "content": [
+                    {
+                        "title": "futureshop",
+                        "duration": "3年",
+                        "content": "問題なく日常的に利用できる"
+                    },
+                    {
+                        "title": "ECCube",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    },
+                    {
+                        "title": "リピスト",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "software": {
+                "title": "ソフトウェア",
+                "content": [
+                    {
+                        "title": "Excel",
+                        "duration": "3年",
+                        "content": "日常的に利用できる"
+                    },
+                    {
+                        "title": "Photoshop",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13年間",
+                        "content": "仕事上とWEB開発に使用した経験あり\n個人的に使用\nターミナルの知識あり"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5年間",
+                        "content": "仕事上とWEB開発に使用した経験あり"
+                    },
+                    {
+                        "title": "Linux (Ubuntu)",
+                        "duration": "1年間",
+                        "content": "独学\nRasberry Piでサーバーとして使用した経験あり\nコマンドラインの知識あり"
                     }
                 ]
             },
@@ -228,16 +310,19 @@
                 "title": "仕事上のスキル",
                 "content": [
                     {
-                        "title": "フロントエンドのWEB開発"
+                        "title": "フロントエンドのWEB開発経験が多い（HTML・CSS・Javascript）"
                     },
                     {
-                        "title": "自分で調べて行動する事が得意"
+                        "title": "使ったことがない技術でも、自分で調べて行動する事が得意"
                     },
                     {
-                        "title": "その他技術：Wordpress, Photoshop, mt.net"
+                        "title": "語学：日本語と英語とフランス語が流暢"
                     },
                     {
-                        "title": "EC：futureshop, eccube, 楽天, ヤフー, リピスト"
+                        "title": "毎日の計画を立て、予想と実績に差がでないようにすることが得意"
+                    },
+                    {
+                        "title": "ECモール（楽天、Yahoo！、Amazon…）の商品登録のような操作が可能"
                     }
                 ]
             }
@@ -305,7 +390,7 @@
                     {
                         "title": "jQuery",
                         "duration": "1 year",
-                        "content": "Knowledgeable, prefer to use pure JS"
+                        "content": "Basic knowledge, prefer to use vanilla JS"
                     }
                 ]
             },
@@ -412,7 +497,7 @@
                     {
                         "title": "React",
                         "duration": "1 an",
-                        "content": "Expérience personnelle principalement en développement frontend\nExpérience avec Bootstrap, Material-UI, Express"
+                        "content": "Expérience personnelle principalement en développement front end\nExpérience avec Bootstrap, Material-UI, Express"
                     },
                     {
                         "title": "jQuery",
@@ -471,12 +556,16 @@
         "jp": {
             "title": "実績",
             "appGroups": {
+                "portfolio": {
+                    "title": "ポートフォリオ作成",
+                    "description": "当ポートフォリオをReactでコーディング　　サーバー：Github Pages　　使用プラグイン：react-router-dom・framer-motion"
+                },
                 "iosApps": {
                     "title": "iOS Apps",
                     "content": {
                         "dayPlan": {
                             "title": "Day Plan",
-                            "description": "一日のスケジュールを簡単に入力・レビューするためのアプリを開発中。タスク追加の際、できるだけシンプルで早く追加できるというのがこのアプリのメリット。ほとんどの開発ができています。カレンダーのイベントと連携、iCloudバックアップの２機能が出来次第公開予定。"
+                            "description": "一日のスケジュールを簡単に入力・レビューするためのアプリを開発中　　個人で他アプリを使用した時、入力にかなり時間がかかるという問題から、このアプリの売りとしてタスク追加をできるシンプルさ　　カレンダーのイベントと連携、iCloudバックアップの２機能が出来次第公開予定"
                         }
                     }
                 },
@@ -486,7 +575,7 @@
                     "content": {
                         "flashChat": {
                             "title": "Flash Chat",
-                            "description": "Firebase DBを使用したチャットアプリ。アカウント作成、ログイン、チャットメッセージを送信できる機能"
+                            "description": "Firebase DBを使用したチャットアプリ　　アカウント作成、ログイン、チャットメッセージを送信できる機能"
                         },
                         "todo": {
                             "title": "Todo",
@@ -542,6 +631,10 @@
         "en": {
             "title": "Achievements",
             "appGroups": {
+                "portfolio": {
+                    "title": "Coding of this portfolio",
+                    "description": "Server：Github Pages　　Plugin：react-router-dom・framer-motion"
+                },
                 "iosApps": {
                     "title": "iOS Apps",
                     "content": {
@@ -613,6 +706,10 @@
         "fr": {
             "title": "Réalisations",
             "appGroups": {
+                "portfolio": {
+                    "title": "Coding de ce portfolio",
+                    "description": "Serveur：Github Pages　　Plugin：react-router-dom・framer-motion"
+                },
                 "iosApps": {
                     "title": "Applications iOS",
                     "content": {

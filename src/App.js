@@ -21,7 +21,7 @@ const StyledApp = styled.div`
     position: absolute;
     overflow-x: hidden !important;
     background-color: ${props => props.theme === 'light' ? 'rgba(50,50,50,0.1)' : 'rgba(250,250,250,0.2)'}; 
-    padding: ${props => props.$togglenavibar ? '1% 2%' : '8% 4%'};
+    padding: ${props => props.$togglenavibar ? '0 2%' : '0 0 8% 8%'};
     border-radius: ${props => props.$togglenavibar ? '30px' : '0'};
     left: ${props => props.$togglenavibar ? '20%' : '0'};
     top: ${props => props.$togglenavibar ? '5%' : '0'};
@@ -91,6 +91,12 @@ const StyledApp = styled.div`
   button.toggle-navibar > span:nth-of-type(3) {
     opacity: ${props => props.$togglenavibar? '0' : '1'};
     transform: ${props => props.$togglenavibar? 'rotate(-45deg) translate(8px, -8px)' : 'none'};
+  }
+
+  @media ${devices.laptopL} {
+    .motion {
+      padding: ${props => props.$togglenavibar ? '0 2%' : '8% 0 8% 8%'};
+    }
   }
 
   @media ${devices.tablet} {

@@ -180,6 +180,18 @@ const Apps = () => {
 
             <div ref={scrollRef}>
 
+            <div className="category">
+                    <motion.h2 key={language} {...animateProps}>
+                        {apps[language].appGroups.portfolio.title}
+                    </motion.h2>
+
+                    <div className="app">
+                        <motion.p key={language} {...animateProps}>
+                            {apps[language].appGroups.portfolio.description}
+                        </motion.p>
+                    </div>
+                </div>
+
                 <div className="category">
                     <motion.h2 custom={0.5} key={language} {...animateProps}>
                         {apps[language].appGroups.iosApps.title}

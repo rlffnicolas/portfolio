@@ -11,6 +11,16 @@ const StyledProfile = styled.div`
     height: 100%;
     position: relative;
 
+    h2 {
+        margin-top: 70px;
+    }
+
+    b {
+        font-weight: 500 !important;
+        opacity: 0.6;
+        font-size: 1.2em;
+    }
+
     .icon-container {
         position: absolute;
         width: 100%;
@@ -53,7 +63,6 @@ const Profile = () => {
         variants: variants
     };
 
-    const profilePresentation = profile[language].presentation.replace(/\n/g, '<br>');
     const profileStudiesContent = profile[language].studies.content.replace(/\n/g, '<br>');
     const profileWorkContent = profile[language].work.content.replace(/\n/g, '<br>');
     const profileDiplomasContent = profile[language].diplomas.content.replace(/\n/g, '<br>');
@@ -79,10 +88,6 @@ const Profile = () => {
                     {...animateProps}
                     custom={0}
                     >{profile[language].title}</motion.h1>
-                <motion.p 
-                    {...animateProps}
-                    custom={0.5}
-                    dangerouslySetInnerHTML={{ __html: profilePresentation }}></motion.p>
 
                 <motion.h2
                     {...animateProps}
@@ -110,6 +115,8 @@ const Profile = () => {
                     {...animateProps}
                     custom={3.5}
                     dangerouslySetInnerHTML={{ __html: profileDiplomasContent }}></motion.p>
+
+                    
             </motion.div>  
 
             <br/>

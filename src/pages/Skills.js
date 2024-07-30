@@ -19,7 +19,7 @@ const StyledSkills = styled.div`
     }
 
     h2 {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     h3 {
@@ -88,27 +88,6 @@ const Skills = () => {
                 >{skills[language].title}</motion.h1>
 
                 <motion.h2
-                    key="os-title"
-                    {...animateProps}
-                    custom={0.5}
-                >{skills[language].os.title}</motion.h2>
-                <motion.ul
-                    key="os-list"
-                    {...animateProps}
-                    custom={1}
-                >
-                    {skills[language].os.content.map((content, index) => {
-                        return (
-                            <li key={index}>
-                                <h3>{content.title}</h3>
-                                <p>{content.duration}</p>
-                                <p>{content.content}</p>
-                            </li>
-                        )
-                    })}
-                </motion.ul>
-
-                <motion.h2
                     key="programming-title"
                     {...animateProps}
                     custom={1.5}
@@ -140,6 +119,132 @@ const Skills = () => {
                     custom={3}
                 >
                     {skills[language].framework.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="db-title"
+                    {...animateProps}
+                    custom={2.5}
+                >{skills[language].DB.title}</motion.h2>
+                <motion.ul
+                    key="db-list"
+                    {...animateProps}
+                    custom={3}
+                >
+                    {skills[language].DB.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="server-title"
+                    {...animateProps}
+                    custom={2.5}
+                >{skills[language].server.title}</motion.h2>
+                <motion.ul
+                    key="server-list"
+                    {...animateProps}
+                    custom={3}
+                >
+                    {skills[language].server.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="cms-title"
+                    {...animateProps}
+                    custom={2.5}
+                >{skills[language].cms.title}</motion.h2>
+                <motion.ul
+                    key="cms-list"
+                    {...animateProps}
+                    custom={3}
+                >
+                    {skills[language].cms.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="ec-cms-title"
+                    {...animateProps}
+                    custom={2.5}
+                >{skills[language].ecCms.title}</motion.h2>
+                <motion.ul
+                    key="ec-cms-list"
+                    {...animateProps}
+                    custom={3}
+                >
+                    {skills[language].ecCms.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="software-title"
+                    {...animateProps}
+                    custom={2.5}
+                >{skills[language].software.title}</motion.h2>
+                <motion.ul
+                    key="software-list"
+                    {...animateProps}
+                    custom={3}
+                >
+                    {skills[language].software.content.map((content, index) => {
+                        return (
+                            <li key={index}>
+                                <h3>{content.title}</h3>
+                                <p>{content.duration}</p>
+                                <p>{content.content}</p>
+                            </li>
+                        )
+                    })}
+                </motion.ul>
+
+                <motion.h2
+                    key="os-title"
+                    {...animateProps}
+                    custom={0.5}
+                >{skills[language].os.title}</motion.h2>
+                <motion.ul
+                    key="os-list"
+                    {...animateProps}
+                    custom={1}
+                >
+                    {skills[language].os.content.map((content, index) => {
                         return (
                             <li key={index}>
                                 <h3>{content.title}</h3>
