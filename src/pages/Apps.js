@@ -30,6 +30,8 @@ import Todo2 from '../assets/images/apps/todo-2.png';
 import ColorPicker from '../assets/images/apps/colorpicker.png';
 
 const StyledApps = styled.div`
+    max-width: 1000px;
+    margin: 0 auto;
 
    img {
         width: 100%;

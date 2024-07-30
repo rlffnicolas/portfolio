@@ -22,11 +22,15 @@ const StyledNavibar = styled.div`
 
   left: ${props => props.$togglenavibar ? '0' : '-15%'}; 
   opacity: ${props => props.$togglenavibar ? '1' : '0'}; 
+
+  p.portfolio {
+    margin: 0 0 0 40px;
+  }
   
   h1 {
     text-align: start;
     font-size: 26px;
-    margin-left: 40px;
+    margin: 0 0 0 40px;
   }
 
   ul {
@@ -199,16 +203,37 @@ const Navibar = () => {
     <StyledNavibar theme={theme} $togglenavibar={toggleNavibar} >
       <ClickableProvider>
 
-        <motion.h1
-          key={language}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          variants={variants}
-          custom={0}
-        >
-          {navibar[language].name}
-        </motion.h1>
+      <motion.div key={language}>
+        <motion.p
+            className='portfolio'
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={variants}
+            custom={0}
+          >
+            {navibar[language].portfolio}
+          </motion.p>
+          <motion.p
+            className='portfolio'
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={variants}
+            custom={0.25}
+          >
+            {navibar[language].profession}
+          </motion.p>
+          <motion.h1
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={variants}
+            custom={0.5}
+          >
+            {navibar[language].name}
+          </motion.h1>
+        </motion.div>
 
         <ul>
           {['/about', '/profile', '/skills', '/apps'].map((path, index) => (

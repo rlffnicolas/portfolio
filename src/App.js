@@ -20,6 +20,7 @@ const StyledApp = styled.div`
 
   .motion {
     position: absolute;
+    overflow-x: hidden !important;
     background-color: ${props => props.theme === 'light' ? 'rgba(50,50,50,0.1)' : 'rgba(250,250,250,0.2)'}; 
     padding: ${props => props.$togglenavibar ? '1% 2%' : '8% 4%'};
     border-radius: ${props => props.$togglenavibar ? '30px' : '0'};
@@ -38,7 +39,6 @@ const StyledApp = styled.div`
 
   .scrollbar > * {
     overflow-x: hidden !important;
-    max-width: 1000px;
     margin: 0 auto !important;
   }
 

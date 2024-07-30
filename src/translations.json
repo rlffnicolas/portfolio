@@ -1,6 +1,8 @@
 {
     "navibar": {
         "jp": {
+            "portfolio": "ポートフォリオ",
+            "profession": "Web/SE",
             "name": "オルロフ",
             "menu": {
                 "about": "紹介",
@@ -10,6 +12,8 @@
             } 
         },
         "en": {
+            "portfolio": "Portfolio",
+            "profession": "Web/SE",
             "name": "Orloff",
             "menu": {
                 "about": "About",
@@ -19,6 +23,8 @@
             } 
         },
         "fr": {
+            "portfolio": "Portfolio",
+            "profession": "Web/SE",
             "name": "Orloff",
             "menu": {
                 "about": "About",
@@ -31,15 +37,46 @@
     "about": {
         "jp": {
             "title": "紹介",
-            "main": "オルロフ・ニコラ　と申します。\n\n\n２９歳のフランス人です。\n\n\n８年前から日本に暮らしています。\n\n\nフランスの大学で「応用言語」を専攻しました。\n\n英語・日本語・翻訳の勉強をしました。\n\n\n一年上智大学に交換留学しました。\n\n\n昔からITに興味があり、\n\n４年前からウェブ開発の勉強をし、\n\n３年前に転職し、フロントエンドウェブエンジニアとして務まりました。\n\n\n新しい技術を身につけたく、\n\n現在はiOSのアプリ開発（SwiftUI）を勉強しております。"
+            "line1": "オルロフ・ニコラ",
+            "line2": "２９歳　フランス人",
+            "line3": "８年前より日本在住",
+            "line4": "フランスのエクス・マルセイユ大学で「応用言語」を専攻",
+            "line5": "英語・日本語・翻訳を履修",
+            "line6": "１年間上智大学に交換留学",
+            "line7": "昔からITに興味があった。",
+            "line8": "４年前からウェブ開発の勉強し、",
+            "line9": "３年前に転職し、フロントエンドウェブエンジニアとして勤務。",
+            "line10": "新しい技術を身につけたく、",
+            "line11": "現在はiOSのアプリ開発（SwiftUI）を勉強中。"
+
         },
         "en": {
             "title": "About me",
-            "main": "My name is Nicolas.\n\nI am a 29-year-old Frenchman.\n\nI have been living in Japan for eight years.\n\nI majored in “Applied Linguistics” at a university in France.\n\nI studied English, Japanese, and translation.\n\nI spent one year as an exchange student at Sophia University.\n\nI have been interested in IT for a long time.\n\nI started studying web development four years ago.\n\nThree years ago, I changed careers and began working as a front-end web engineer.\n\nCurrently, I am studying iOS app development (SwiftUI) to acquire new skills."
+            "line1": "My name is Nicolas.",
+            "line2": "I am a 29-year-old Frenchman.",
+            "line3": "I have been living in Japan for eight years.",
+            "line4": "I majored in “Applied Linguistics” at a university in France.",
+            "line5": "I studied English, Japanese, and translation.",
+            "line6": "I spent one year as an exchange student at Sophia University.",
+            "line7": "I have been interested in IT for a long time.",
+            "line8": "I started studying web development four years ago.",
+            "line9": "Three years ago, I changed careers and began working as a front-end web engineer.",
+            "line10": "Currently, I am studying iOS app development (SwiftUI) to acquire new skills.",
+            "line11": ""
         },
         "fr": {
             "title": "À propos de moi",
-            "main": "Je m'appelle Nicolas.\n\nJe suis un Français de 29 ans.\n\nJe vis au Japon depuis huit ans.\n\nJ'ai étudié la “Linguistique appliquée” à l'université en France.\n\nJ'ai étudié l'anglais, le japonais et la traduction.\n\nJ'ai passé un an en échange universitaire à l'Université Sophia.\n\nJe m'intéresse à l'informatique depuis longtemps.\n\nJ'ai commencé à étudier le développement web il y a quatre ans.\n\nIl y a trois ans, j'ai changé de carrière et commencé à travailler en tant qu'ingénieur web front-end.\n\nActuellement, j'étudie le développement d'applications iOS (SwiftUI) pour acquérir de nouvelles compétences."
+            "line1": "Je m'appelle Nicolas.",
+            "line2": "Je suis un Français de 29 ans.",
+            "line3": "Je vis au Japon depuis huit ans.",
+            "line4": "J'ai étudié la “Linguistique appliquée” à l'université en France.",
+            "line5": "J'ai étudié l'anglais, le japonais et la traduction.",
+            "line6": "J'ai passé un an en échange universitaire à l'Université Sophia.",
+            "line7": "Je m'intéresse à l'informatique depuis longtemps.",
+            "line8": "J'ai commencé à étudier le développement web il y a quatre ans.",
+            "line9": "Il y a trois ans, j'ai changé de carrière et commencé à travailler en tant qu'ingénieur web front-end.",
+            "line10": "Actuellement, j'étudie le développement d'applications iOS (SwiftUI) pour acquérir de nouvelles compétences.",
+            "line11": ""
         }
     },
     "profile": {

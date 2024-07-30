@@ -17,6 +17,12 @@ const StyledAbout = styled.div`
         width: 70%;
     }
 
+    .row .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
     @media ${devices.tablet} {
         .row p {
             width: 90%;
@@ -45,12 +51,10 @@ const About = () => {
     const {language} = useLanguage();
     const {about} = translations;
 
-    const mainWithLineBreak = about[language].main.replace(/\n/g, '<br>');
-
     const animateProps = {
-        initial: { opacity: 0, transform: 'translateY(-10px)' },
-        animate: { opacity: 1, transform: 'translateY(0)' },
-        transition: { duration: 0.4 }
+        initial: "hidden",
+        animate: "visible",
+        variants: variants
     };
 
     return (
@@ -68,16 +72,20 @@ const About = () => {
                 </motion.h1>
                 
                 <div className="row">
-                    <motion.p 
-                        dangerouslySetInnerHTML={{ __html: mainWithLineBreak }}
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        variants={variants}
-                        custom={1}
-                        key={language}
-                    ></motion.p>
-                        <AnimatedImage />
+                    <motion.div key={language} className="col">
+                        <motion.p {...animateProps} custom={0.5}>{about[language].line1}</motion.p>
+                        <motion.p {...animateProps} custom={1}>{about[language].line2}</motion.p>
+                        <motion.p {...animateProps} custom={1.5}>{about[language].line3}</motion.p>
+                        <motion.p {...animateProps} custom={2}>{about[language].line4}</motion.p>
+                        <motion.p {...animateProps} custom={2.5}>{about[language].line5}</motion.p>
+                        <motion.p {...animateProps} custom={3}>{about[language].line6}</motion.p>
+                        <motion.p {...animateProps} custom={3.5}>{about[language].line7}</motion.p>
+                        <motion.p {...animateProps} custom={4}>{about[language].line8}</motion.p>
+                        <motion.p {...animateProps} custom={4.5}>{about[language].line9}</motion.p>
+                        <motion.p {...animateProps} custom={5}>{about[language].line10}</motion.p>
+                        <motion.p {...animateProps} custom={5.5}>{about[language].line11}</motion.p>
+                    </motion.div>
+                    <AnimatedImage />
                 </div>
 
                 <br/>

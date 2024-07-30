@@ -28,7 +28,7 @@ const AnimatedImage = () => {
         '--color': '#fff',
         right: rightTransform, 
         opacity: opacityTransform,
-        width: '200px',
+        width: '250px',
         height: 'fit-content',
         height: 'auto',
         boxSizing: 'border-box',
