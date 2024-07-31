@@ -855,7 +855,7 @@
             }
         },
         "fr": {
-            "title": "Réalisations",
+            "title": "Mes apps",
             "appGroups": {
                 "portfolio": {
                     "title": "Coding de ce portfolio",
@@ -865,7 +865,7 @@
                     "title": "Applications iOS",
                     "content": {
                         "dayPlan": {
-                            "title": "Plan de Jour",
+                            "title": "Day Plan",
                             "description": "Développement d'une application pour saisir et revoir facilement les emplois du temps quotidiens. L'avantage de cette application est que les tâches peuvent être ajoutées aussi simplement et rapidement que possible. La majeure partie du développement est terminée. L'application sera publiée une fois les fonctionnalités d'intégration des événements du calendrier et de sauvegarde iCloud terminées."
                         }
                     }
