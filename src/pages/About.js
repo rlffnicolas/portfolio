@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import { useLanguage } from "../contexts/LanguageContext";
 import translations from '../translations.json';
 import Photo from "../assets/images/portrait.jpg";
@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { motion } from "framer-motion";
 import AnimatedImage from "../components/AnimatedImage";
 import { devices } from "../deviceSizes";
+import { MaterialSymbol } from 'react-material-symbols';
 
 const StyledAbout = styled.div`
 
@@ -82,6 +83,8 @@ const variants = {
   };
 
 const About = () => {
+    const imageUrl = [Photo]
+    
     const {language} = useLanguage();
     const {about} = translations;
 
@@ -90,6 +93,44 @@ const About = () => {
         animate: "visible",
         variants: variants
     };
+
+    const [loading, setLoading] = useState(true);
+
+    const preloadImages = (urls) => {
+        return Promise.all(
+          urls.map((url) => {
+            return new Promise((resolve, reject) => {
+              const img = new Image();
+              img.src = url;
+              img.onload = resolve;
+              img.onerror = reject;
+            });
+          })
+        );
+      };
+
+    useEffect(() => {
+        preloadImages(imageUrl)
+          .then(() => {
+                setLoading(false);            
+          })
+          .catch((err) => {
+            console.error('Failed to load images', err);
+          });
+      }, []);
+
+    if (loading) {
+        return (
+            <motion.div 
+                className="icon-container"
+                initial={{ translateX: '-100%', fontSize: '70vw', opacity: '0.1'}}
+                animate={{ translateX: '100%', }}
+                transition={{duration: 4}}
+            >
+                <MaterialSymbol className="settings-icon" icon="arrow_forward" />
+            </motion.div>
+        )
+      }
 
     return (
         <StyledAbout>
