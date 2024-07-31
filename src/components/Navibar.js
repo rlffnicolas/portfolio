@@ -29,6 +29,7 @@ const StyledNavibar = styled.div`
 
   .title {
     border: 3px dotted rgba(255,255,255,0.2) !important;
+    border: ${props => props.theme === 'light' ? '3px dotted rgba(121,87,62,0.5) !important' : '3px dotted rgba(255,255,255,0.2) !important'};
     padding: 5% 10%;
     border-radius: 20px;
     width: fit-content;
