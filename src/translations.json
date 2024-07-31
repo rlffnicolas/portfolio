@@ -160,12 +160,12 @@
                     {
                         "title": "HTML / CSS",
                         "duration": "4年間",
-                        "content": "仕事上"
+                        "content": "仕事で使用"
                     },
                     {
                         "title": "Javascript",
                         "duration": "4年間",
-                        "content": "仕事上"
+                        "content": "仕事で使用"
                     },
                     {
                         "title": "Swift",
@@ -298,7 +298,7 @@
                     },
                     {
                         "title": "英語",
-                        "content": "検索に常に使用しています。毎日聞いています。前職で使用。"
+                        "content": "流暢、検索で使用することが多い"
                     },
                     {
                         "title": "フランス語",
@@ -565,7 +565,7 @@
                     "content": {
                         "dayPlan": {
                             "title": "Day Plan",
-                            "description": "一日のスケジュールを簡単に入力・レビューするためのアプリを開発中　　個人で他アプリを使用した時、入力にかなり時間がかかるという問題から、このアプリの売りとしてタスク追加をできるシンプルさ　　カレンダーのイベントと連携、iCloudバックアップの２機能が出来次第公開予定"
+                            "description": "一日のスケジュールを簡単に入力・レビューするためのアプリを開発中　　個人で他アプリを使用した時、入力にかなり時間がかかるという問題から、このアプリの売りとしてタスク追加をできるだけシンプルに　　カレンダーのイベントと連携、iCloudバックアップの２機能が出来次第公開予定"
                         }
                     }
                 },
@@ -613,17 +613,17 @@
                 },
                 "excelProjects": {
                     "title": "ExcelのCSV変換ツール",
-                    "description": "Excelの関数やマクロを使用したCSV変換ツールを作成"
+                    "description": "複数EC用CMSやモールに商品できるよう、Excelの関数やマクロを使用したCSV変換ツールを作成"
                 },
                 "reactProjects": {
                     "title": "Reactアプリ",
                     "colorPicker": {
                         "title": "Color Picker",
-                        "description": "カラーパレットを作成できるWebアプリ"
+                        "description": "カラーパレットを作成できるWebアプリ（スクリーンショットをクリックするとアプリが表示される）"
                     },
                     "moneySaver": {
                         "title": "Money Saver",
-                        "description": "個人の支出入力・管理Webアプリ"
+                        "description": "個人の支出入力・管理Webアプリ（現在使用不可）"
                     }
                 }
             }
