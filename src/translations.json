@@ -18,7 +18,7 @@
             "menu": {
                 "about": "About",
                 "profile": "Profile",
-                "skills": "Experiences",
+                "skills": "Skills",
                 "apps": "My apps"
             } 
         },
@@ -27,10 +27,10 @@
             "profession": "Web/SE",
             "name": "Orloff",
             "menu": {
-                "about": "About",
-                "profile": "Profile",
-                "skills": "Skills",
-                "apps": "My apps"
+                "about": "À propos",
+                "profile": "Profil",
+                "skills": "Compétences",
+                "apps": "Mes apps"
             } 
         }
     },
