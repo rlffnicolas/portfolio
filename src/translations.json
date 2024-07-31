@@ -299,7 +299,7 @@
                 "content": [
                     {
                         "title": "日本語",
-                        "content": "８年日本在住、流暢"
+                        "content": "流暢、８年日本在住、"
                     },
                     {
                         "title": "英語",
@@ -345,12 +345,12 @@
                     {
                         "title": "HTML / CSS",
                         "duration": "4 years",
-                        "content": "For work"
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "Javascript",
                         "duration": "4 years",
-                        "content": "For work"
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "Swift",
@@ -365,7 +365,7 @@
                     {
                         "title": "PHP",
                         "duration": "4 years",
-                        "content": "Some experience for work\nExperience using Smarty templates"
+                        "content": "Few experience at work"
                     }
                 ]
             },
@@ -375,12 +375,12 @@
                     {
                         "title": "React",
                         "duration": "1 year",
-                        "content": "Personal experience mainly in frontend development\nExperience with Bootstrap, Material-UI, Express"
+                        "content": "Studied, coded portfolio and a few web apps"
                     },
                     {
                         "title": "jQuery",
                         "duration": "1 year",
-                        "content": "Basic knowledge, prefer to use vanilla JS"
+                        "content": "Basic knowledge, prefer to use vanilla JS if I can"
                     }
                 ]
             },
@@ -388,19 +388,24 @@
                 "title": "Databases",
                 "content": [
                     {
-                        "title": "MongoDB, MySQL",
+                        "title": "MongoDB",
                         "duration": "1 year",
-                        "content": "Studied\nSome experience with MySQL for work"
+                        "content": "Studied"
+                    },
+                    {
+                        "title": "MySQL",
+                        "duration": "1 year",
+                        "content": "Few experience at work"
                     }
                 ]
             },
             "server": {
-                "title": "サーバー",
+                "title": "Server",
                 "content": [
                     {
                         "title": "AWS",
-                        "duration": "1年",
-                        "content": "仕事上に使用する機会あり"
+                        "duration": "1 year",
+                        "content": "Few experience at work"
                     }
                 ]
             },
@@ -409,48 +414,48 @@
                 "content": [
                     {
                         "title": "MovableType",
-                        "duration": "3年",
-                        "content": "問題なく日常的に利用できる"
+                        "duration": "3 years",
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "WordPress",
-                        "duration": "1年",
-                        "content": "利用できる"
+                        "duration": "1 year",
+                        "content": "Have practical experience"
                     }
                 ]
             },
             "ecCms": {
-                "title": "EC用CMS",
+                "title": "CMS for EC",
                 "content": [
                     {
                         "title": "futureshop",
-                        "duration": "3年",
-                        "content": "問題なく日常的に利用できる"
+                        "duration": "3 years",
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "ECCube",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "duration": "2 years",
+                        "content": "Have practical experienc"
                     },
                     {
-                        "title": "リピスト",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "title": "Rpst",
+                        "duration": "2 years",
+                        "content": "Have practical experienc"
                     }
                 ]
             },
             "software": {
-                "title": "ソフトウェア",
+                "title": "Software",
                 "content": [
                     {
                         "title": "Excel",
-                        "duration": "3年",
-                        "content": "日常的に利用できる"
+                        "duration": "3 years",
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "Photoshop",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "duration": "2 years",
+                        "content": "Have practical experience"
                     }
                 ]
             },
@@ -459,18 +464,18 @@
                 "content": [
                     {
                         "title": "macOS",
-                        "duration": "13年間",
-                        "content": "仕事上とWEB開発に使用した経験あり\n個人的に使用\nターミナルの知識あり"
+                        "duration": "13 years",
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "Windows (10 & 11)",
-                        "duration": "5年間",
-                        "content": "仕事上とWEB開発に使用した経験あり"
+                        "duration": "5 years",
+                        "content": "Have practical experience"
                     },
                     {
                         "title": "Linux (Ubuntu)",
-                        "duration": "1年間",
-                        "content": "独学\nRasberry Piでサーバーとして使用した経験あり\nコマンドラインの知識あり"
+                        "duration": "1 year",
+                        "content": "Studied"
                     }
                 ]
             },
@@ -483,11 +488,11 @@
                     },
                     {
                         "title": "English",
-                        "content": "Used for searches regularly. Listen to it daily. Used in previous job."
+                        "content": "Fluent, using daily for searches"
                     },
                     {
                         "title": "French",
-                        "content": "Native language"
+                        "content": "Native"
                     }
                 ]
             },
@@ -495,17 +500,20 @@
                 "title": "Work Skills",
                 "content": [
                     {
-                        "title": "Frontend Web Development"
+                        "title": "Extensive experience in front-end web development (HTML, CSS, Javascript)"
                     },
                     {
-                        "title": "Good at self-research and taking action"
+                        "title": "Capable of researching and learning new technologies independently"
                     },
                     {
-                        "title": "Other skills: Wordpress, Photoshop, .NET"
+                        "title": "Languages: Fluent in Japanese, English, and French"
                     },
                     {
-                        "title": "E-commerce: Futureshop, ECCube, Rakuten, Yahoo, Repeaters"
-                    }
+                        "title": "Skilled in daily planning and minimizing discrepancies between forecasts and actual outcomes"
+                    },
+                    {
+                        "title": "Proficient in performing operations such as product registration on e-commerce platforms (Rakuten, Yahoo!, Amazon, etc.)"
+                    }                    
                 ]
             }
         },
@@ -522,27 +530,27 @@
                     {
                         "title": "HTML / CSS",
                         "duration": "4 ans",
-                        "content": "Pour le travail"
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "Javascript",
                         "duration": "4 ans",
-                        "content": "Pour le travail"
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "Swift",
                         "duration": "1 an",
-                        "content": "Actuellement en apprentissage, développement d'applications avec Swift UI"
+                        "content": "Actuellement apprentissage en autodidacte, en train de développer une application"
                     },
                     {
                         "title": "Python",
                         "duration": "4 mois",
-                        "content": "Étudié"
+                        "content": "Autodidacte"
                     },
                     {
                         "title": "PHP",
                         "duration": "4 ans",
-                        "content": "Quelques expériences pour le travail\nExpérience avec les modèles Smarty"
+                        "content": "Quelques expériences professionnelles"
                     }
                 ]
             },
@@ -552,12 +560,12 @@
                     {
                         "title": "React",
                         "duration": "1 an",
-                        "content": "Expérience personnelle principalement en développement front end\nExpérience avec Bootstrap, Material-UI, Express"
+                        "content": "Autodidacte"
                     },
                     {
                         "title": "jQuery",
                         "duration": "1 an",
-                        "content": "Connaissances, préfère utiliser JS pur"
+                        "content": "Autodidacte"
                     }
                 ]
             },
@@ -565,19 +573,24 @@
                 "title": "Bases de données",
                 "content": [
                     {
-                        "title": "MongoDB, MySQL",
+                        "title": "MongoDB",
                         "duration": "1 an",
-                        "content": "Étudié\nQuelques expériences avec MySQL pour le travail"
+                        "content": "Autodidacte"
+                    },
+                    {
+                        "title": "MySQL",
+                        "duration": "1 an",
+                        "content": "Quelques expériences professionnelles"
                     }
                 ]
             },
             "server": {
-                "title": "サーバー",
+                "title": "Serveur",
                 "content": [
                     {
                         "title": "AWS",
-                        "duration": "1年",
-                        "content": "仕事上に使用する機会あり"
+                        "duration": "1 an",
+                        "content": "Quelques expériences professionnelles"
                     }
                 ]
             },
@@ -586,48 +599,48 @@
                 "content": [
                     {
                         "title": "MovableType",
-                        "duration": "3年",
-                        "content": "問題なく日常的に利用できる"
+                        "duration": "3 ans",
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "WordPress",
-                        "duration": "1年",
-                        "content": "利用できる"
+                        "duration": "1 an",
+                        "content": "Quelques expériences professionnelles"
                     }
                 ]
             },
             "ecCms": {
-                "title": "EC用CMS",
+                "title": "CMS pour sites de E-commerce",
                 "content": [
                     {
                         "title": "futureshop",
-                        "duration": "3年",
-                        "content": "問題なく日常的に利用できる"
+                        "duration": "3 ans",
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "ECCube",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "duration": "2 ans",
+                        "content": "Expérience professionnelle"
                     },
                     {
-                        "title": "リピスト",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "title": "Rpst",
+                        "duration": "2 ans",
+                        "content": "Expérience professionnelle"
                     }
                 ]
             },
             "software": {
-                "title": "ソフトウェア",
+                "title": "Software",
                 "content": [
                     {
                         "title": "Excel",
-                        "duration": "3年",
-                        "content": "日常的に利用できる"
+                        "duration": "3 ans",
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "Photoshop",
-                        "duration": "2年",
-                        "content": "利用できる"
+                        "duration": "2 ans",
+                        "content": "Expérience professionnelle"
                     }
                 ]
             },
@@ -636,18 +649,18 @@
                 "content": [
                     {
                         "title": "macOS",
-                        "duration": "13年間",
-                        "content": "仕事上とWEB開発に使用した経験あり\n個人的に使用\nターミナルの知識あり"
+                        "duration": "13 ans",
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "Windows (10 & 11)",
                         "duration": "5年間",
-                        "content": "仕事上とWEB開発に使用した経験あり"
+                        "content": "Expérience professionnelle"
                     },
                     {
                         "title": "Linux (Ubuntu)",
                         "duration": "1年間",
-                        "content": "独学\nRasberry Piでサーバーとして使用した経験あり\nコマンドラインの知識あり"
+                        "content": "Autodidacte"
                     }
                 ]
             },
@@ -656,11 +669,11 @@
                 "content": [
                     {
                         "title": "Japonais",
-                        "content": "Vécu au Japon pendant 8 ans, fluent"
+                        "content": "Vécu au Japon pendant 8 ans"
                     },
                     {
                         "title": "Anglais",
-                        "content": "Utilisé régulièrement pour les recherches. Écoute quotidienne. Utilisé dans un emploi précédent."
+                        "content": "Utilisé régulièrement pour les recherches"
                     },
                     {
                         "title": "Français",
@@ -672,17 +685,20 @@
                 "title": "Compétences professionnelles",
                 "content": [
                     {
-                        "title": "Développement web frontend"
+                        "title": "Grande expérience en développement web front-end (HTML, CSS, Javascript)"
                     },
                     {
-                        "title": "Bonne capacité à rechercher et à agir de manière autonome"
+                        "title": "Capable de rechercher et d'apprendre de nouvelles technologies par soi-même"
                     },
                     {
-                        "title": "Autres compétences : Wordpress, Photoshop, .NET"
+                        "title": "Langues : parle couramment le japonais, l'anglais et le français"
                     },
                     {
-                        "title": "E-commerce : Futureshop, ECCube, Rakuten, Yahoo, Repeaters"
-                    }
+                        "title": "Doué pour planifier quotidiennement mon emploi du temps et minimiser les écarts entre les prévisions et les réalisations"
+                    },
+                    {
+                        "title": "Sait effectuer des opérations comme l'enregistrement de produits sur des sites de e-commerce (Rakuten, Yahoo!, Amazon, etc.)"
+                    }                    
                 ]
             }
         }
