@@ -160,27 +160,27 @@
                     {
                         "title": "HTML / CSS",
                         "duration": "4年間",
-                        "content": "仕事で使用"
+                        "content": "問題なく使用でき、実践経験あり"
                     },
                     {
                         "title": "Javascript",
                         "duration": "4年間",
-                        "content": "仕事で使用"
+                        "content": "問題なく使用でき、実践経験あり"
                     },
                     {
                         "title": "Swift",
                         "duration": "1年間",
-                        "content": "勉強中、Swift UIでアプリ開発中"
+                        "content": "独学で学び実践できる"
                     },
                     {
                         "title": "Python",
                         "duration": "４ヶ月間",
-                        "content": "勉強した経験あり"
+                        "content": "独学で学び実践経験なし"
                     },
                     {
                         "title": "PHP",
                         "duration": "4年間",
-                        "content": "仕事上少し操作した経験あり\nsmartyテンプレートを使用した経験あり"
+                        "content": "実践経験あるが、少ししか利用していない"
                     }
                 ]
             },
@@ -190,12 +190,12 @@
                     {
                         "title": "React",
                         "duration": "1年間",
-                        "content": "個人で主にフロントエンド開発の経験あり\nBootstrap, material-ui, Expressを使用した経験あり"
+                        "content": "実践経験あるが、少ししか利用していない"
                     },
                     {
                         "title": "jQuery",
                         "duration": "1年間",
-                        "content": "知識あり、できるだけJSのみを使用"
+                        "content": "利用でき、実践経験あり"
                     }
                 ]
             },
@@ -203,9 +203,194 @@
                 "title": "DB",
                 "content": [
                     {
-                        "title": "mongoDB, mysql",
+                        "title": "mongoDB",
                         "duration": "1年",
-                        "content": "勉強した経験\n仕事上mysqlを少し操作した経験あり"
+                        "content": "独学で学び実践できる"
+                    },
+                    {
+                        "title": "mysql",
+                        "duration": "1年",
+                        "content": "実践経験はあるが、少ししか利用していない"
+                    }
+                ]
+            },
+            "server": {
+                "title": "サーバー",
+                "content": [
+                    {
+                        "title": "AWS",
+                        "duration": "1年",
+                        "content": "実践経験はあるが、少ししか利用していない"
+                    }
+                ]
+            },
+            "cms": {
+                "title": "CMS",
+                "content": [
+                    {
+                        "title": "MovableType",
+                        "duration": "3年",
+                        "content": "問題なく使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "WordPress",
+                        "duration": "1年",
+                        "content": "実践経験あるが、少ししか利用していない"
+                    }
+                ]
+            },
+            "ecCms": {
+                "title": "EC用CMS",
+                "content": [
+                    {
+                        "title": "futureshop",
+                        "duration": "3年",
+                        "content": "問題なく使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "ECCube",
+                        "duration": "2年",
+                        "content": "使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "リピスト",
+                        "duration": "2年",
+                        "content": "使用でき、実践経験あり"
+                    }
+                ]
+            },
+            "software": {
+                "title": "ソフトウェア",
+                "content": [
+                    {
+                        "title": "Excel",
+                        "duration": "3年",
+                        "content": "使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "Photoshop",
+                        "duration": "2年",
+                        "content": "使用でき、実践経験あり"
+                    }
+                ]
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13年間",
+                        "content": "問題なく使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5年間",
+                        "content": "使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "Linux (Ubuntu)",
+                        "duration": "1年間",
+                        "content": "独学で学び、実践経験なし"
+                    }
+                ]
+            },
+            "languages": {
+                "title": "言語",
+                "content": [
+                    {
+                        "title": "日本語",
+                        "content": "８年日本在住、流暢"
+                    },
+                    {
+                        "title": "英語",
+                        "content": "流暢、検索で使用することが多い"
+                    },
+                    {
+                        "title": "フランス語",
+                        "content": "母国語"
+                    }
+                ]
+            },
+            "workskills": {
+                "title": "仕事上のスキル",
+                "content": [
+                    {
+                        "title": "フロントエンドのWEB開発経験が多い（HTML・CSS・Javascript）"
+                    },
+                    {
+                        "title": "使ったことがない技術でも、自分で調べて行動する事が得意"
+                    },
+                    {
+                        "title": "語学：日本語と英語とフランス語が流暢"
+                    },
+                    {
+                        "title": "毎日の計画を立て、予想と実績に差がでないようにすることが得意"
+                    },
+                    {
+                        "title": "ECモール（楽天、Yahoo！、Amazon…）の商品登録のような操作が可能"
+                    }
+                ]
+            }
+        },
+        "en": {
+            "title": "Skills",
+            "header": {
+                "title": "Type",
+                "duration": "Duration",
+                "level": "Level"
+            },
+            "programming": {
+                "title": "Programming",
+                "content": [
+                    {
+                        "title": "HTML / CSS",
+                        "duration": "4 years",
+                        "content": "For work"
+                    },
+                    {
+                        "title": "Javascript",
+                        "duration": "4 years",
+                        "content": "For work"
+                    },
+                    {
+                        "title": "Swift",
+                        "duration": "1 year",
+                        "content": "Currently studying, developing apps with Swift UI"
+                    },
+                    {
+                        "title": "Python",
+                        "duration": "4 months",
+                        "content": "Studied"
+                    },
+                    {
+                        "title": "PHP",
+                        "duration": "4 years",
+                        "content": "Some experience for work\nExperience using Smarty templates"
+                    }
+                ]
+            },
+            "framework": {
+                "title": "Frameworks",
+                "content": [
+                    {
+                        "title": "React",
+                        "duration": "1 year",
+                        "content": "Personal experience mainly in frontend development\nExperience with Bootstrap, Material-UI, Express"
+                    },
+                    {
+                        "title": "jQuery",
+                        "duration": "1 year",
+                        "content": "Basic knowledge, prefer to use vanilla JS"
+                    }
+                ]
+            },
+            "DB": {
+                "title": "Databases",
+                "content": [
+                    {
+                        "title": "MongoDB, MySQL",
+                        "duration": "1 year",
+                        "content": "Studied\nSome experience with MySQL for work"
                     }
                 ]
             },
@@ -290,121 +475,6 @@
                 ]
             },
             "languages": {
-                "title": "言語",
-                "content": [
-                    {
-                        "title": "日本語",
-                        "content": "８年日本在住、流暢"
-                    },
-                    {
-                        "title": "英語",
-                        "content": "流暢、検索で使用することが多い"
-                    },
-                    {
-                        "title": "フランス語",
-                        "content": "母国語"
-                    }
-                ]
-            },
-            "workskills": {
-                "title": "仕事上のスキル",
-                "content": [
-                    {
-                        "title": "フロントエンドのWEB開発経験が多い（HTML・CSS・Javascript）"
-                    },
-                    {
-                        "title": "使ったことがない技術でも、自分で調べて行動する事が得意"
-                    },
-                    {
-                        "title": "語学：日本語と英語とフランス語が流暢"
-                    },
-                    {
-                        "title": "毎日の計画を立て、予想と実績に差がでないようにすることが得意"
-                    },
-                    {
-                        "title": "ECモール（楽天、Yahoo！、Amazon…）の商品登録のような操作が可能"
-                    }
-                ]
-            }
-        },
-        "en": {
-            "title": "Skills",
-            "header": {
-                "title": "Type",
-                "duration": "Duration",
-                "level": "Level"
-            },
-            "os": {
-                "title": "OS",
-                "content": [
-                    {
-                        "title": "macOS",
-                        "duration": "13 years",
-                        "content": "Used for web development\nPersonal use\nKnowledge of Terminal"
-                    },
-                    {
-                        "title": "Windows (10 & 11)",
-                        "duration": "5 years",
-                        "content": "Used for work, web development"
-                    }
-                ]
-            },
-            "programming": {
-                "title": "Programming",
-                "content": [
-                    {
-                        "title": "HTML / CSS",
-                        "duration": "4 years",
-                        "content": "For work"
-                    },
-                    {
-                        "title": "Javascript",
-                        "duration": "4 years",
-                        "content": "For work"
-                    },
-                    {
-                        "title": "Swift",
-                        "duration": "1 year",
-                        "content": "Currently studying, developing apps with Swift UI"
-                    },
-                    {
-                        "title": "Python",
-                        "duration": "4 months",
-                        "content": "Studied"
-                    },
-                    {
-                        "title": "PHP",
-                        "duration": "4 years",
-                        "content": "Some experience for work\nExperience using Smarty templates"
-                    }
-                ]
-            },
-            "framework": {
-                "title": "Frameworks",
-                "content": [
-                    {
-                        "title": "React",
-                        "duration": "1 year",
-                        "content": "Personal experience mainly in frontend development\nExperience with Bootstrap, Material-UI, Express"
-                    },
-                    {
-                        "title": "jQuery",
-                        "duration": "1 year",
-                        "content": "Basic knowledge, prefer to use vanilla JS"
-                    }
-                ]
-            },
-            "DB": {
-                "title": "Databases",
-                "content": [
-                    {
-                        "title": "MongoDB, MySQL",
-                        "duration": "1 year",
-                        "content": "Studied\nSome experience with MySQL for work"
-                    }
-                ]
-            },
-            "languages": {
                 "title": "Languages",
                 "content": [
                     {
@@ -445,21 +515,6 @@
                 "title": "Type",
                 "duration": "Durée",
                 "level": "Niveau"
-            },
-            "os": {
-                "title": "OS",
-                "content": [
-                    {
-                        "title": "macOS",
-                        "duration": "13 ans",
-                        "content": "Utilisé pour le développement web\nUtilisation personnelle\nConnaissance du Terminal"
-                    },
-                    {
-                        "title": "Windows (10 & 11)",
-                        "duration": "5 ans",
-                        "content": "Utilisé pour le travail, développement web"
-                    }
-                ]
             },
             "programming": {
                 "title": "Programmation",
@@ -513,6 +568,86 @@
                         "title": "MongoDB, MySQL",
                         "duration": "1 an",
                         "content": "Étudié\nQuelques expériences avec MySQL pour le travail"
+                    }
+                ]
+            },
+            "server": {
+                "title": "サーバー",
+                "content": [
+                    {
+                        "title": "AWS",
+                        "duration": "1年",
+                        "content": "仕事上に使用する機会あり"
+                    }
+                ]
+            },
+            "cms": {
+                "title": "CMS",
+                "content": [
+                    {
+                        "title": "MovableType",
+                        "duration": "3年",
+                        "content": "問題なく日常的に利用できる"
+                    },
+                    {
+                        "title": "WordPress",
+                        "duration": "1年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "ecCms": {
+                "title": "EC用CMS",
+                "content": [
+                    {
+                        "title": "futureshop",
+                        "duration": "3年",
+                        "content": "問題なく日常的に利用できる"
+                    },
+                    {
+                        "title": "ECCube",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    },
+                    {
+                        "title": "リピスト",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "software": {
+                "title": "ソフトウェア",
+                "content": [
+                    {
+                        "title": "Excel",
+                        "duration": "3年",
+                        "content": "日常的に利用できる"
+                    },
+                    {
+                        "title": "Photoshop",
+                        "duration": "2年",
+                        "content": "利用できる"
+                    }
+                ]
+            },
+            "os": {
+                "title": "OS",
+                "content": [
+                    {
+                        "title": "macOS",
+                        "duration": "13年間",
+                        "content": "仕事上とWEB開発に使用した経験あり\n個人的に使用\nターミナルの知識あり"
+                    },
+                    {
+                        "title": "Windows (10 & 11)",
+                        "duration": "5年間",
+                        "content": "仕事上とWEB開発に使用した経験あり"
+                    },
+                    {
+                        "title": "Linux (Ubuntu)",
+                        "duration": "1年間",
+                        "content": "独学\nRasberry Piでサーバーとして使用した経験あり\nコマンドラインの知識あり"
                     }
                 ]
             },
