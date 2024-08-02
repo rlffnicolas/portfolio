@@ -239,26 +239,6 @@
                     }
                 ]
             },
-            "ecCms": {
-                "title": "EC用CMS",
-                "content": [
-                    {
-                        "title": "futureshop",
-                        "duration": "3年",
-                        "content": "問題なく使用でき、実践経験あり"
-                    },
-                    {
-                        "title": "ECCube",
-                        "duration": "2年",
-                        "content": "使用でき、実践経験あり"
-                    },
-                    {
-                        "title": "リピスト",
-                        "duration": "2年",
-                        "content": "使用でき、実践経験あり"
-                    }
-                ]
-            },
             "software": {
                 "title": "ソフトウェア",
                 "content": [
@@ -315,19 +295,22 @@
                 "title": "仕事上のスキル",
                 "content": [
                     {
-                        "title": "フロントエンドのWEB開発経験が多い（HTML・CSS・Javascript）"
+                        "title": "約20ECサイトのフロントエンドコーディングと保守（HTML・CSS・Javascript）"
                     },
                     {
-                        "title": "使ったことがない技術でも、自分で調べて行動する事が得意"
+                        "title": "ドメイン・サーバー・DNS設定の初期設定の経験が多い"
+                    },
+                    {
+                        "title": "毎日のスケジュールを立て、予想と実績に差が出ないように心がけている"
+                    },
+                    {
+                        "title": "EC用CMS（futureshop, ECCube…）とECモール（楽天、Yahoo！、Amazon…）の操作経験が多い"
+                    },
+                    {
+                        "title": "使用したことがない技術を自分で調べ、学び、行動する事が得意"
                     },
                     {
                         "title": "語学：日本語と英語とフランス語が流暢"
-                    },
-                    {
-                        "title": "毎日の計画を立て、予想と実績に差がでないようにすることが得意"
-                    },
-                    {
-                        "title": "ECモール（楽天、Yahoo！、Amazon…）の商品登録のような操作が可能"
                     }
                 ]
             }
@@ -424,26 +407,6 @@
                     }
                 ]
             },
-            "ecCms": {
-                "title": "CMS for EC",
-                "content": [
-                    {
-                        "title": "futureshop",
-                        "duration": "3 years",
-                        "content": "Have practical experience"
-                    },
-                    {
-                        "title": "ECCube",
-                        "duration": "2 years",
-                        "content": "Have practical experienc"
-                    },
-                    {
-                        "title": "Rpst",
-                        "duration": "2 years",
-                        "content": "Have practical experienc"
-                    }
-                ]
-            },
             "software": {
                 "title": "Software",
                 "content": [
@@ -500,20 +463,23 @@
                 "title": "Work Skills",
                 "content": [
                     {
-                        "title": "Extensive experience in front-end web development (HTML, CSS, Javascript)"
+                        "title": "Frontend coding and maintenance for approximately 20 e-commerce sites (HTML, CSS, Javascript)"
                     },
                     {
-                        "title": "Capable of researching and learning new technologies independently"
+                        "title": "Lot of experience in initial setup of domain, server, and DNS settings"
+                    },
+                    {
+                        "title": "Daily scheduling to ensure no discrepancies between predictions and actual results"
+                    },
+                    {
+                        "title": "Lot of experience with e-commerce CMS (futureshop, ECCube…) and e-commerce platforms (Rakuten, Yahoo!, Amazon…)"
+                    },
+                    {
+                        "title": "Skilled at researching, learning, and applying new technologies"
                     },
                     {
                         "title": "Languages: Fluent in Japanese, English, and French"
-                    },
-                    {
-                        "title": "Skilled in daily planning and minimizing discrepancies between forecasts and actual outcomes"
-                    },
-                    {
-                        "title": "Proficient in performing operations such as product registration on e-commerce platforms (Rakuten, Yahoo!, Amazon, etc.)"
-                    }                    
+                    }          
                 ]
             }
         },
@@ -609,26 +575,6 @@
                     }
                 ]
             },
-            "ecCms": {
-                "title": "CMS pour sites de E-commerce",
-                "content": [
-                    {
-                        "title": "futureshop",
-                        "duration": "3 ans",
-                        "content": "Expérience professionnelle"
-                    },
-                    {
-                        "title": "ECCube",
-                        "duration": "2 ans",
-                        "content": "Expérience professionnelle"
-                    },
-                    {
-                        "title": "Rpst",
-                        "duration": "2 ans",
-                        "content": "Expérience professionnelle"
-                    }
-                ]
-            },
             "software": {
                 "title": "Software",
                 "content": [
@@ -685,20 +631,23 @@
                 "title": "Compétences professionnelles",
                 "content": [
                     {
-                        "title": "Grande expérience en développement web front-end (HTML, CSS, Javascript)"
+                        "title": "Codage et maintenance frontend pour environ 20 sites de commerce électronique (HTML, CSS, Javascript)"
                     },
                     {
-                        "title": "Capable de rechercher et d'apprendre de nouvelles technologies par soi-même"
+                        "title": "Beaucoup d'expérience dans la configuration initiale de domaines, serveurs et paramètres DNS"
                     },
                     {
-                        "title": "Langues : parle couramment le japonais, l'anglais et le français"
+                        "title": "Planification quotidienne pour éviter les écarts entre les prévisions et les résultats réels"
                     },
                     {
-                        "title": "Doué pour planifier quotidiennement mon emploi du temps et minimiser les écarts entre les prévisions et les réalisations"
+                        "title": "Beaucoup d'expérience étendue avec les CMS pour e-commerce (futureshop, ECCube…) et les plateformes de e-commerce (Rakuten, Yahoo!, Amazon…)"
                     },
                     {
-                        "title": "Sait effectuer des opérations comme l'enregistrement de produits sur des sites de e-commerce (Rakuten, Yahoo!, Amazon, etc.)"
-                    }                    
+                        "title": "Compétent pour rechercher, apprendre et appliquer de nouvelles technologies de manière autonome"
+                    },
+                    {
+                        "title": "Langues : Courant en japonais, anglais et français"
+                    }                   
                 ]
             }
         }

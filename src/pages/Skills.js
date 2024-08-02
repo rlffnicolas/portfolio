@@ -193,27 +193,6 @@ const Skills = () => {
                 </motion.ul>
 
                 <motion.h2
-                    key="ec-cms-title"
-                    {...animateProps}
-                    custom={2.5}
-                >{skills[language].ecCms.title}</motion.h2>
-                <motion.ul
-                    key="ec-cms-list"
-                    {...animateProps}
-                    custom={3}
-                >
-                    {skills[language].ecCms.content.map((content, index) => {
-                        return (
-                            <li key={index}>
-                                <h3>{content.title}</h3>
-                                <p>{content.duration}</p>
-                                <p>{content.content}</p>
-                            </li>
-                        )
-                    })}
-                </motion.ul>
-
-                <motion.h2
                     key="software-title"
                     {...animateProps}
                     custom={2.5}
