@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState ,Component } from 'react';
+import React, { useState ,useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useLocation, useOutlet } from "react-router-dom";
 import { useTheme } from './contexts/ThemeContext';
@@ -8,6 +8,7 @@ import { Navibar }  from './components';
 import { useToggleNavibar } from './contexts/ToggleNavibarContext';
 import { devices } from './deviceSizes';
 import { Scrollbars } from 'react-custom-scrollbars-2';
+import Loading from './components/Loading';
 
 const StyledApp = styled.div`
 
@@ -118,6 +119,25 @@ const StyledApp = styled.div`
 
 function App() {
 
+  const {theme} = useTheme();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // Set loading time to 1 second
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div>
+      {loading ? <Loading /> : <MainContent />}
+    </div>
+  );
+}
+
+const MainContent = () => {
   const {theme} = useTheme();
   const {toggleNavibar, setToggleNavibar} = useToggleNavibar();
   const location = useLocation();
