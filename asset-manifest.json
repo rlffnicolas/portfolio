@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.749ca1d9.css",
-    "main.js": "/static/js/main.8c424f75.js",
+    "main.js": "/static/js/main.6a94f1c2.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/material-symbols-rounded.woff2": "/static/media/material-symbols-rounded.7e6c57567e2ab620ec78.woff2",
     "static/media/dicee.png": "/static/media/dicee.02565903d4e427c2362a.png",
@@ -11,6 +11,7 @@
     "static/media/dayplan-6.png": "/static/media/dayplan-6.9630befa2c4cfa0052e5.png",
     "static/media/dayplan-2.png": "/static/media/dayplan-2.ce93e3e21dcfda5c7f6e.png",
     "static/media/hackernews.png": "/static/media/hackernews.245961c1154e31407268.png",
+    "static/media/logo.png": "/static/media/logo.5ac93c36a0feea606daf.png",
     "static/media/flash-chat-3.png": "/static/media/flash-chat-3.a6c5cec5b445f10beb7f.png",
     "static/media/bmi-calculator.png": "/static/media/bmi-calculator.70cc9493e767d20c5597.png",
     "static/media/flash-chat-2.png": "/static/media/flash-chat-2.e8a9e094352146791b7e.png",
@@ -23,11 +24,11 @@
     "static/media/colorpicker.png": "/static/media/colorpicker.025e1d0238843c69e8d0.png",
     "index.html": "/index.html",
     "main.749ca1d9.css.map": "/static/css/main.749ca1d9.css.map",
-    "main.8c424f75.js.map": "/static/js/main.8c424f75.js.map",
+    "main.6a94f1c2.js.map": "/static/js/main.6a94f1c2.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.749ca1d9.css",
-    "static/js/main.8c424f75.js"
+    "static/js/main.6a94f1c2.js"
   ]
 }
