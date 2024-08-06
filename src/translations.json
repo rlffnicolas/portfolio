@@ -251,6 +251,21 @@
                         "title": "Photoshop",
                         "duration": "2年",
                         "content": "使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "Chatwork",
+                        "duration": "3年",
+                        "content": "使用でき、実践経験あり"
+                    },
+                    {
+                        "title": "Git",
+                        "duration": "2年",
+                        "content": "使用でき、実践経験なし"
+                    },
+                    {
+                        "title": "Notion",
+                        "duration": "2年",
+                        "content": "使用でき、実践経験なし"
                     }
                 ]
             },
@@ -263,7 +278,7 @@
                         "content": "問題なく使用でき、実践経験あり"
                     },
                     {
-                        "title": "Windows (10 & 11)",
+                        "title": "Windows",
                         "duration": "5年間",
                         "content": "使用でき、実践経験あり"
                     },
@@ -343,7 +358,7 @@
                     {
                         "title": "Python",
                         "duration": "4 months",
-                        "content": "Studied"
+                        "content": "Self-taught"
                     },
                     {
                         "title": "PHP",
@@ -373,7 +388,7 @@
                     {
                         "title": "MongoDB",
                         "duration": "1 year",
-                        "content": "Studied"
+                        "content": "Self-taught"
                     },
                     {
                         "title": "MySQL",
@@ -419,6 +434,21 @@
                         "title": "Photoshop",
                         "duration": "2 years",
                         "content": "Have practical experience"
+                    },
+                    {
+                        "title": "Chatwork",
+                        "duration": "3 years",
+                        "content": "Have practical experience"
+                    },
+                    {
+                        "title": "Git",
+                        "duration": "2 years",
+                        "content": "Self-taught"
+                    },
+                    {
+                        "title": "Notion",
+                        "duration": "2 years",
+                        "content": "Self-taught"
                     }
                 ]
             },
@@ -431,14 +461,14 @@
                         "content": "Have practical experience"
                     },
                     {
-                        "title": "Windows (10 & 11)",
+                        "title": "Windows",
                         "duration": "5 years",
                         "content": "Have practical experience"
                     },
                     {
                         "title": "Linux (Ubuntu)",
                         "duration": "1 year",
-                        "content": "Studied"
+                        "content": "Self-taught"
                     }
                 ]
             },
@@ -587,6 +617,21 @@
                         "title": "Photoshop",
                         "duration": "2 ans",
                         "content": "Expérience professionnelle"
+                    },
+                    {
+                        "title": "Chatwork",
+                        "duration": "3 ans",
+                        "content": "Expérience professionnelle"
+                    },
+                    {
+                        "title": "Git",
+                        "duration": "2 ans",
+                        "content": "Autodidacte"
+                    },
+                    {
+                        "title": "Notion",
+                        "duration": "2 ans",
+                        "content": "Autodidacte"
                     }
                 ]
             },
